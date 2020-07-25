@@ -2,6 +2,8 @@ Français
 
 # COVID Alert: COVID-19 Exposure Notification Application Privacy Assessment
 
+_Health Canada/Public Health Agency of Canada Privacy Management Division_
+
 * [1. Objective](#1-objective)
 * [2. Scope](#2-scope)
 * [3. Background](#3-background)
