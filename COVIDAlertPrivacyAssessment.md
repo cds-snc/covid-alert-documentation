@@ -1,4 +1,4 @@
-Français
+[Français](https://github.com/cds-snc/covid-alert-documentation/blob/main/EvaluationViePriveeAlerteCOVID.md)
 
 # COVID Alert: COVID-19 Exposure Notification Application Privacy Assessment
 
