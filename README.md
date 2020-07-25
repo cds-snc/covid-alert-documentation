@@ -1,4 +1,4 @@
-[La version française suit.](#documentation-pour-covid-alert)
+[La version française suit.](#documentation-pour-alerte-covid)
 
 # COVID Alert documentation
 
@@ -43,31 +43,31 @@ For questions or feedback, you can email the Canadian Digital Service at [cds-sn
 
 ----
 
-# Documentation pour COVID Alert
+# Documentation pour Alerte COVID
 
-Ce référentiel comprend de la documentation à l’appui de COVID Alert, l’application d’avis d’exposition du Canada. Ces documents ont été produits par le [Service numérique canadien](https://numerique.canada.ca/), [Santé Canada](https://www.canada.ca/fr/sante-canada.html), et d’autres partenaires gouvernementaux :   
+Ce référentiel comprend de la documentation à l’appui de l’Alerte COVID, l’application d’avis d’exposition du Canada. Ces documents ont été produits par le [Service numérique canadien](https://numerique.canada.ca/), [Santé Canada](https://www.canada.ca/fr/sante-canada.html), et d’autres partenaires gouvernementaux :   
 
-*   Évaluation de la protection de la vie privée de COVID Alert
+*   [Évaluation de la protection de la vie privée de l’application Alerte COVID](https://github.com/cds-snc/covid-alert-documentation/blob/main/EvaluationViePriveeAlerteCOVID.md)
 *   Rapport sur l’accessibilité
 *   Politique de divulgation des vulnérabilités
 
 Vous pouvez également consulter :  
 
-*   Énoncé d’accessibilité pour COVID Alert
-*   Obtenir de l’aide avec COVID Alert
-*   Énoncé de confidentialité COVID Alert
+*   Énoncé d’accessibilité pour Alerte COVID
+*   Obtenir de l’aide avec Alerte COVID
+*   Énoncé de confidentialité Alerte COVID
 *   [Documentation technique pour l'application mobile](https://github.com/cds-snc/covid-alert-app#readme)
 *   [Documentation technique sur le principal serveur](https://github.com/cds-snc/covid-alert-server#readme)
 *   [Documentation technique sur le portail](https://github.com/cds-snc/covid-alert-portal#readme)
 *   [Guide de contribution](https://github.com/cds-snc/covid-alert-app/blob/master/CONTRIBUTING.md)
 
-## Installer et utiliser COVID Alert
+## Installer et utiliser Alerte COVID
 
-Vous pouvez installer COVID Alert à partir de l’App Store d’Apple et de Google Play Store.
+Vous pouvez installer Alerte COVID à partir de l’App Store d’Apple et de Google Play Store.
 
-Pour plus d’information sur la façon d’installer et d’utiliser COVID Alert, consultez la page d’accueil ou la page d’aide de COVID Alert.
+Pour plus d’information sur la façon d’installer et d’utiliser Alerte COVID, consultez la page d’accueil ou la page d’aide de l’Alerte COVID.
 
-## Au sujet de COVID Alert
+## Au sujet de l’application Alerte COVID
 
 Dans le cadre des efforts pour réduire la propagation du virus de la COVID-19 tout en assouplissant progressivement les restrictions imposées et en permettant à l’économie de recommencer, le gouvernement du Canada s’est engagé à lancer une application nationale unique de notification d’exposition à la COVID-19 (ci-après dénommée Alerte COVID). Cette application sera interopérable entre les provinces et a été conçue pour minimiser la collecte et le stockage de renseignements identifiables. Afin de minimiser les risques pour les renseignements personnels, on a déterminé qu’une application de notification d’exposition, par rapport à une application de recherche de contacts, était l’approche privilégiée pour établir une solution numérique pancanadienne afin de soutenir les efforts visant à réduire la propagation du virus.
 
