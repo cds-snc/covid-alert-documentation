@@ -164,7 +164,7 @@ In the broader context of the entirety of the exposure notification app:
 
 We hold too that this is a non-public disclosure with a low possibility of attack and a low impact, meaning the risk tolerance should be higher.
 
-Considering this data personal information would necessitate automatically considering data with any_ de minimus_ risk of re-identification (rather than a serious risk of re-identification, defined as more than frivolous) as personal information, regardless of context. In our view, in this context, this data remains below the threshold of “serious risk of re-identification.”
+Considering this data personal information would necessitate automatically considering data with any _de minimus_ risk of re-identification (rather than a serious risk of re-identification, defined as more than frivolous) as personal information, regardless of context. In our view, in this context, this data remains below the threshold of “serious risk of re-identification.”
 
 Further, the Federal Court in Sig Sauer (Canada (Information Commissioner) v. Canada (Public Safety and Emergency Preparedness), 2019 FC 1279) found that “to use the serial numbers identify an individual would require either access to restricted government databases that already contain personal information, or a successful effort to trick either the government or the manufacturer into releasing personal information.  The evidence does not establish a serious possibility of either occurring.” In this case, McHaffie J was satisfied that there was no personal information at issue.
 
@@ -184,7 +184,7 @@ Use of the app is entirely voluntary. If users have been diagnosed with COVID-19
 
 #### _Legal Authority_
 
-The app, as a tool to enhance existing measures to address and reduce the spread of the COVID-19 virus, fits within the mandates of HC and its legislative requirements according to section 4 of the _Department of Health Act _to protect the people of Canada against risks to health and the spreading of diseases. In addition, subsection 29.2 of the _Financial Administrative Act_ provides the authority for CDS to deliver internal support services (IT services) to HC and fulfill their role in the development of the app, as described in section 4 of this document.
+The app, as a tool to enhance existing measures to address and reduce the spread of the COVID-19 virus, fits within the mandates of HC and its legislative requirements according to section 4 of the _Department of Health Act_ to protect the people of Canada against risks to health and the spreading of diseases. In addition, subsection 29.2 of the _Financial Administrative Act_ provides the authority for CDS to deliver internal support services (IT services) to HC and fulfill their role in the development of the app, as described in section 4 of this document.
 
 #### _Necessity and Proportionality_
 
