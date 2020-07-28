@@ -45,7 +45,7 @@ For questions or feedback, you can email the Canadian Digital Service at [cds-sn
 
 # Documentation pour Alerte COVID
 
-Ce dépôt comprend de la documentation à l’appui d’Alerte COVID, l’application de notification d’exposition du Canada. Ces documents ont été produits par le [Service numérique canadien](https://numerique.canada.ca/), [Santé Canada](https://www.canada.ca/fr/sante-canada.html) et d’autres partenaires gouvernementaux :   
+Ce dépôt comprend de la documentation à l’appui d’[Alerte COVID](https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/alerte-covid.html), l’application de notification d’exposition du Canada. Ces documents ont été produits par le [Service numérique canadien](https://numerique.canada.ca/), [Santé Canada](https://www.canada.ca/fr/sante-canada.html) et d’autres partenaires gouvernementaux :   
 
 *   [Évaluation de la protection de la vie privée de l’application Alerte COVID](https://github.com/cds-snc/covid-alert-documentation/blob/main/EvaluationViePriveeAlerteCOVID.md)
 *   [Rapport sur l’accessibilité](https://github.com/cds-snc/covid-alert-documentation/blob/main/RapportAccessibilite.md)
@@ -53,9 +53,9 @@ Ce dépôt comprend de la documentation à l’appui d’Alerte COVID, l’appli
 
 Vous pouvez également consulter :  
 
-*   Déclaration d’accessibilité pour Alerte COVID
-*   Obtenir de l’aide avec Alerte COVID
-*   Énoncé de confidentialité d’Alerte COVID
+*   [Déclaration d’accessibilité pour Alerte COVID](https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/alerte-covid/declaration-accessibilite.html)
+*   [Obtenir de l’aide avec Alerte COVID](https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/alerte-covid/aide.html)
+*   [Énoncé de confidentialité d’Alerte COVID](https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/alerte-covid/politique-confidentialite.html)
 *   [Documentation technique sur l’application mobile](https://github.com/cds-snc/covid-alert-app#readme)
 *   [Documentation technique sur le serveur de clés](https://github.com/cds-snc/covid-alert-server#readme)
 *   [Documentation technique sur le portail](https://github.com/cds-snc/covid-alert-portal#readme)
@@ -65,7 +65,7 @@ Vous pouvez également consulter :
 
 Vous pouvez installer Alerte COVID à partir de l’App Store d’Apple et de Google Play Store.
 
-Pour plus d’information sur la façon d’installer et d’utiliser Alerte COVID, consultez la page d’accueil ou la page d’aide d’Alerte COVID.
+Pour plus d’information sur la façon d’installer et d’utiliser Alerte COVID, consultez [la page d’accueil](https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/alerte-covid.html) ou [la page d’aide d’Alerte COVID](https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/alerte-covid/aide.html).
 
 ## Au sujet de l’application Alerte COVID
 
