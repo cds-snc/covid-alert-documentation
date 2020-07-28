@@ -17,11 +17,12 @@ You may also be interested in:
 *   [Key server technical documentation](https://github.com/cds-snc/covid-alert-server#readme)
 *   [Healthcare portal technical documentation](https://github.com/cds-snc/covid-alert-portal#readme)
 *   [Contributing guide](https://github.com/cds-snc/covid-alert-app/blob/master/CONTRIBUTING.md)
+*   [CDS Accessibility Handbook](https://digital.canada.ca/a11y/)
 
 
 ## Installing and using COVID Alert
 
-You can install COVID Alert from the Apple App Store and Google Play Store.
+You can install COVID Alert from the [Apple App Store](https://apps.apple.com/ca/app/id1520284227) and [Google Play Store](https://play.google.com/store/apps/details?id=ca.gc.hcsc.canada.stopcovid).
 
 For more information on how to install and use COVID Alert, see the [COVID Alert landing page](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html) or the [Help with COVID Alert page](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert/help.html) for more information.
 
@@ -60,10 +61,11 @@ Vous pouvez également consulter :
 *   [Documentation technique sur le serveur de clés](https://github.com/cds-snc/covid-alert-server#readme)
 *   [Documentation technique sur le portail](https://github.com/cds-snc/covid-alert-portal#readme)
 *   [Guide de contribution](https://github.com/cds-snc/covid-alert-app/blob/master/CONTRIBUTING.md)
+*   [Guide d’accessibilité du SNC](https://numerique.canada.ca/a11y/)
 
 ## Installer et utiliser Alerte COVID
 
-Vous pouvez installer Alerte COVID à partir de l’App Store d’Apple et de Google Play Store.
+Vous pouvez installer Alerte COVID à partir de l’[App Store d’Apple](https://apps.apple.com/ca/app/id1520284227?l=fr) et de [Google Play Store](https://play.google.com/store/apps/details?id=ca.gc.hcsc.canada.stopcovid&hl=fr).
 
 Pour plus d’information sur la façon d’installer et d’utiliser Alerte COVID, consultez [la page d’accueil](https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/alerte-covid.html) ou [la page d’aide d’Alerte COVID](https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/alerte-covid/aide.html).
 
