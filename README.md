@@ -5,7 +5,7 @@
 This repository contains supporting documentation for [COVID Alert](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html), Canada’s exposure notification app. These documents were produced by the [Canadian Digital Service](https://digital.canada.ca/), [Health Canada](https://www.canada.ca/en/health-canada.html), and other government partners:
 
 *   [COVID Alert Privacy Assessment](https://github.com/cds-snc/covid-alert-documentation/blob/main/COVIDAlertPrivacyAssessment.md)
-*   Accessibility Report
+*   [Accessibility Report](https://github.com/cds-snc/covid-alert-documentation/blob/main/AccessibilityReport.md)
 *   Vulnerability Disclosure Policy
 
 You may also be interested in:
@@ -48,7 +48,7 @@ For questions or feedback, you can email the Canadian Digital Service at [cds-sn
 Ce dépôt comprend de la documentation à l’appui d’Alerte COVID, l’application de notification d’exposition du Canada. Ces documents ont été produits par le [Service numérique canadien](https://numerique.canada.ca/), [Santé Canada](https://www.canada.ca/fr/sante-canada.html) et d’autres partenaires gouvernementaux :   
 
 *   [Évaluation de la protection de la vie privée de l’application Alerte COVID](https://github.com/cds-snc/covid-alert-documentation/blob/main/EvaluationViePriveeAlerteCOVID.md)
-*   Rapport sur l’accessibilité
+*   [Rapport sur l’accessibilité](https://github.com/cds-snc/covid-alert-documentation/blob/main/RapportAccessibilite.md)
 *   Politique de divulgation des vulnérabilités
 
 Vous pouvez également consulter :  
