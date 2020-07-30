@@ -6,7 +6,7 @@ This repository contains supporting documentation for [COVID Alert](https://www.
 
 *   [COVID Alert Privacy Assessment](https://github.com/cds-snc/covid-alert-documentation/blob/main/COVIDAlertPrivacyAssessment.md)
 *   [Accessibility Report](https://github.com/cds-snc/covid-alert-documentation/blob/main/AccessibilityReport.md)
-*   Vulnerability Disclosure Policy
+*   [Vulnerability Disclosure Policy](https://github.com/cds-snc/covid-alert-documentation/blob/main/VulnerabilityDisclosurePolicy.md)
 
 You may also be interested in:
 
@@ -50,7 +50,7 @@ Ce dépôt comprend de la documentation à l’appui d’[Alerte COVID](https://
 
 *   [Évaluation de la protection de la vie privée de l’application Alerte COVID](https://github.com/cds-snc/covid-alert-documentation/blob/main/EvaluationViePriveeAlerteCOVID.md)
 *   [Rapport sur l’accessibilité](https://github.com/cds-snc/covid-alert-documentation/blob/main/RapportAccessibilite.md)
-*   Politique de divulgation des vulnérabilités
+*   [Politique de divulgation des vulnérabilités](https://github.com/cds-snc/covid-alert-documentation/blob/main/PolitiqueDivulgationVulnerabilites.md)
 
 Vous pouvez également consulter :  
 
