@@ -4,6 +4,8 @@
 
 _Division de la gestion de la protection des renseignements personnels de Santé Canada et de l’Agence de la santé publique du Canada_
 
+_[L’évaluation est également publiée sur Canada.ca](https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/alerte-covid/politique-confidentialite/evaluation.html)_
+
 * [1. Objectif](#1-objectif)
 * [2. Portée](#2-portée)
 * [3. Contexte](#3-contexte)

@@ -4,6 +4,8 @@
 
 _Health Canada/Public Health Agency of Canada Privacy Management Division_
 
+_[Also published on Canada.ca](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert/privacy-policy/assessment.html)_
+
 * [1. Objective](#1-objective)
 * [2. Scope](#2-scope)
 * [3. Background](#3-background)
