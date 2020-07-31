@@ -4,6 +4,8 @@
 
 _Health Canada/Public Health Agency of Canada Privacy Management Division_
 
+_[Also published on Canada.ca](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert/privacy-policy/assessment.html)_
+
 * [1. Objective](#1-objective)
 * [2. Scope](#2-scope)
 * [3. Background](#3-background)
@@ -11,7 +13,7 @@ _Health Canada/Public Health Agency of Canada Privacy Management Division_
 * [5. How does the COVID Alert App work?](#5-how-does-the-covid-alert-app-work)
 * [6. Privacy Analysis](#6-privacy-analysis)
 * [Appendix A: List of COVID Alert App Data Elements](#appendix-a-list-of-data-covid-alert-app-data)
-* [Notes](#notes)
+* [Footnotes](#footnotes)
 
 ## 1\. Objective
 
@@ -446,7 +448,7 @@ Finally, the public will be informed of any vulnerabilities or threats to the ap
 </table>
 
 
-## Notes
+## Footnotes
 
 <a name="otp-portal">[1]</a>
      If required, the Government of Canada may develop a portal to create and distribute one-time codes for some PTs. If this occurs, a separate privacy analysis will be undertaken. [↩](#f1)

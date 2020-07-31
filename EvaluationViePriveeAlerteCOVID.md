@@ -4,6 +4,8 @@
 
 _Division de la gestion de la protection des renseignements personnels de Santé Canada et de l’Agence de la santé publique du Canada_
 
+_[L’évaluation est également publiée sur Canada.ca](https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/alerte-covid/politique-confidentialite/evaluation.html)_
+
 * [1. Objectif](#1-objectif)
 * [2. Portée](#2-portée)
 * [3. Contexte](#3-contexte)
@@ -11,7 +13,7 @@ _Division de la gestion de la protection des renseignements personnels de Santé
 * [5. Fonctionnement de l’application Alerte COVID](#5-fonctionnement-de-lapplication-alerte-covid)
 * [6. Analyse de la protection des renseignements personnels](#6-analyse-de-la-protection-des-renseignements-personnels)
 * [Annexe A : Liste des données sur l’application Alerte COVID](#annexea-liste-des-données-sur-lapplication-alerte-covid)
-* [Notes](#notes)
+* [Notes de bas de page](#notes-de-bas-de-page)
 
 ## 1\. Objectif
 
@@ -445,7 +447,7 @@ Enfin, le public sera informé de toute vulnérabilité ou menace à l’applica
   </tr>
 </table>
 
-## Notes
+## Notes de bas de page
 
 <a name="portail">[1]</a>
      Au besoin, le gouvernement du Canada peut élaborer un portail pour créer et distribuer des codes à usage unique pour certains PT. Si cela se produit, une analyse distincte sur la protection des renseignements personnels sera entreprise. [↩](#f1)
