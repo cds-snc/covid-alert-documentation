@@ -20,17 +20,17 @@ We looked at research related to the key handoff based on three sources:
 3. Lessons learned so far in Ontario and the Canadian Digital Service’s COVID Alert beta testing
 
 
-### Challenges
+## Challenges
 
 
-#### Patients are likely to be stressed and unable to work with information
+### Patients are likely to be stressed and unable to work with information
 
 At this time, the service relies on the healthcare workers sharing the one-time key when they inform the individual of a positive test for COVID-19. Research suggests that in such a possibly emotional situation, the patient may not be able to follow instructions in order to enter the key into the app.
 
 When delivering bad news, patients are known to need time to process it. Healthcare workers should be ready for emotional reactions including [shock and distress](https://www.cmpa-acpm.ca/en/advice-publications/browse-articles/2015/after-the-diagnosis-how-to-communicate-with-terminally-ill-patients). Behavioral Insights research shows that when people are in these types of emotional states they are not able to [process information](https://www.frontiersin.org/articles/10.3389/fpsyg.2015.01727/full). Patient information booklets etc. are used in other contexts to [reinforce the information](https://onlinelibrary.wiley.com/doi/full/10.1111/hex.12487) from the clinical consult. In this app, we need to supply analogous patient information.
 
 
-#### Contact tracers navigating difficult conversations
+### Contact tracers navigating difficult conversations
 
 Doctors (not contact tracers, but similar fears may exist), [fear the following when delivering bad news](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4677873/):
 
@@ -55,30 +55,30 @@ In addition to the difficult task of delivering bad news, contact tracers are at
 Not only are patients being asked to understand stressful information, the contact tracers are responsible for navigating various situations where asking about an app may be strange/inappropriate.
 
 
-#### App-specific lexicon
+### App-specific lexicon
 
 One other concern is that distinguishing between different types of keys/codes can be difficult. ODS and [Dutch usability studies](https://corona.sticktailapp.com/share/view/099d845b35b3b68/wJEdnvsNTHDA/ex-patienten-stuurden-zelf-hun-contacten-een-bericht/) uncovered confusion between the codes traded between users and the code verifying a positive diagnosis. Content must try to clarify this difference as well as possible.
 
 
-#### No ability to paste the key
+### No ability to paste the key
 
 People are used to cutting and pasting keys from one place to another on their devices. In our beta test, testers expressed some frustration that they could not paste the key into the app after copying the key on their device. This issue was fixed on the app, but important to consider as small things like pasting in the key will be helpful in stressful situations.
 
 
-### Things that helped
+## Things that helped
 
 
-#### Phonetic alphabet
+### Phonetic alphabet
 
 One encouraging finding that this handoff can be successful comes from the Netherlands. Usability testing there showed that people were able to enter the code smoothly. One way the app users ensured the key was accurate was [using the phonetic alphabet](https://corona.sticktailapp.com/share/view/e1733fb74d0b64c/VC0JRwP3PCAg/aangeven-dat-je-positief-getest-bent-gaat-relatief-soepel-maar-er-is-nog-wel-verwarring-over-controlecode-en-codes-uploaden/) in order to confirm the letters over the phone (“Alpha” for “A”, “Bravo” for “B”, but the Dutch version). 
 
 
-#### Willingness to contribute to community
+### Willingness to contribute to community
 
 The Dutch COVID app team conducted interviews with ex-COVID patients from earlier in the pandemic and found that [they took it on themselves to warn people they had come in contact with and share their stories online](https://corona.sticktailapp.com/share/view/099d845b35b3b68/wJEdnvsNTHDA/ex-patienten-stuurden-zelf-hun-contacten-een-bericht/). They assumed it as their responsibility because they were not receiving information from their regional health authorities.
 
 
-### Recommendations
+## Recommendations
 
 
 
