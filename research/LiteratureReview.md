@@ -1,4 +1,4 @@
-<!--[Français](https://github.com/cds-snc/covid-alert-documentation/blob/main/RapportAccessibilite.md)-->
+[Français](https://github.com/cds-snc/covid-alert-documentation/blob/main/recherche/RevueLitterature.md)
 
 # How might people positive for COVID-19 react to the ‘One-time key’?
 

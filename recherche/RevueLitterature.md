@@ -1,4 +1,4 @@
-<!--[English](https://github.com/cds-snc/covid-alert-documentation/blob/main/RevueLitterature.md)-->
+[English](https://github.com/cds-snc/covid-alert-documentation/blob/main/research/LiteratureReview.md)
 
 # Quelle est la réaction des personnes qui ont la COVID-19 face à la « clé à usage unique »?
 
