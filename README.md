@@ -55,6 +55,8 @@ Ce dépôt comprend de la documentation à l’appui d’[Alerte COVID](https://
 *   [Rapport sur l’accessibilité](https://github.com/cds-snc/covid-alert-documentation/blob/main/RapportAccessibilite.md)
 *   [Processus de divulgation des vulnérabilités](https://github.com/cds-snc/covid-alert-documentation/blob/main/PolitiqueDivulgationVulnerabilites.md)
 
+Documentation pour la recherche en conception:
+*   [Quelle est la réaction des personnes qui ont la COVID-19 face à la « clé à usage unique »?](https://github.com/cds-snc/covid-alert-documentation/blob/main/recherche/revuelitterature.md) (Revue de la littérature, le 28 juillet 2020)
 
 Vous pouvez également consulter :  
 
