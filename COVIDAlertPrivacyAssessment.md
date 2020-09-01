@@ -12,7 +12,7 @@ _[Also published on Canada.ca](https://www.canada.ca/en/public-health/services/d
 * [4. Partners and Stakeholders](#4-partners-and-stakeholders)
 * [5. How does the COVID Alert App work?](#5-how-does-the-covid-alert-app-work)
 * [6. Privacy Analysis](#6-privacy-analysis)
-* [Appendix A: List of COVID Alert App Data Elements](#appendix-a-list-of-data-covid-alert-app-data)
+* [Appendix A: List of COVID Alert App Data Elements](#appendix-a-list-of-covid-alert-app-data-elements)
 * [Footnotes](#footnotes)
 
 ## 1\. Objective
