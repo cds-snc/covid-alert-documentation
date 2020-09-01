@@ -8,6 +8,9 @@ This repository contains supporting documentation for [COVID Alert](https://www.
 *   [Accessibility Report](https://github.com/cds-snc/covid-alert-documentation/blob/main/AccessibilityReport.md)
 *   [Vulnerability Disclosure Policy](https://github.com/cds-snc/covid-alert-documentation/blob/main/VulnerabilityDisclosurePolicy.md)
 
+Design research documentation:
+*   [How might people positive for COVID-19 react to the ‘One-time key’?](https://github.com/cds-snc/covid-alert-documentation/blob/main/research/LiteratureReview.md) (Literature review, July 28 2020)
+
 You may also be interested in:
 
 *   [COVID Alert Accessibility Statement](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert/accessibility-statement.html)
@@ -51,6 +54,7 @@ Ce dépôt comprend de la documentation à l’appui d’[Alerte COVID](https://
 *   [Évaluation de la protection de la vie privée de l’application Alerte COVID](https://github.com/cds-snc/covid-alert-documentation/blob/main/EvaluationViePriveeAlerteCOVID.md)
 *   [Rapport sur l’accessibilité](https://github.com/cds-snc/covid-alert-documentation/blob/main/RapportAccessibilite.md)
 *   [Processus de divulgation des vulnérabilités](https://github.com/cds-snc/covid-alert-documentation/blob/main/PolitiqueDivulgationVulnerabilites.md)
+
 
 Vous pouvez également consulter :  
 
