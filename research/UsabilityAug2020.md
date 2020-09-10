@@ -22,14 +22,14 @@ For the purpose of research, a colleague at CDS acted as a public health nurse a
 
     
 
-![Screenshot of the “Let people know they may have been exposed” screen, which explains the steps involved in sending an exposure notification.](research/images/LetPeopleKnow.png "Screenshot"){:class="img-responsive"}
+![Screenshot of the “Let people know they may have been exposed” screen, which explains the steps involved in sending an exposure notification.](images/LetPeopleKnow.png "Screenshot"){:class="img-responsive"}
 
     
-![Screenshot of the “Now you can upload your codes” screen, which explains that there is a phone prompt coming up and what the permission means. ](research/images/NowYouCan.png "Screenshot")
+![Screenshot of the “Now you can upload your codes” screen, which explains that there is a phone prompt coming up and what the permission means. ](images/NowYouCan.png "Screenshot")
 
 
 
-![Screenshot of the “Share your random codes” prompt, which explains what the prompt is about.](research/images/ShareRandomCodes.png "Screenshot")
+![Screenshot of the “Share your random codes” prompt, which explains what the prompt is about.](images/ShareRandomCodes.png "Screenshot")
 
 *   Confusion between key and codes: (Paraphrasing) “I have entered only one code, why is it asking me to send all the codes?”
 *   “Now you can upload your codes” suggests involvement from me.” As if the participant can upload them manually, one by one.
@@ -38,7 +38,7 @@ For the purpose of research, a colleague at CDS acted as a public health nurse a
 
 
 
-![Screenshot of the ‘thank you’ screen, with the first sentence being “For the next 13 days, you’ll get a daily notification asking permission to upload any new random codes your phone sent out.”](research/images/ThanksForHelping.png "Screenshot")
+![Screenshot of the ‘thank you’ screen, with the first sentence being “For the next 13 days, you’ll get a daily notification asking permission to upload any new random codes your phone sent out.”](images/ThanksForHelping.png "Screenshot")
 
 
 
@@ -55,7 +55,7 @@ For the purpose of research, a colleague at CDS acted as a public health nurse a
 	
 
 
-![Screenshot of the Step 5 of the onboarding screen, which explains what ‘random codes’ are.](research/images/Onboarding5.png "Screenshot")
+![Screenshot of the Step 5 of the onboarding screen, which explains what ‘random codes’ are.](images/Onboarding5.png "Screenshot")
 
 
 
@@ -66,7 +66,7 @@ For the purpose of research, a colleague at CDS acted as a public health nurse a
 
 
 
-![Screenshot of the ‘Enable COVID-19 Exposure Logging and Notifications’ prompt, with 7 lines of text in small font size.](research/images/EnableExposure.png "Screenshot")
+![Screenshot of the ‘Enable COVID-19 Exposure Logging and Notifications’ prompt, with 7 lines of text in small font size.](images/EnableExposure.png "Screenshot")
 
 ## What made it difficult for participants to input the one-time key?
 
@@ -82,13 +82,13 @@ Most people expressed a general comment that the interface is clear and interact
 	
 
 
-![Screenshot of the main screen with the label “Tap for menu” at the bottom, with no clear indication where the key should be put in.](research/images/MainScreen.png "Screenshot")
+![Screenshot of the main screen with the label “Tap for menu” at the bottom, with no clear indication where the key should be put in.](images/MainScreen.png "Screenshot")
 
 	
 
 
 
-![Screenshot of the menu with 8 different clickable labels, two of them being about the ‘one-time key’. Overall, the menu shows the word ‘key’ 3 times.](research/images/Menu.png "Screenshot")
+![Screenshot of the menu with 8 different clickable labels, two of them being about the ‘one-time key’. Overall, the menu shows the word ‘key’ 3 times.](images/Menu.png "Screenshot")
 
 
 
