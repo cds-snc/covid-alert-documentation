@@ -11,7 +11,7 @@ This repository contains supporting documentation for [COVID Alert](https://www.
 Design research documentation:
 
 *   [How might people positive for COVID-19 react to the ‘One-time key’?](https://github.com/cds-snc/covid-alert-documentation/blob/main/research/LiteratureReview.md) (Literature review, July 28 2020)
-*   [How well does the app support users when they receive a positive diagnosis (and one-time key)?](https://github.com/cds-snc/covid-alert-documentation/blob/main/recherche/UsabilityAug2020.md) (Usability testing, Aug 25 2020)
+*   [How well does the app support users when they receive a positive diagnosis (and one-time key)?](https://github.com/cds-snc/covid-alert-documentation/blob/main/research/UsabilityAug2020.md) (Usability testing, Aug 25 2020)
 
 You may also be interested in:
 
