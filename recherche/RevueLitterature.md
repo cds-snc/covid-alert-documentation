@@ -6,6 +6,8 @@ Date : Le 28 juillet 2020
 
 Auteures : Jeana Frost et Adrianne Lee
 
+Traduit par : Élise Cossette
+
 
 ## But
 
