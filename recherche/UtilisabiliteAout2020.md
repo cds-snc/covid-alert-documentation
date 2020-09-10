@@ -1,4 +1,4 @@
-[English](https://github.com/cds-snc/covid-alert-documentation/blob/main/recherche/UsabilityAug2020.md)
+[English](recherche/UsabilityAug2020.md)
 # Dans quelle mesure l’application aide-t-elle les utilisateurs quand ils reçoivent un résultat positif (et une clé à usage unique) 
 
 Date : 25 août 2020
@@ -75,7 +75,7 @@ Pour les besoins de la recherche, une employée du SNC a joué le rôle d’une 
     
 
 
-!Capture d’écran de la fenêtre surgissante « Activer la journalisation des expositions à la COVID-19 et les notification », avec 9 lignes de texte en petits caractères.](recherche/images/Activer.png "Capture d’écran")
+![Capture d’écran de la fenêtre surgissante « Activer la journalisation des expositions à la COVID-19 et les notification », avec 9 lignes de texte en petits caractères.](recherche/images/Activer.png "Capture d’écran")
 
 
  
