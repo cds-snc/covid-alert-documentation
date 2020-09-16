@@ -27,20 +27,20 @@ Pour les besoins de la recherche, une employée du SNC a joué le rôle d’une 
     
 
 
-![Capture d’écran de l’écran « Aviser les autres personnes d’une exposition potentielle », qui explique les étapes pour envoyer une notification d’exposition.](recherche/images/AviserLesAutres.png "Capture d’écran")
+![Capture d’écran de l’écran « Aviser les autres personnes d’une exposition potentielle », qui explique les étapes pour envoyer une notification d’exposition.](images/AviserLesAutres.png "Capture d’écran")
 
 
    
 
 
-![Capture d’écran de l’écran « Vous pouvez maintenant téléverser vos codes », qui explique ce que signifie le fait de fournir son autorisation et qui mentionne à l’utilisateur que son téléphone fera apparaître un message.](recherche/images/VousPouvez.png "Capture d’écran")
+![Capture d’écran de l’écran « Vous pouvez maintenant téléverser vos codes », qui explique ce que signifie le fait de fournir son autorisation et qui mentionne à l’utilisateur que son téléphone fera apparaître un message.](images/VousPouvez.png "Capture d’écran")
 
 
     
 
 
 
-![Capture d’écran de la fenêtre surgissante « Partager les identifiants aléatoires », qui explique ce qu’une telle action implique.](recherche/images/Partager.png "Capture d’écran")
+![Capture d’écran de la fenêtre surgissante « Partager les identifiants aléatoires », qui explique ce qu’une telle action implique.](images/Partager.png "Capture d’écran")
 
 *   Il y a eu confusion entre « clé » et « codes » : (reformulation) « J’ai entré un seul code, pourquoi ça me demande d’envoyer tous mes codes? »
 *   « La phrase ”Vous pouvez maintenant téléverser vos codes” suggère une participation de ma part. » Cette phrase donnait l’impression au participant qu’il pouvait téléverser les codes manuellement, un par un.
@@ -50,7 +50,7 @@ Pour les besoins de la recherche, une employée du SNC a joué le rôle d’une 
 
 
 
-![Capture d’écran de l’écran de remerciement, dont la première phrase est « Au cours des 13 prochains jours, vous recevrez une notification quotidienne vous demandant l’autorisation de téléverser tout nouveau code aléatoire émis par votre téléphone. ».](recherche/images/Merci.png "Capture d’écran")
+![Capture d’écran de l’écran de remerciement, dont la première phrase est « Au cours des 13 prochains jours, vous recevrez une notification quotidienne vous demandant l’autorisation de téléverser tout nouveau code aléatoire émis par votre téléphone. ».](images/Merci.png "Capture d’écran")
 
 
 *   Un sentiment de panique pendant l’appel peut mener à la nécessité de faire un suivi.
@@ -66,7 +66,7 @@ Pour les besoins de la recherche, une employée du SNC a joué le rôle d’une 
    
 
 
-![Capture d’écran de l’étape 5 des pages introductives, qui explique ce que sont les « codes aléatoires ».](recherche/images/Onboarding5FR.png "Capture d’écran")
+![Capture d’écran de l’étape 5 des pages introductives, qui explique ce que sont les « codes aléatoires ».](images/Onboarding5FR.png "Capture d’écran")
 
 *   Pour un participant, ce n’était pas clair si le Bluetooth devait être activé pour que l’application fonctionne.
 *   Deux personnes francophones ont eu de la difficulté à comprendre le mot « aléatoire ». L’une d’elle parlait le français comme langue seconde. 
@@ -75,7 +75,7 @@ Pour les besoins de la recherche, une employée du SNC a joué le rôle d’une 
     
 
 
-![Capture d’écran de la fenêtre surgissante « Activer la journalisation des expositions à la COVID-19 et les notification », avec 9 lignes de texte en petits caractères.](recherche/images/Activer.png "Capture d’écran")
+![Capture d’écran de la fenêtre surgissante « Activer la journalisation des expositions à la COVID-19 et les notification », avec 9 lignes de texte en petits caractères.](images/Activer.png "Capture d’écran")
 
 
  
@@ -98,14 +98,14 @@ La plupart des personnes ont dit que l’interface était claire et que l’inte
 
 
 
-![Capture d’écran de l’écran principal, avec la phrase « Appuyez pour voir le menu » au bas de l’écran et sans indication claire sur l’endroit où il faut entrer la clé.](recherche/images/AucuneExposition.png "Capture d’écran")
+![Capture d’écran de l’écran principal, avec la phrase « Appuyez pour voir le menu » au bas de l’écran et sans indication claire sur l’endroit où il faut entrer la clé.](images/AucuneExposition.png "Capture d’écran")
 
 
     
 
 
 
-![Capture d’écran du menu, qui comprend huit différents éléments cliquables, deux d’entre eux ayant l’expression « clé à usage unique ». En tout, le menu comprend trois fois le mot « clé ».](recherche/images/Menu.png "image_tooltip")
+![Capture d’écran du menu, qui comprend huit différents éléments cliquables, deux d’entre eux ayant l’expression « clé à usage unique ». En tout, le menu comprend trois fois le mot « clé ».](images/Menu.png "image_tooltip")
 
 *   Quelques participants ont demandé à la personne jouant le rôle d’infirmière s’ils devaient saisir leur clé en lettres majuscules ou minuscules. L’« infirmière » leur a répondu que les deux options fonctionnaient. Cette question a aussi été posée par les unités de santé publique pendant l’introduction provinciale au portail.
 *   Les participants ont apprécié les explications, mais ont trouvé qu’il y avait beaucoup d’étapes de consentement. Les écrans « Aviser les autres personnes d’une exposition potentielle », « Vous pouvez maintenant téléverser vos codes » et l’invite « Partager les identifiants aléatoires » semblaient redondants pour les participants.
