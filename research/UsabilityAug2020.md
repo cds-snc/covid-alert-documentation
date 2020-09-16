@@ -1,4 +1,4 @@
-[Français](recherche/UtilisabiliteAout2020.md)
+[Français](https://github.com/cds-snc/covid-alert-documentation/blob/main/recherche/UtilisabiliteAout2020.md)
 
 # How well does the app support users when they receive a positive diagnosis (and one-time key)?
 

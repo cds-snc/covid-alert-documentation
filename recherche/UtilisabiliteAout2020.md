@@ -1,4 +1,5 @@
-[English](recherche/UsabilityAug2020.md)
+[English](https://github.com/cds-snc/covid-alert-documentation/blob/main/research/UsabilityAug2020.md)
+
 # Dans quelle mesure l’application aide-t-elle les utilisateurs quand ils reçoivent un résultat positif (et une clé à usage unique) 
 
 Date : 25 août 2020
