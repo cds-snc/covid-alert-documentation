@@ -2,8 +2,7 @@
 
 # How well does the app support users when they receive a positive diagnosis (and one-time key)?
 
-Date: Aug 25, 2020
-
+Date: Aug 25, 2020 \
 Authors: Jeana Frost, Adrianne Lee
 
 
@@ -18,11 +17,11 @@ For the purpose of research, a colleague at CDS acted as a public health nurse a
 
 
 
-*   Appreciated explanations but lots of layers of consent. The “Let people know they may have been exposed”, “Now you can upload your codes” screens and the “Share your random codes ..” prompt seemed to be redundant for participants. 
+*   Appreciated explanations but lots of layers of consent. The “Let people know they may have been exposed”, “Now you can upload your codes” screens and the “Share your random codes…” prompt seemed to be redundant for participants. 
 
     
 
-![Screenshot of the “Let people know they may have been exposed” screen, which explains the steps involved in sending an exposure notification.](images/LetPeopleKnow.png "Screenshot"){:class="img-responsive"}
+![Screenshot of the “Let people know they may have been exposed” screen, which explains the steps involved in sending an exposure notification.](images/LetPeopleKnow.png "Screenshot")
 
     
 ![Screenshot of the “Now you can upload your codes” screen, which explains that there is a phone prompt coming up and what the permission means. ](images/NowYouCan.png "Screenshot")
@@ -77,7 +76,7 @@ Most people expressed a general comment that the interface is clear and interact
 
 
 
-*   "Tap for menu" label was not immediately clear for one person as a place to enter the code. Menu page has "a lot of things", a lot of uses of the word "key". One person thought he might click: “get a one time key” instead of “Enter your one-time key”.
+*   “Tap for menu” label was not immediately clear for one person as a place to enter the code. Menu page has “a lot of things”, a lot of uses of the word “key”. One person thought he might click: “get a one time key” instead of “Enter your one-time key”.
 
 	
 
@@ -93,7 +92,7 @@ Most people expressed a general comment that the interface is clear and interact
 
 
 *   A few people asked the person playing the role of nurse if they should enter their key in upper or lower case but the “nurse” told them either works. This is also a question that regional health authorities had during their regional onboarding onto the portal.
-*   Appreciated explanations but there were lots of layers of consent. The “Let people know they may have been exposed”, “Now you can upload your codes” screens and the “Share your random codes ..” prompt seemed to be redundant for participants. 
+*   Appreciated explanations but there were lots of layers of consent. The “Let people know they may have been exposed”, “Now you can upload your codes” screens and the “Share your random codes…” prompt seemed to be redundant for participants. 
 *   Confusion between keys and codes: (Paraphrasing) “I have entered only one code, why is it asking me to send all the codes?”
 *   “Now you can upload your codes” suggests involvement from me.” As if the participant can upload them manually, one by one.
 *   One person noted that “téléverser les codes” is easy to confuse with ‘one-time key’

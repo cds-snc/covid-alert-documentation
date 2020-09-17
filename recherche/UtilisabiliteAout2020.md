@@ -2,10 +2,8 @@
 
 # Dans quelle mesure l’application aide-t-elle les utilisateurs quand ils reçoivent un résultat positif (et une clé à usage unique) 
 
-Date : 25 août 2020
-
-Auteures : Jeana Frost et Adrianne Lee
-
+Date : 25 août 2020 \
+Auteures : Jeana Frost et Adrianne Lee \
 Traduit par : Élise Cossette
 
 
@@ -19,7 +17,7 @@ Pour les besoins de la recherche, une employée du SNC a joué le rôle d’une 
 
  
 
-**Principaux résultats de recherche pour l’application :**
+## Principaux résultats de recherche pour l’application :
 
 
 
@@ -93,7 +91,7 @@ La plupart des personnes ont dit que l’interface était claire et que l’inte
 
 
 
-*   Pour une personne, il n’était pas évident que l’onglet « Appuyez pour voir le menu » était l’endroit permettant d’entrer le code. Le menu « contient beaucoup de choses », et le mot « clé » revient souvent. Une personne a avancé qu’elle pourrait cliquer sur « Obtenir une clé à usage unique » au lieu de « Entrer votre clé ».** **
+*   Pour une personne, il n’était pas évident que l’onglet « Appuyez pour voir le menu » était l’endroit permettant d’entrer le code. Le menu « contient beaucoup de choses », et le mot « clé » revient souvent. Une personne a avancé qu’elle pourrait cliquer sur « Obtenir une clé à usage unique » au lieu de « Entrer votre clé ».
 
     
 
@@ -163,7 +161,7 @@ Limite de la recherche : la plupart des personnes ont écouté les instructions 
     *   Les participants aimeraient pouvoir rappeler quelqu’un pour obtenir des réponses à leurs questions après avoir eu le temps de réfléchir.
 *   Trois personnes se sont montrées préoccupées par le fait d’avoir à confirmer le partage de codes quotidiennement pendant 13 jours. 
     *   Les participants croient que les personnes vont perdre intérêt à le faire et oublier de le faire chaque jour, ce qui causerait une perte de données. Certains ont demandé la possibilité d’autoriser d’un seul coup le partage pendant 13 jours. Cette préoccupation peut être causée par le fait que l’interface n’explique pas clairement l’utilité de partager les codes pendant 13 jours au lieu d’accorder une autorisation générale. L’un des participants s’attendait (après avoir vu les pages introductives) à partager les codes pendant 13 jours d’un seul coup.
-*   Besoin d’un rappel sur la façon dont les notifications fonctionnent.** **
+*   Besoin d’un rappel sur la façon dont les notifications fonctionnent.
     *   Les personnes ont fait remarquer qu’au moment où elles saisissent leur clé, cela peut faire des mois qu’elles ont téléchargé l’application et qu’elles sont passées à travers les pages introductives. Quand elles téléversent leurs codes, ce pourrait être une bonne occasion de leur rappeler les implications en matière de vie privée.
 *   Il y a eu des questions au sujet des mesures à prendre en dehors de l’application.
     *   Les participants ont demandé s’ils devaient quand même avertir leur famille et leurs amis.
