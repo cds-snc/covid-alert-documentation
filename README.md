@@ -21,6 +21,7 @@ You may also be interested in:
 *   [Mobile app technical documentation](https://github.com/cds-snc/covid-alert-app#readme)
 *   [Key server technical documentation](https://github.com/cds-snc/covid-alert-server#readme)
 *   [Healthcare portal technical documentation](https://github.com/cds-snc/covid-alert-portal#readme)
+*   [Healthcare portal changelog](https://github.com/cds-snc/covid-alert-portal/blob/main/CHANGELOG.md)
 *   [Contributing guide](https://github.com/cds-snc/covid-alert-app/blob/master/CONTRIBUTING.md)
 *   [CDS Accessibility Handbook](https://digital.canada.ca/a11y/)
 
@@ -70,6 +71,7 @@ Vous pouvez également consulter :
 *   [Documentation technique sur l’application mobile](https://github.com/cds-snc/covid-alert-app#readme)
 *   [Documentation technique sur le serveur de clés](https://github.com/cds-snc/covid-alert-server#readme)
 *   [Documentation technique sur le portail](https://github.com/cds-snc/covid-alert-portal#readme)
+*   [Journal des modifications (changelog) du portail](https://github.com/cds-snc/covid-alert-portal/blob/main/CHANGELOG.md)
 *   [Guide de contribution](https://github.com/cds-snc/covid-alert-app/blob/master/CONTRIBUTING.md)
 *   [Guide d’accessibilité du SNC](https://numerique.canada.ca/a11y/)
 
