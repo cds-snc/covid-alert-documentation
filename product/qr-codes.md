@@ -1,3 +1,5 @@
+[Français](https://github.com/cds-snc/covid-alert-documentation/blob/main/produit/codes-qr.md)
+
 # QR Codes - Notifications for venue outbreaks
 
 COVID Alert aims to notify people when they may have been exposed to positive COVID-19 cases. Exposure to COVID-19 can happen via close contact with a COVID-positive individual or through aerosol or fomite transmission at venues where there is an outbreak, and the app currently only notifies people of close contact exposures. COVID Alert can support notifying people of outbreaks at places they’ve visited through scanning QR codes placed at participating venues while maintaining COVID Alert’s privacy-first principle. This work is based on venue outbreak capabilities in the UK and New Zealand’s exposure notification apps.
