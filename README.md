@@ -8,6 +8,10 @@ This repository contains supporting documentation for [COVID Alert](https://www.
 *   [Accessibility Report](https://github.com/cds-snc/covid-alert-documentation/blob/main/AccessibilityReport.md)
 *   [Vulnerability Disclosure Policy](https://github.com/cds-snc/covid-alert-documentation/blob/main/VulnerabilityDisclosurePolicy.md)
 
+Product documentation:
+
+* [QR Codes -  Notifications for venue outbreaks](https://github.com/cds-snc/covid-alert-documentation/blob/main/product/qr-codes.md)
+
 Design research documentation:
 
 *   [How might people positive for COVID-19 react to the ‘One-time key’?](https://github.com/cds-snc/covid-alert-documentation/blob/main/research/LiteratureReview.md) (Literature review, July 28 2020)
@@ -58,6 +62,10 @@ Ce dépôt comprend de la documentation à l’appui d’[Alerte COVID](https://
 *   [Rapport sur l’accessibilité](https://github.com/cds-snc/covid-alert-documentation/blob/main/RapportAccessibilite.md)
 *   [Processus de divulgation des vulnérabilités](https://github.com/cds-snc/covid-alert-documentation/blob/main/PolitiqueDivulgationVulnerabilites.md)
 
+Documentation pour le produit:
+
+* [Codes QR - Notifications d’éclosions sur site](https://github.com/cds-snc/covid-alert-documentation/blob/main/produit/codes-qr.md)
+
 Documentation pour la recherche en conception:
 
 *   [Quelle est la réaction des personnes qui ont la COVID-19 face à la « clé à usage unique »?](https://github.com/cds-snc/covid-alert-documentation/blob/main/recherche/RevueLitterature.md) (Revue de la littérature, le 28 juillet 2020)
@@ -85,7 +93,7 @@ Pour plus d’information sur la façon d’installer et d’utiliser Alerte COV
 
 Dans le cadre des efforts pour réduire la propagation du virus de la COVID-19, tout en assouplissant progressivement les restrictions imposées et en permettant à l’économie de recommencer, le gouvernement du Canada s’est engagé à lancer une application nationale unique de notification d’exposition à la COVID-19 (ci-après dénommée Alerte COVID). Cette application sera interopérable entre les provinces et a été conçue pour minimiser la collecte et le stockage de renseignements identificatoires. Afin de minimiser les risques pour les renseignements personnels, il a été déterminé qu’une application de notification d’exposition, par rapport à une application de recherche de contacts, était l’approche privilégiée pour établir une solution numérique pancanadienne soutenant les efforts de réduction de la propagation du virus.
 
-La notification d’exposition est considérée comme une approche peu intrusive destinée à être utilisée en parallèle et en appui aux mesures de santé publique actuellement prises dans tout le Canada en réponse à la pandémie. Alerte COVID suit une approche entièrement décentralisée selon laquelle les renseignements identificatoires ne sont pas collectés ni stockés dans un seul lieu central. Au lieu de cela, lorsqu’un utilisateur télécharge l’application et consent à ses diverses fonctions, son appareil mobile transmet des identifiants aléatoires qui sont utilisés pour enregistrer la proximité avec l’appareil d’un autre utilisateur de l’application. Cette méthode diffère des applications de recherche de contacts qui accèdent aux données de localisation d’un appareil et les signalent aux autorités de santé publique. La section 5 du présent document fournit de plus amples renseignements sur le fonctionnement de l’application. 
+La notification d’exposition est considérée comme une approche peu intrusive destinée à être utilisée en parallèle et en appui aux mesures de santé publique actuellement prises dans tout le Canada en réponse à la pandémie. Alerte COVID suit une approche entièrement décentralisée selon laquelle les renseignements identificatoires ne sont pas collectés ni stockés dans un seul lieu central. Au lieu de cela, lorsqu’un utilisateur télécharge l’application et consent à ses diverses fonctions, son appareil mobile transmet des identifiants aléatoires qui sont utilisés pour enregistrer la proximité avec l’appareil d’un autre utilisateur de l’application. Cette méthode diffère des applications de recherche de contacts qui accèdent aux données de localisation d’un appareil et les signalent aux autorités de santé publique. La section 5 du présent document fournit de plus amples renseignements sur le fonctionnement de l’application.
 
 L’application vise à compléter les mesures existantes pour réduire la propagation du virus, y compris la recherche manuelle des contacts. Elle permet d’informer les Canadiens et Canadiennes s’ils ont été près d’une personne qui a reçu un diagnostic de COVID-19 et qui utilise également l’application, et les encourage à prendre des mesures appropriées (par exemple, se faire tester). Si une personne a eu un test positif pour la COVID-19 dans une province ou un territoire utilisant l’application, les autorités locales de santé publique peuvent la conseiller sur les prochaines étapes et lui fournir une clé à usage unique à entrer dans l’application, ce qui à son tour informera les autres utilisateurs de l’application qui ont été près d’elle au cours des 14 derniers jours. Cette mesure contribuera à réduire la propagation globale du virus.
 
