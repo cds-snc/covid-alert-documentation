@@ -10,7 +10,7 @@ This repository contains supporting documentation for [COVID Alert](https://www.
 
 Product documentation:
 
-* [QR Codes -  Notifications for venue outbreaks](https://github.com/cds-snc/covid-alert-documentation/blob/product-doc/product/qr-codes.md)
+* [QR Codes -  Notifications for venue outbreaks](https://github.com/cds-snc/covid-alert-documentation/blob/main/product/qr-codes.md)
 
 Design research documentation:
 
@@ -64,7 +64,7 @@ Ce dépôt comprend de la documentation à l’appui d’[Alerte COVID](https://
 
 Documentation pour le produit:
 
-* [Codes QR - Notifications d’éclosions sur site](https://github.com/cds-snc/covid-alert-documentation/blob/product-doc/produit/codes-qr.md)
+* [Codes QR - Notifications d’éclosions sur site](https://github.com/cds-snc/covid-alert-documentation/blob/main/produit/codes-qr.md)
 
 Documentation pour la recherche en conception:
 
