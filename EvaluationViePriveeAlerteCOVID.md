@@ -4,7 +4,7 @@
 
 _Division de la gestion de la protection des renseignements personnels de Santé Canada et de l’Agence de la santé publique du Canada_
 
-Octobre 2020 – [Historique des versions](https://github.com/cds-snc/covid-alert-documentation/commits/main/EvaluationViePriveeAlerteCOVID.md) – [Également publiée sur Canada.ca](https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/alerte-covid/politique-confidentialite/evaluation.html)
+Février 2021 – [Historique des versions](https://github.com/cds-snc/covid-alert-documentation/commits/main/EvaluationViePriveeAlerteCOVID.md) – [Également publiée sur Canada.ca](https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/alerte-covid/politique-confidentialite/evaluation.html)
 
 * [1. Objectif](#1-objectif)
 * [2. Portée](#2-portée)
@@ -13,6 +13,7 @@ Octobre 2020 – [Historique des versions](https://github.com/cds-snc/covid-aler
 * [5. Fonctionnement de l’application Alerte COVID](#5-fonctionnement-de-lapplication-alerte-covid)
 * [6. Analyse de la protection des renseignements personnels](#6-analyse-de-la-protection-des-renseignements-personnels)
 * [Annexe A : Liste des données sur l’application Alerte COVID](#annexea-liste-des-données-sur-lapplication-alerte-covid)
+* [Annexe B : Mesures de performance d’Alerte COVID](#annexe-b--mesures-de-performance-dalerte-covid)
 * [Notes de bas de page](#notes-de-bas-de-page)
 
 ## 1\. Objectif
@@ -27,7 +28,7 @@ Certains processus qui se déroulent au niveau des PT, sur un appareil, ou à de
 
 ## 3\. Contexte
 
-Dans le cadre des efforts pour réduire la propagation du virus de la COVID-19 tout en assouplissant progressivement les restrictions imposées et en permettant à l’économie de recommencer, le gouvernement du Canada a lançé le 31 juillet 2020 une application nationale unique de notification d’exposition à la COVID-19 (ci-après dénommée Alerte COVID). Cette application est interopérable entre les provinces et a été conçue pour minimiser la collecte et le stockage de renseignements qui permettraient d’identifier les utilisateurs. Afin de minimiser les risques relatifs à la vie privée, on a déterminé qu’une application de notification d’exposition, par rapport à une application de recherche de contacts, était l’approche privilégiée pour établir une solution numérique pancanadienne afin de soutenir les efforts visant à réduire la propagation du virus.
+Dans le cadre des efforts pour réduire la propagation du virus de la COVID-19 tout en assouplissant progressivement les restrictions imposées et en permettant à l’économie de recommencer, le gouvernement du Canada a lancé le 31 juillet 2020 une application nationale unique de notification d’exposition à la COVID-19 (ci-après dénommée Alerte COVID). Cette application est interopérable entre les provinces et a été conçue pour minimiser la collecte et le stockage de renseignements qui permettraient d’identifier les utilisateurs. Afin de minimiser les risques relatifs à la vie privée, on a déterminé qu’une application de notification d’exposition, par rapport à une application de recherche de contacts, était l’approche privilégiée pour établir une solution numérique pancanadienne afin de soutenir les efforts visant à réduire la propagation du virus.
 
 La notification d’exposition est considérée comme une approche peu intrusive destinée à être utilisée en combinaison avec et à l’appui des mesures de santé publique actuellement prises dans tout le Canada en réponse à la pandémie. Alerte COVID suit une approche entièrement décentralisée selon laquelle les renseignements identifiables ne sont pas collectés et stockés dans un seul lieu central. Au lieu de cela, lorsqu’un utilisateur télécharge l’application et consent à ses diverses fonctions, son appareil mobile transmet des identifiants aléatoires qui sont utilisés pour enregistrer la proximité avec l’appareil d’un autre utilisateur de l’application. Cette méthode diffère des applications de recherche de contacts qui accèdent aux données de localisation d’un appareil et les signalent aux autorités de santé publique. La section 5 du présent document fournit de plus amples renseignements sur le fonctionnement de l’application. 
 
@@ -87,7 +88,7 @@ La conception de l’API Google/Apple est telle que cette couche protégée du s
 
 ### Qu’est-ce qui est communiqué exactement entre les utilisateurs participants?
 
-Chaque appareil sur lequel l’application est installée envoie et reçoit des codes aléatoires appelés des identifiants de proximité variable (IPV) qui ne sont pas statiques : chaque jour, la couche Google/Apple génère automatiquement une clé d’exposition temporaire (CET). La CET du jour génère ensuite un nouvel IPV toutes les 5 à 20 minutes. Ce sont ces IPV en constante évolution qui sont communiqués avec d’autres appareils.
+Chaque appareil sur lequel l’application est installée envoie et reçoit des codes aléatoires appelés des identifiants de proximité variable (IPV) qui ne sont pas statiques : chaque jour, la couche GAOS génère automatiquement une clé d’exposition temporaire (CET). La CET du jour génère ensuite un nouvel IPV toutes les 5 à 20 minutes. Ce sont ces IPV en constante évolution qui sont communiqués avec d’autres appareils.
 
 La génération quotidienne de CET et la génération fréquente d’IPV sont des caractéristiques de conception visant à atténuer le risque de réidentification des utilisateurs. (De plus, ils sont conçus pour réduire au minimum transfert de données afin de conserver la bande passante.) Les IPV ne sont pas identifiables et ne sont pas accessibles à l’application ou transmises au serveur de clés. Par conception, les IPV sont censés être publics (ils sont partagés avec d’autres appareils par Bluetooth), et ne fournissent donc aucune forme de renseignements d’identifiables en l’absence d’autres renseignements. Même si un IPV était intercepté par un appareil exploité par un acteur malveillant, il serait un nombre totalement insignifiant, et ne serait pas relié à un appareil sans effort significatif. Les CET sont stockées sur l’appareil, mais l’on ne peut les communiquer au serveur de clés qu’en cas de résultat positif et de consentement explicite de l’utilisateur.
 
@@ -95,7 +96,7 @@ Lorsqu’un utilisateur reçoit un résultat positif au test de la COVID-19, les
 
 Bien que le portail dépendra de l’extraction de clés à usage unique provenant du serveur clé, il n’est pas connecté à l’application d’aucune façon et ne sera pas connecté à aucun système informatique d’une province ou d’un territoire. Seuls les renseignements personnels des administrateurs et des professionnels de la santé des provinces et des territoires seront recueillis de sorte qu’ils puissent créer des comptes au portail et extraire les clés à usage unique. Le portail ne recueillera ni ne conservera des renseignements sur les patients.
 
-Une fois qu’un clé à usage unique est entré dans l’application, celle-ci validera la clé et demandera à l’utilisateur s’il souhaite que ses CET soient envoyées au serveur de clés.<sup id="f4">[[4]](#processus-envoie)</sup> Si la personne répond par l’affirmative, l’application communique avec la couche Google/Apple. La couche Google/Apple demande une seconde fois si la personne consent à envoyer leurs CETs au serveur de clés. Si la personne y consent, les CET sont envoyées au serveur de clés, ce qui permet aux autres utilisateurs avec lesquels elle a été en contact au cours des 14 derniers jours d’être avisés, une fois que leur application a téléchargé ces clés. Les utilisateurs de l’application ont également la possibilité de télécharger leurs clés de diagnostic pendant les 14 jours _suivant_ la réception d’un diagnostic positif, dans le scénario malheureux où une personne qui a la COVID-19 ne peut pas se mettre en quarantaine (par exemple, n’a pas de congé de maladie; vit seul et doit faire des emplettes).
+Une fois qu’une clé à usage unique est entrée dans l’application, celle-ci validera la clé et demandera à l’utilisateur s’il souhaite que ses CET soient envoyées au serveur de clés.<sup id="f4">[[4]](#processus-envoie)</sup> Si la personne répond par l’affirmative, l’application communique avec la couche GAOS. La couche GAOS demande une seconde fois si la personne consent à envoyer ses CET au serveur de clés. Si la personne y consent, les CET sont envoyées au serveur de clés, ce qui permet aux autres utilisateurs avec lesquels elle a été en contact au cours des 14 derniers jours d’être avisés, une fois que leur application a téléchargé ces clés. Les utilisateurs de l’application ont également la possibilité de télécharger leurs clés de diagnostic pendant les 14 jours _suivant_ la réception d’un diagnostic positif, dans le scénario malheureux où une personne qui a la COVID-19 ne peut pas se mettre en quarantaine (par exemple, n’a pas de congé de maladie; vit seul et doit faire des emplettes).
 
 ### Option d’entrer la date d’apparition de symptômes et de la date du test
 
@@ -109,9 +110,7 @@ Les CET sont générées une fois par jour et expirent après 14 jours sur l’
 
 ### Comment les personnes sont-elles informées de l’exposition à une personne dont le test est positif?
 
-Selon un calendrier prédéfini (une fois toutes les 4 à 24 heures, selon la charge de la batterie, et quand l’application est ouverte), l’application télécharge les nouvelles clés de diagnostic du serveur de clés. L’application transmet ces clés de diagnostic à la couche GAOS qui génère ensuite de nouveaux IPV à partir de chacune des clés de diagnostic fournies. Le système GAOS compare ces IPV régénérés à la liste des IPV stockés localement qui se sont rencontrés au cours des 14 derniers jours. Si la couche GAOS constate que l’un des IPV régénérés et stockés localement correspond, et que les critères de risque de notification d’exposition sont remplis (durée d’exposition, intensité du signal, etc.), la couche GAOS envoie un signal positif à l’application. Si l’application reçoit un signal positif, elle envoie une notification d’exposition à l’utilisateur final. 
-
-La correspondance se fait sur l’appareil. Le serveur de clés n’a aucun moyen de savoir si deux appareils ont interagi. D’autres pays ont ajouté un flux volontaire pour permettre aux utilisateurs informés de télécharger ces notifications à des fins d’analyse de la santé publique, une fonction qui est conforme aux modalités de l’accord-cadre sur les notifications d’exposition – bien qu’il reste à voir si cette fonctionnalité serait ajoutée à la mise en œuvre du Canada pour appuyer les efforts des PT ou de l’autorité fédérale de santé publique. Si cette fonctionnalité était envisagée (et notez qu’elle n’est pas en vigueur), nous consulterons à nouveau le Commissariat à la protection de la vie privée (CPVP).
+Selon un calendrier prédéfini (une fois toutes les 4 à 24 heures, selon la charge de la batterie, et quand l’application est ouverte), l’application télécharge les nouvelles clés de diagnostic du serveur de clés. L’application transmet ces clés de diagnostic à la couche GAOS qui génère ensuite de nouveaux IPV à partir de chacune des clés de diagnostic fournies. Le système GAOS compare ces IPV régénérés à la liste des IPV stockés localement qui se sont rencontrés au cours des 14 derniers jours. Si la couche GAOS constate que l’un des IPV régénérés et stockés localement correspond, et que les critères de risque de notification d’exposition sont remplis (durée d’exposition, intensité du signal, etc.), la couche GAOS envoie un signal positif à l’application. Si l’application reçoit un signal positif, elle envoie une notification d’exposition à l’utilisateur final. La correspondance se fait sur l’appareil. Le serveur de clés n’a aucun moyen de savoir si deux appareils ont interagi.
 
 Lorsqu’un utilisateur de l’application est déclaré positif pour la COVID-19 dans une province ou un territoire qui a adopté l’application, il obtiendra une clé unique qui lui sera fourni par sa province ou son territoire (la façon dont cela se produit dépendra du PT). Cette clé est fourni à la province ou au territoire par le gouvernement du Canada, et le gouvernement du Canada n’a aucun moyen de savoir à qui cette clé est associé (c’est-à-dire, la personne qui recevra cette clé). Tout ce que le gouvernement du Canada sait, c’est que quelqu’un dans une province ou un territoire a été déclaré positif pour la COVID-19. Cela dit, les protocoles d’entente conclus avec les PT qui adoptent l’application comprendront des exigences visant à protéger les clés, à s’assurer qu’ils ne sont conservés que le temps nécessaire et à les supprimer une fois obtenus par l’utilisateur de l’application.
 
@@ -123,9 +122,9 @@ Notre analyse de la protection de la vie privée se divise en deux parties. La p
 
 ### Des renseignements ou des données personnelles sont-ils recueillis?
 
-Les éléments de données (voir l’annexe A) qui seront sous le contrôle du gouvernement du Canada, et stockés dans le serveur de clés du gouvernement du Canada (situé au Canada) ne contiennent aucun identifiant direct (par exemple, nom, numéros d’identification, etc.). 
+Les éléments de données (voir l’[Annexe A](#annexea-liste-des-données-sur-lapplication-alerte-covid)) qui seront sous le contrôle du gouvernement du Canada, et stockés dans le serveur de clés du gouvernement du Canada (situé au Canada) ne contiennent aucun identifiant direct (par exemple, nom, numéros d’identification, etc.). 
 
-On trouvera ci-après de plus amples renseignements sur les IPV et les CET, sur l’émission des clés à usage unique fournis aux utilisateurs de l’application qui reçoivent un diagnostic positif, sur l’utilisation des adresses IP pour des raisons de sécurité et sur l’identifiant de hachage. Nous apporterons également plus de précisions quant aux mesures de protection très solides qui sont en place et à la courte conservation de certains de ces éléments.
+On trouvera ci-après de plus amples renseignements sur les IPV et les CET, sur l’émission des clés à usage unique fournies aux utilisateurs de l’application qui reçoivent un diagnostic positif, sur l’utilisation des adresses IP pour des raisons de sécurité, sur l’identifiant de hachage, et sur la collecte de mesures de performance de l’application. Nous apporterons également plus de précisions quant aux mesures de protection très solides qui sont en place et à la courte conservation de certains de ces éléments.
 
 Tout d’abord, il convient de noter que, peu importe l’application, les PT recueillent des renseignements personnels sur les personnes qui ont été déclarées positives pour la COVID-19 selon leurs exigences législatives – cela se produit entièrement à l’extérieur de l’application et n’est pas recueilli par le gouvernement du Canada par l’entremise de l’application. 
 
@@ -145,7 +144,7 @@ Lorsqu’une province ou un territoire demande une clé à usage unique pour le 
 
 Les PT peuvent également générer des clés à usage unique en utilisant un portail de soins de santé administré par le gouvernement du Canada. Dans ce cas, les professionnels de la santé qui ont été autorisés par une province ou un territoire peuvent ouvrir une séance dans un portail sécurisé administré par le SNC. Ce portail de soins de santé ne renferme aucune donnée sur les patients et est utilisé que pour générer des clés à usage unique, qui sont extraits au moyen d’un jeton API provenant du serveur de clés. Il incombe aux PT de désigner les fonctionnaires issus de leurs organisations de soins de santé qui peuvent servir comme administrateurs du portail et de gérer les comptes des utilisateurs pour leur PT respectif.<sup id="f8">[[8]](#portail-vie-privee)</sup>
 
-Tel que décrit à la section 5, la clé unique existe pour permettre aux utilisateurs (qui reçoivent la clé par leur province) de télécharger leurs clés de diagnostic sur le serveur de clés, en agissant comme une mesure anti-pourriel pour s’assurer que les fausses clés de diagnostic ne sont pas téléchargées accidentellement ou de façon malveillante. Les clés de diagnostic ne sont pas associées au clé à usage unique ni téléchargées sur le serveur de clés avec la clé. Une fois que la clé est entré dans l'application par l'utilisateur, elle est envoyée directement de l'application au serveur de clés, et elle n'est pas conservé dans l'application. Le serveur de clés vérifie ensuite si cette clé unique est valide ou non. Si elle est valide, le serveur de clés efface son enregistrement de la clé unique et permet à l'application de télécharger les clés de diagnostic de l'appareil, avec le consentement de l'utilisateur, en échangeant une paire de clés de chiffrement avec l'application pour s'assurer que les clés de diagnostic sont chiffrées en transit. Par conséquent, comme nous l'avons noté, la clé unique n'est pas associé aux clés de diagnostic téléchargées.
+Tel que décrit à la section 5, la clé unique existe pour permettre aux utilisateurs (qui reçoivent la clé par leur province) de télécharger leurs clés de diagnostic sur le serveur de clés, en agissant comme une mesure anti-pourriel pour s’assurer que les fausses clés de diagnostic ne sont pas téléchargées accidentellement ou de façon malveillante. Les clés de diagnostic ne sont pas associées au clé à usage unique ni téléchargées sur le serveur de clés avec la clé. Une fois que la clé est entré dans l’application par l’utilisateur, elle est envoyée directement de l’application au serveur de clés, et elle n’est pas conservé dans l’application. Le serveur de clés vérifie ensuite si cette clé unique est valide ou non. Si elle est valide, le serveur de clés efface son enregistrement de la clé unique et permet à l’application de télécharger les clés de diagnostic de l’appareil, avec le consentement de l’utilisateur, en échangeant une paire de clés de chiffrement avec l’application pour s’assurer que les clés de diagnostic sont chiffrées en transit. Par conséquent, comme nous l’avons noté, la clé unique n’est pas associée aux clés de diagnostic téléchargées.
 
 Les utilisateurs ont l’option d’entrer la date de l’apparition de symptômes ou la date du test afin d’affiner le processus de notification d’exposition aux utilisateurs qui ont été en proche contact avec un cas positif durant la période de contagion. Bien que ces données ne soient pas téléversées au serveur, il est possible théoriquement de calculer le nombre des CET téléchargées par événement à partir du volume du téléchargement et, en faisant de l’ingénierie inverse, de dériver la date probable de l’apparition de symptômes ou du test au moyen de l’information et de l’horodatage des opérations informatiques. Même si une date probable est déduite par ingénierie inverse, le risque de réidentification demeure faible, car cela nécessiterait un effort et un accès de même niveau que ce qui serait nécessaire pour lier un diagnostic positif à une adresse IP particulière (on en traite plus à fond plus loin). Ajoutons que même si cela était réalisable, il est impossible de savoir de quelle date il s’agit : la date d’apparition de symptômes ou la date d’un test.
 
@@ -170,6 +169,15 @@ Lorsque le système des résultats de tests d’un PT utilisant cette fonction c
 Même si l’identifiant de hachage est stocké sur le serveur de clés du gouvernement du Canada, les renseignements utilisés pour le générer ne le sont pas. L’identifiant de hachage est associé à une clé unique lors de la génération de la clé.
 
 Cette fonctionnalité a été ajoutée initialement à la demande de l’Ontario, afin d’éviter les abus du système. Le stockage de l’identifiant de hachage en même temps que la clé unique généré permet aux systèmes des PT de vérifier s’il faut ou non émettre une nouvel cclé unique. Le système des PT peut voir si une clé unique précédemment fourni avait déjà été demandé. Si une clé à usage unique fourni précédemment n’a pas encore été demandé, la génération d’une nouvelle clé à usage unique portant le même identifiant de hachage invalide automatiquement la clé à usage unique précédent. Si la clé à usage unique précédent n’a pas encore été demandé, une nouvelle clé n’est pas générée.
+
+#### Mesures de performance de l’application
+
+Des données sont recueillies à partir d’Alerte COVID pour permettre à SC de mieux mesurer et encourager l’adoption de l’application, et de surveiller son rendement et son efficacité pour limiter la propagation de la COVID-19. Les données utilisées pour obtenir des mesures de performance sont recueillies en créant des journaux des événements concernant les expériences et/ou les actions des utilisateurs. Ces journaux des événements sont transmis au serveur de clés et seront accompagnés de l’adresse IP. Cependant, les journaux des événements et l’adresse IP ne pourront pas être liés et ne seront jamais stockés ensemble. Les données seront chiffrées en transit et stockées de deux manières sur le serveur de clés : 
+
+1. En tant que journal des événements individuel stocké pendant 24 heures qui contient le type d’événement, le type d’appareil (p. ex., iPhone, Android), la date et l’heure;
+2. En tant que registre de données regroupées de tous les événements, mis à jour toutes les 24 heures, qui est stocké indéfiniment et qui contient la date, le type d’événement, le type d’appareil et le nombre total d’événements par jour. 
+
+Consultez l’[Annexe B](#annexe-b--mesures-de-performance-dalerte-covid) pour obtenir un aperçu et une analyse de la protection de la vie privée concernant la collecte de mesures de performance de l’application.
 
 #### Points à considérer en matière de sécurité
 
@@ -196,13 +204,15 @@ Pour considérer ces données comme des renseignements personnels, il faudrait c
 
 De plus, la Cour fédérale dans l’affaire Sig Sauer (Canada (Commissaire à l’information) c. Canada (Sécurité publique et Protection civile Canada), 2019 FC 1279) a conclu que « Pour identifier une personne à l’aide d’un numéro de série, il faudrait accéder aux bases de données à accès restreint du gouvernement, lesquelles contiennent déjà des renseignements personnels, ou amener un responsable du gouvernement ou le fabricant à divulguer des renseignements personnels. Les éléments de preuve n’établissent pas l’existence d’une possibilité sérieuse que l’une ou l’autre de ces deux situations se produise. » Dans cette affaire, le juge McHaffie était satisfait qu’il n’y ait pas eu de renseignements personnels en cause.
 
-Dans ce cas, les adresses IP ne révèlent pas d’identité individuelle; ils sont stockés sur un serveur sécurisé auquel seuls des employés limités du gouvernement du Canada ont accès, et ils sont tenus par des obligations de sécurité de protéger ces renseignements et de ne pas y accéder ou de les utiliser à des fins malveillantes. 
+Dans ce cas, les adresses IP ne révèlent pas d’identité individuelle; elles sont stockées sur un serveur sécurisé auquel seuls des employés limités du gouvernement du Canada ont accès, et ils sont tenus par des obligations de sécurité de protéger ces renseignements et de ne pas y accéder ou de les utiliser à des fins malveillantes. 
+
+De plus, les mesures de performance recueillies par SC ne contiennent aucun renseignement permettant d’identifier directement une personne. Les journaux individuels seront stockés pendant une courte période. Ils seront compilés sous forme de données regroupées (nombre total d’utilisateurs / mesure de performance) et ne seront pas combinés avec d’autres renseignements, y compris les adresses IP (consultez l’[Annexe B](#annexe-b--mesures-de-performance-dalerte-covid) pour obtenir une analyse de la protection de la vie privée concernant les mesures de performance de l’application).
 
 En conclusion, compte tenu de l’ensemble des circonstances, alors que les éléments de données échangés par l’application, le serveur de clés central et les serveurs des PT pourraient en théorie être utilisés pour produire des renseignements personnels identifiables, les mesures prises pour développer l’application, le serveur central de clés et les serveurs des PT, outre la manière dont ils recueillent, échangent, utilisent et conservent ces éléments de données, réduisent le risque au minimum possible. Notre évaluation globale est qu’il est si peu probable qu’une personne puisse être identifiée, que la collecte d’éléments de données (y compris les adresses IP) et leur utilisation n’arrivent pas au seuil de « possibilité sérieuse » qu’une personne puisse être identifiée<sup id="f9">[[9]](#gordon)</sup>.
 
 Néanmoins, si l’on parvient à une conclusion différente quant à l’évaluation de la possibilité de considérer un élément de données comme des renseignements personnels, toutes les exigences de la _Loi sur la protection des renseignements personnels_ et des politiques du Conseil du Trésor sur la protection des renseignements personnels ont été respectées afin de garantir la protection des renseignements personnels des utilisateurs.
 
-Veuillez noter que la liste des éléments de données (annexe A), et par conséquent cette évaluation, peut être modifiée à mesure que l’application est mise en œuvre et adoptée par les provinces et territoires. Le Commissariat à la protection de la vie privée sera consulté sur toute modification ou mise à jour substantielle qui pourrait avoir une incidence sur cette évaluation. 
+Veuillez noter que la liste des éléments de données ([Annexe A](#annexea-liste-des-données-sur-lapplication-alerte-covid)), et par conséquent cette évaluation, peut être modifiée à mesure que l’application est mise en œuvre et adoptée par les provinces et territoires. Le Commissariat à la protection de la vie privée sera consulté sur toute modification ou mise à jour substantielle qui pourrait avoir une incidence sur cette évaluation. 
 
 ### Principes de protection de de la vie privée 
 
@@ -218,21 +228,23 @@ L’application, en tant qu’outil permettant d’améliorer les mesures exista
 
 ##### La mesure est-elle manifestement nécessaire pour répondre à un besoin précis?
 
-La COVID-19 est une nouvelle maladie très contagieuse dont nous savons encore très peu de choses. Il n’existe pas de vaccin ni de traitement fiable. Dans certains cas, elle peut être mortelle ou causer des dommages permanents, notamment de graves lésions pulmonaires ou des amputations de membres. Dans d’autres cas, les personnes atteintes ne présentent pas ou peu de symptômes. Les personnes asymptomatiques ou présymptomatiques peuvent infecter d’autres personnes. Il est possible qu’une personne qui a déjà eu la maladie soit à nouveau infectée.
+La COVID-19 est une maladie très contagieuse que nous sommes encore en train d’apprendre à connaître. Dans certains cas, elle peut être mortelle ou causer des dommages permanents, notamment de graves lésions pulmonaires ou des amputations de membres. Dans d’autres cas, les personnes atteintes ne présentent pas ou peu de symptômes. Les personnes asymptomatiques ou présymptomatiques peuvent infecter d’autres personnes. Il est possible qu’une personne qui a déjà eu la maladie soit à nouveau infectée. Il faudra de nombreux mois pour que la vaccination devienne une solution à l’échelle de la population.
 
-Étant donné notre inaptitude à prévenir la maladie (faute d’un vaccin) ou à la traiter, les approches que nous avons adoptées, dont celle de demander aux Canadiens d’éviter les déplacements non essentiels à l’extérieur de leur domicile et de ne pas approcher de trop près les membres de leur famille et leurs amis, ont donné lieu à une réalité difficile à maintenir jusqu’à ce qu’un vaccin ou un traitement soit mis au point, ou que la maladie disparaisse d’elle-même de la population du simple fait que personne ne sort de son logis.
+Étant donné les limites de notre aptitude à prévenir la maladie ou à la traiter, les approches que nous avons adoptées, dont celle de demander aux Canadiens d’éviter les déplacements non essentiels à l’extérieur de leur domicile et de ne pas approcher de trop près les membres de leur famille et leurs amis, ont donné lieu à une réalité difficile à maintenir.
 
 L’objectif public de cette application pancanadienne de notification d’exposition est d’assouplir en toute sécurité les restrictions à la liberté de mouvement et de permettre la réouverture prudente de l’économie tout en protégeant la vie, la santé et le bien-être de tous les Canadiens dans le contexte de la pandémie de COVID-19. 
 
-Cet objectif pourrait être facilité davantage par la mise en place de mesures permettant une certaine forme de notification d’exposition au virus. La recherche manuelle des contacts est déjà en cours; cependant, elle prend énormément de temps et de ressources et repose par ailleurs sur la participation et la mémoire, parfois oublieuse, de chacun quant aux endroits qu’il a fréquentés au cours des 14 derniers jours. Un système automatisé pour aider à informer les personnes d’une exposition à la COVID-19 est un élément nécessaire pour assouplir les restrictions en toute sécurité et rouvrir l’économie jusqu’à ce qu’il y ait un vaccin ou un traitement efficace.
+Cet objectif pourrait être facilité davantage par la mise en place de mesures permettant une certaine forme de notification d’exposition au virus. La recherche manuelle des contacts est déjà en cours; cependant, elle prend énormément de temps et de ressources et repose par ailleurs sur la participation et la mémoire, parfois oublieuse, de chacun quant aux endroits qu’il a fréquentés au cours des 14 derniers jours. Un système automatisé pour aider à informer les personnes d’une exposition à la COVID-19 est un élément nécessaire pour assouplir les restrictions en toute sécurité et rouvrir l’économie.
 
 ##### Est-elle susceptible de répondre efficacement à ce besoin?
 
-L’efficacité des applications de notification d’exposition dépend fortement du niveau d’adoption; plus il y a d’utilisateurs qui téléchargent l’application, plus il y a de contacts qu’il pourra consigner. Alors que dans le passé les pays ont eu du mal à réaliser la base d’utilisateurs nécessaire, Apple et Google ont maintenant lancé une nouvelle technologie pour une approche de protection de la vie privée d’abord, afin que les citoyens puissent avoir confiance que leur gouvernement ne collecte pas de renseignements permettant d’identifier une personne. En plus d’une stratégie solide de communication et de marketing, on s’attend à ce que le nombre d’utilisateurs téléchargeant l’application augmente sensiblement par rapport à ce qui s’est produit dans les pays qui ont lancé de tels programmes dans les phases précédentes de la pandémie. Santé Canada s’attend à ce que l’application soit efficace pour atteindre les objectifs établis.
+L’efficacité des applications de notification d’exposition dépend fortement du niveau d’adoption; plus il y a d’utilisateurs qui téléchargent l’application, plus il y a de contacts qu’elle pourra consigner. Alors que dans le passé les pays ont eu du mal à réaliser la base d’utilisateurs nécessaire, Apple et Google ont maintenant lancé une nouvelle technologie pour une approche de protection de la vie privée d’abord, afin que les citoyens puissent avoir confiance que leur gouvernement ne collecte pas de renseignements permettant d’identifier une personne. En plus d’une stratégie solide de communication et de marketing, on s’attend à ce que le nombre d’utilisateurs téléchargeant l’application augmente sensiblement par rapport à ce qui s’est produit dans les pays qui ont lancé de tels programmes dans les phases précédentes de la pandémie.
+
+Certaines mesures de performance seront recueillies à l’aide d’Alerte COVID afin d’évaluer l’efficacité de l’application du point de vue de la santé publique et du rendement technique. Consultez l’[Annexe B](#annexe-b--mesures-de-performance-dalerte-covid) pour obtenir de plus amples informations sur la manière dont cette approche permettra à SC d’évaluer l’efficacité de l’application.
 
 ##### La perte de la vie privée est-elle proportionnelle au besoin?
 
-Comme nous l’avons mentionné, il est peu probable que le gouvernement du Canada recueille des renseignements personnels au sujet des utilisateurs de l’application et les données recueillies sont généralement conservées pendant une courte période afin d’appuyer les mesures de sécurité. Autrement dit, tous les renseignements contenus dans l’écosystème de cette application sont conçus pour être conservés pendant la période la plus courte nécessaire pour répondre au besoin précis pour lequel cette information est fournie. Lorsqu’une personne reçoit une notification l’informant qu’elle était en contact étroit avec une personne dont le test est positif, mais que la personne qui a reçu la notification a été en contact avec très peu de personnes au cours des deux dernières semaines, il est possible qu’elle soit en mesure d’identifier cette personne. D’autres risques de réidentification sont possibles, mais ils seraient beaucoup plus difficiles à réaliser et donc beaucoup plus éloignés. Les répercussions limitées sur les renseignements personnels semblent proportionnelles au grand besoin de sauver des vies et d’alléger les restrictions imposées aux personnes, ce qui améliore également la santé mentale des Canadiens et permet de rouvrir l’économie de façon prudente et d’entreprendre le rétablissement.
+Comme nous l’avons mentionné, il est peu probable que le gouvernement du Canada recueille des renseignements personnels au sujet des utilisateurs de l’application, et les données recueillies sont généralement conservées pendant une courte période pour appuyer les mesures de sécurité et évaluer l’efficacité de l’application. Autrement dit, tous les renseignements contenus dans l’écosystème de cette application sont conçus pour être conservés pendant la période la plus courte nécessaire pour répondre au besoin précis pour lequel cette information est fournie. Lorsqu’une personne reçoit une notification l’informant qu’elle était en contact étroit avec une personne dont le test est positif, mais que la personne qui a reçu la notification a été en contact avec très peu de personnes au cours des deux dernières semaines, il est possible qu’elle soit en mesure d’identifier cette personne. D’autres risques de réidentification sont possibles, mais ils seraient beaucoup plus difficiles à réaliser et donc beaucoup plus éloignés. Les répercussions limitées sur les renseignements personnels semblent proportionnelles au grand besoin de sauver des vies et d’alléger les restrictions imposées aux personnes, ce qui améliore également la santé mentale des Canadiens et permet de rouvrir l’économie de façon prudente et d’entreprendre le rétablissement.
 
 ##### Existe-t-il un moyen moins intrusif pour atteindre le même objectif?
 
@@ -244,7 +256,7 @@ Pour ces raisons, l’application de notification d’exposition a été identif
 
 #### _Principe de finalité_
 
-L’application et les données qui y sont recueillies seront utilisées dans le but de freiner la propagation du virus de la COVID-19 au Canada. Par ailleurs, les données, qui seront évaluées pour assurer qu’elles ne constituent pas des renseignements personnels, serviront à faire un suivi du rendement de l’application et à mesurer ce rendement. De plus, toute nouvelle utilisation ou divulgation des données ne peut se faire qu’avec le consentement des personnes concernées. Veuillez noter que l’utilisation de l’API Google/Apple est conditionnelle à ce que toute utilisation ou divulgation de renseignements personnels soit fondée sur le consentement. 
+L’application et les données qui y sont recueillies seront utilisées dans le but de freiner la propagation du virus de la COVID-19 au Canada. Par ailleurs, des données, évaluées pour s’assurer qu’elles ne constituent pas des renseignements personnels, serviront à faire un suivi du rendement de l’application et à mesurer ce rendement. De plus, toute nouvelle utilisation ou divulgation des données ne peut se faire qu’avec le consentement des personnes concernées. Veuillez noter que l’utilisation de l’API Google/Apple est conditionnelle à ce que toute utilisation ou divulgation de renseignements personnels soit fondée sur le consentement. 
 
 #### _Dépersonnalisation_
 
@@ -254,9 +266,9 @@ L’application ne comprendra probablement pas la collecte de renseignements per
 
 L’application dans son ensemble sera fermée dans un délai de 30 jours suivant la réception d’une déclaration par l’administratrice en chef de la santé publique du Canada que la pandémie sera terminée.<sup id="f10">[[10]](#criteres-pandemie)</sup> De plus, les personnes peuvent supprimer l’application en tout temps. Enfin, les CET sur l’appareil s’effacent après 14 jours. Autrement dit, tous les renseignements contenus dans l’écosystème de cette application sont conçus pour être conservés pendant la période la plus courte nécessaire pour répondre au besoin précis pour lequel cette information est fournie. 
 
-Une fois que la décision a été prise d’arrêter le service ou programme, entre autres, l’application sera mise hors service. Cela inclut le serveur de clés et les portails à clés unique, ainsi que la possibilité de télécharger l’application dans les magasins d’applications Apple et Google.
+Une fois que la décision a été prise d’arrêter le service ou programme, entre autres, l’application sera mise hors service. Cela inclut le serveur de clés et les portails à clés unique, ainsi que la possibilité de télécharger l’application dans les magasins d’applications Apple et Google. 
 
-Si des données regroupées et anonymes sont recueillies, cette collecte et la conservation des données seront évaluées pour s’assurer qu’elles répondent à toutes les exigences.
+La collecte de données regroupées et dépersonnalisées et leur période de conservation ont été évaluées pour s’assurer qu’elles répondent à toutes les exigences.
 
 #### _Transparence_
 
@@ -469,6 +481,83 @@ La clé à usage unique est supprimée de la base de données une fois qu’il a
   </tr>
 </table>
 
+## Annexe B : Mesures de performance d’Alerte COVID  
+
+À compter de la semaine du 8 février 2021, de nouvelles mesures de performance sont recueillies à partir d’Alerte COVID afin d’améliorer la capacité du gouvernement du Canada à évaluer l’efficacité de l’application.
+
+### Avant
+
+Avant cette modification, les mesures de performance de l’application n’étaient recueillies qu’à partir du serveur Alerte COVID et des magasins d’applications Google Play et Apple. Ces mesures comprenaient : 
+
+*   Nombre total de téléchargements;
+*   Nombre de provinces et de territoires (PT) qui ont intégré l’application;
+*   Nombre de clés à usage unique entrées dans l’application (par province ou territoire).<sup id="f11">[[11]](#donnees-serveur)</sup>
+
+Ces mesures à elles seules n’étaient pas suffisantes pour évaluer l’efficacité de l’application du point de vue des résultats de santé publique. SC continue de recueillir ces mesures à partir du serveur d’Alerte COVID et des magasins d’applications, en plus des mesures de performance de l’application supplémentaires décrites ci-dessous. 
+
+### Nouvelles mesures de performance
+
+SC recueille maintenant les données suivantes :
+
+* **Nombre d’utilisateurs actifs par province ou par territoire (PT) :** Un « utilisateur actif » est un utilisateur dont l’application effectue des vérifications à l’arrière-plan comme prévu. L’application communique la PT que l’utilisateur a sélectionnée dans l’application pendant le processus d’intégration pour fournir un nombre approximatif d’utilisateurs actifs par PT. La sélection d’une PT demeurera volontaire pour les utilisateurs de l’application. 
+
+* **Nombre d’utilisateurs dont l’application est passée à l’état « exposé » :** Lorsqu’un utilisateur reçoit une notification d’exposition, l’état de l’application passe de « non exposé » à « exposé ». Chaque fois que cela se produit, l’événement est enregistré et transmis au serveur de clés et regroupé pour fournir le nombre total d’utilisateurs de l’application qui ont reçu une notification d’exposition et le nombre approximatif de notifications d’exposition envoyées. De plus, un événement distinct serait consigné pour fournir un nombre total d’utilisateurs qui ont reçu des notifications d’exposition supplémentaires alors que leur application était déjà à l’état « exposé ». Ces données seraient également comparées à la PT sélectionnée pour estimer le nombre de notifications reçues dans chaque PT. 
+
+* **Nombre d’utilisateurs de l’application qui entrent une clé à usage unique après avoir reçu une notification d’exposition :** Si un utilisateur obtient un résultat positif à un test de dépistage de la COVID-19 et entre une clé à usage unique dans l’application alors que l’application est dans l’état « exposé », ceci fournit des mesures sur le nombre approximatif d’utilisateurs qui ont obtenu un résultat positif à un test de dépistage après avoir reçu une notification d’exposition. Ces données seraient comparées à la PT sélectionnée pour estimer le nombre d’utilisateurs qui ont obtenu un résultat positif à un test de dépistage après avoir reçu une notification d’exposition dans chaque PT. 
+
+* **Mesures de rendement technique :** 
+
+     *   Le nombre de nouvelles installations, qui est communiqué chaque fois qu’un utilisateur accède au premier écran affiché lorsque l’application est ouverte pour la première fois. Cela indique qu’un nouvel utilisateur a téléchargé et ouvert Alerte COVID.
+     *   Le nombre de « dates d’apparition des symptômes » ou de « dates du test » soumises lors du téléchargement des clés d’exposition temporaires (CET). Les dates elles-mêmes ne sont pas partagées.
+     *   Nombre d’utilisateurs de l’application qui ont terminé l’intégration et qui ont accordé les trois autorisations suivantes : 
+          *   Alerte COVID est activée
+          *   Le Cadre de notification des expositions Google/Apple est activé
+          *   Les notifications directes sont activées pour Alerte COVID
+     *   Nombre d’appareils qui effectuent des vérifications à l’arrière-plan et nombre de vérifications à l’arrière-plan effectuées par jour et par type d’appareil (iOS ou Android)<sup id="f12">[[12]](#verifications-quotidiennes)</sup>
+     *   Nombre de fois que l’application a été activée ou désactivée<sup id="f13">[[13]](#epi-desactiver-activer)</sup>
+     *   Temps écoulé entre la notification de l’exposition et le moment où l’utilisateur efface l’état « exposé » <sup id="f14">[[14]](#effacer-statut-expose)</sup>
+
+### Méthode de collecte des données
+
+Des données sont recueillies à partir d’Alerte COVID pour obtenir des mesures de performance qui permettent à SC d’évaluer l’efficacité et le rendement de l’application. Les données utilisées pour obtenir des mesures sont recueillies en créant des journaux des événements concernant les expériences et/ou les actions des utilisateurs. Ces journaux des événements sont transmis au serveur de clés et seront accompagnés de l’adresse IP. Cependant, les journaux des événements et l’adresse IP ne pourront pas être liés et ne seront jamais stockés ensemble. Les données seront chiffrées en transit et stockées de deux manières sur le serveur de clés : 
+
+1. En tant que journal des événements individuel stocké pendant 24 heures qui contient le type d’événement, le type d’appareil (p. ex., iPhone, Android), la date et l’heure;
+2. En tant que registre de données regroupées sur tous les événements, mis à jour toutes les 24 heures, qui est stocké indéfiniment et qui contient la date, le type d’événement, le type d’appareil et le nombre total d’événements par jour. 
+
+### Justification par des considérations de santé publique
+
+Les mesures de performance recueillies à partir d’Alerte COVID fourniront des renseignements sur :
+
+*   Le niveau d’adoption approximatif de l’application dans chaque PT;
+*   Le nombre approximatif de notifications d’exposition envoyées par PT;
+*   Le nombre approximatif d’utilisateurs qui ont obtenu un résultat positif à un test de dépistage de la COVID-19 après avoir reçu une notification d’exposition;
+*   Si les différentes fonctions de l'application fonctionnent correctement et si elles sont utiles; et
+*   Le rendement technique de l’application, en particulier,
+    *   la proportion des utilisateurs qui soumettent des clés à usage unique et qui soumettent également une date d’apparition des symptômes ou du test;
+    *   la proportion des utilisateurs qui accordent les autorisations nécessaires au fonctionnement de l’application;
+    *   si les vérifications en arrière-plan nécessaires sont effectuées; et
+    *   si deux nouvelles fonctionnalités – la possibilité de désactiver l’application et la possibilité d’effacer l’état « exposé » – sont utilisées comme prévu.
+
+Ces mesures permettront à SC d’évaluer l'efficacité de l'application à influencer les résultats positifs en matière de santé publique, ce qui est conforme à la recommandation du CPVP. Les mesures éclaireront l’évaluation qui aura lieu en partenariat avec son bureau.
+
+Si les mesures montrent l’efficacité de l’application, cela pourrait encourager les personnes à télécharger Alerte COVID et encourager de nouvelles provinces et de nouveaux territoires à l’intégrer.
+
+Elles indiqueront également dans quelle mesure environ les personnes utilisent l’application pour informer d’autres personnes d’une exposition potentielle. Cela permettrait à SC de déterminer si l’application a un effet tangible sur la réduction de la propagation de la pandémie (c.-à-d. si les personnes sont avisées des expositions potentielles et si elles prennent des mesures en conséquence). La collecte de ces mesures par PT permettra également à SC de cibler ses communications en fonction des régions où l’application est moins utilisée qu’ailleurs. 
+
+### Analyse de la protection de la vie privée
+
+Les mesures de performance proposées ci-dessus ne contiennent aucun renseignement permettant d’identifier directement une personne. Les journaux individuels seront stockés pendant une courte période, ils seront compilés sous forme de données regroupées (nombre total d’utilisateurs / mesure de performance) et ne seront pas combinés à d’autres renseignements, y compris les adresses IP. De plus, les mesures ne seront pas rendues publiques si les dénombrements sont inférieurs à vingt.
+
+Compte tenu de ces circonstances et des mesures prises pour protéger les données (p. ex., limiter la conservation des journaux des événements individuels, regrouper les journaux des événements, stocker les données et les adresses IP séparément et stocker les données sur un serveur sécurisé à accès limité), il est peu probable que les données constituent des renseignements personnels. En d’autres termes, la probabilité qu’une personne puisse être identifiée uniquement à partir de ces renseignements ou en les combinant à d’autres renseignements disponibles est négligeable. Par conséquent, il est peu probable que la _Loi sur la protection des renseignements personnels_ s’applique à la collecte de ces mesures de performance.
+
+Le principal risque est que le public _perçoive_ la collecte de mesures de performance comme contraire à l’approche de la protection de la vie privée adoptée lors de la conception de l’application. Ce risque sera atténué en s’assurant de transmettre des messages clairs et transparents sur la collecte de données supplémentaires, le besoin que nous avons de ces données et les mesures de protection de la vie privée mises en place pour réduire le risque de réidentification à presque zéro.
+
+### Autres considérations
+
+Les mesures de performance seront utilisées principalement pour l’analyse interne et la mesure du rendement. Cependant, certaines mesures, comme le nombre d’installations dans chaque PT et le nombre de notifications d’exposition envoyées, peuvent être rendues publiques sous forme de données regroupées pour montrer l’efficacité de l’application et encourager son adoption. Ces données peuvent également être publiées par chaque PT. Une évaluation de la protection de la vie privée sera réalisée pour s’assurer que, lorsque des mesures de performance sont rendues publiques, elles le sont de manière à réduire le risque de réidentification à presque zéro. 
+
+Santé Canada consultera également le CPVP et le Conseil consultatif avant de rendre publiques des données sur les mesures de performance de l’application. De plus, le CPVP, le Conseil consultatif et le Groupe de travail fédéral, provincial et territorial continueront d’être consultés sur la collecte de données avant la prise de toute décision et avant la mise en œuvre. Des commentaires supplémentaires seront pris en compte pour s’assurer que la collecte de données est conforme à l’approche de la protection de la vie privée de l’application.
+
 ## Notes de bas de page
 
 <a name="portail">[1]</a>
@@ -500,3 +589,33 @@ La clé à usage unique est supprimée de la base de données une fois qu’il a
 
 <a name="criteres-pandemie">[10]</a>
      Veuillez noter que les critères pour considérer la pandémie comme terminée et le processus de cette détermination sont encore à établir. [↩](#f10)
+
+<a name="donnees-serveur">[11]</a>
+     Les données exhaustives recueillies par le gouvernement du Canada à partir du serveur sont les suivantes :
+
+*   nombre de clés à usage unique générées, par PT
+*   nombre de clés à usage unique saisies dans l’application, par PT
+*   durée d’une clé à usage unique, par PT (c.-à-d., le temps qu’il a fallu pour réclamer une clé à usage unique)
+*   nombre de clés de chiffrement non réclamées , par PT (une clé de chiffrement est ce que l’on obtient en demandant une clé à usage unique, de sorte que ce paramètre représente le nombre de clés à usage unique non réclamées)
+*   nombre de clés de chiffrement réclamées expirées, par PT
+*   nombre de clés de chiffrement réclamées  expirées sans téléchargement, par PT
+*   nombre de clés de chiffrement épuisées par PT
+*   nombre de CET téléchargées par utilisateur lors de son téléchargement initial (c.-à-d. juste après la soumission de la clé à usage unique)
+*   nombre de CET téléchargées après un téléchargement initial (nombre de clés téléchargées dans un lot, qui ne sont liées ni à un appareil ni à un utilisateur)
+
+Le gouvernement surveille également les mesures de performance suivantes par l’entremise de Google Play et de l’App Store d’Apple à des fins de vérification du rendement :
+
+*   nombre de téléchargements
+*   nombre de téléchargements par type d’appareil
+*   perte d’utilisateurs (c.-à-d. le nombre de désinstallations)
+*   plantages
+*   critiques (données qualitatives) [↩](#f11)
+
+<a name="verifications-quotidiennes">[12]</a>
+     L’application effectue quotidiennement des vérifications à l’arrière-plan pour confirmer qu’elle fonctionne correctement. [↩](#f12)
+
+<a name="epi-desactiver-activer">[13]</a>
+     Cette fonctionnalité a été ajoutée afin que les utilisateurs de l’application puissent désactiver l’application lorsqu’ils portent un équipement de protection individuelle complet (p. ex., les infirmières et les médecins qui soignent des patients atteints de COVID-19) afin qu’ils ne reçoivent pas de notifications d’exposition pendant les périodes où ils sont entièrement protégés de l’exposition. [↩](#f13)
+
+<a name="effacer-statut-expose">[14]</a>
+     Cette fonctionnalité a été ajoutée afin que les utilisateurs qui reçoivent une notification d’exposition, subissent un test et reçoivent un résultat négatif puissent effacer leur statut « exposé ». Cependant, il est également possible pour les personnes d’effacer immédiatement leur statut « exposé » sans avoir obtenu de résultat négatif à un test. [↩](#f14)
