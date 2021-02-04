@@ -1,3 +1,5 @@
+[English](https://github.com/cds-snc/covid-alert-documentation/blob/main/product/metrics.md)
+
 # Mesures de performance
 
 L’application Alerte COVID commencera bientôt à collecter des mesures de performance qui permettront de mieux savoir si l’application fonctionne comme prévu et de connaître son incidence sur la pandémie. Ces mesures sont agrégées et ne sont pas associées à des appareils personnels. Le Commissariat à la protection de la vie privée du Canada et le Conseil consultatif d’Alerte COVID ont été consultés au sujet des mesures de performance et de la façon de les collecter. Alerte COVID continue de protéger la vie privée des personnes.

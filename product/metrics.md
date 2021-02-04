@@ -1,3 +1,5 @@
+[Français](https://github.com/cds-snc/covid-alert-documentation/blob/main/produit/mesures-de-performance.md)
+
 # Metrics
 
 The COVID Alert app will soon start collecting metrics to help learn if the app is functioning as intended and about its impact on the pandemic. These metrics are aggregated and not tied to individual devices. The Office of the Privacy Commissioner of Canada and the COVID Alert Advisory Council were consulted on the metrics and the collection method. COVID Alert continues to protect people&#39;s privacy.
