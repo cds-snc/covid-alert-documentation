@@ -4,7 +4,7 @@
 
 _Health Canada/Public Health Agency of Canada Privacy Management Division_
 
-October 2020 – [Version history](https://github.com/cds-snc/covid-alert-documentation/commits/main/COVIDAlertPrivacyAssessment.md) – [Also published on Canada.ca](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert/privacy-policy/assessment.html)
+February 2021 – [Version history](https://github.com/cds-snc/covid-alert-documentation/commits/main/COVIDAlertPrivacyAssessment.md) – [Also published on Canada.ca](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert/privacy-policy/assessment.html)
 
 * [1. Objective](#1-objective)
 * [2. Scope](#2-scope)
@@ -12,7 +12,8 @@ October 2020 – [Version history](https://github.com/cds-snc/covid-alert-docume
 * [4. Partners and Stakeholders](#4-partners-and-stakeholders)
 * [5. How does the COVID Alert App work?](#5-how-does-the-covid-alert-app-work)
 * [6. Privacy Analysis](#6-privacy-analysis)
-* [Appendix A: List of COVID Alert App Data Elements](#appendix-a-list-of-covid-alert-app-data-elements)
+* [Appendix A: List of COVID Alert App Data](#appendix-a-list-of-covid-alert-app-data)
+* [Appendix B: COVID Alert App Metrics](#appendix-b-covid-alert-app-metrics)
 * [Footnotes](#footnotes)
 
 ## 1\. Objective
@@ -61,7 +62,7 @@ In line with its mandate to provide cyber security advice and guidance to federa
 
 ### Google/Apple
 
-Google/Apple jointly developed the exposure notification API being adopted, subject to [Google](https://blog.google/documents/72/Exposure_Notifications_Service_Additional_Terms.pdf) and [Apple’s](https://developer.apple.com/contact/request/download/Exposure_Notification_Addendum.pdf) terms and conditions, by the Government of Canada for the COVID Alert app.  Google/Apple do not have access to the data. CDS consults Google and Apple when new operating system or framework changes are published by both companies.
+Google/Apple jointly developed the exposure notification API being adopted, subject to [Google](https://blog.google/documents/72/Exposure_Notifications_Service_Additional_Terms.pdf) and [Apple’s](https://developer.apple.com/contact/request/download/Exposure_Notification_Addendum.pdf) terms and conditions, by the Government of Canada for the COVID Alert app.  Google and Apple do not have access to the data. CDS consults Google and Apple when new operating system or framework changes are published by both companies.
 
 ### Shopify
 
@@ -87,7 +88,7 @@ The design of the Google/Apple API is such that this protected layer of the oper
 
 ### What exactly is being communicated between participating users? 
 
-Each device with the app installed is sending out and listening for random codes called rolling proximity identifiers (RPIs) which are not static: On a daily basis, the Google/Apple layer automatically generates a random temporary exposure key (TEK). The TEK of the day then generates a new RPI every five to twenty minutes. It is these ever-changing RPIs that are shared with other devices.
+Each device with the app installed is sending out and listening for random codes called rolling proximity identifiers (RPIs) which are not static: On a daily basis, the GAOS layer automatically generates a random temporary exposure key (TEK). The TEK of the day then generates a new RPI every five to twenty minutes. It is these ever-changing RPIs that are shared with other devices.
 
 The daily TEK generation and frequent RPI generation are design features with the purpose of minimizing the risk of re-identification of users. (In addition to this, they are designed to minimize data transfer to conserve bandwidth.) The RPIs are not identifiable and are not accessible to the app or transmitted to the key server. By design, the RPIs are meant to be public (they are shared to other devices via Bluetooth), and as such do not provide any form of identifying information in the absence of other information. Even if an RPI were intercepted by a device operated by a malicious actor, it would be an entirely meaningless number, and would not be linkable to a device without significant effort. TEKs are stored on the device, but may only be released to the key server in the case of a positive test result and explicit user consent.
 
@@ -95,7 +96,7 @@ When a user receives a positive COVID-19 test result, PT health authorities who 
 
 Although the portal will rely on retrieving one-time keys from the key server, it is not connected to the app in any way nor will it connect to any PT IT system. Only personal information about PT administrators and healthcare providers will be collected so they can create portal accounts and retrieve the one-time keys - no patient information will be collected or retained by the portal. 
 
-When a one-time key is entered into the app, it will validate the key and ask the user if they would like their TEKs to be sent to the key server.<sup id="f4">[[4]](#dk-upload-process)</sup> If the individual says yes, the app communicates with the Google/Apple layer. The Google/Apple layer asks a second time whether the individual consents to sending their TEKs to the key server. If the individual consents, the TEKs are sent to the key server, allowing other users they have come in contact with in the past 14 days to be notified, once their app has downloaded these keys. App users also have the option of uploading their diagnosis keys for the 14 days _following_ receipt of a positive diagnosis, in the unfortunate scenario where an individual who has COVID-19 cannot self-quarantine (e.g. doesn’t have sick leave; lives alone and has to buy groceries, etc). 
+When a one-time key is entered into the app, it will validate the key and ask the user if they would like their TEKs to be sent to the key server.<sup id="f4">[[4]](#dk-upload-process)</sup> If the individual says yes, the app communicates with the GAOS layer. The GAOS layer asks a second time whether the individual consents to sending their TEKs to the key server. If the individual consents, the TEKs are sent to the key server, allowing other users they have come in contact with in the past 14 days to be notified, once their app has downloaded these keys. App users also have the option of uploading their diagnosis keys for the 14 days _following_ receipt of a positive diagnosis, in the unfortunate scenario where an individual who has COVID-19 cannot self-quarantine (e.g. doesn’t have sick leave; lives alone and has to buy groceries, etc.). 
 
 ### Option to enter date of symptom onset / test date
 
@@ -109,9 +110,7 @@ TEKs are generated once a day and expire after 14 days on the device. A TEK beco
 
 ### How are individuals notified of exposure to someone who tested positive?
 
-On a pre-defined schedule (once every 4 to 24 hours depending on battery level, and when the app is opened), the app downloads new diagnosis keys from the key server. The app passes those diagnosis keys to the GAOS layer and the GAOS layer re-generates the RPIs from each of the provided diagnosis keys. The GAOS compares those regenerated RPIs to the list of locally-stored RPIs it has encountered in the last 14 days. If the GAOS layer finds that any of the re-generated and locally-stored RPIs match, and the exposure notification risk criteria are met (length of exposure, strength of signal, etc.), the GAOS layer sends a positive signal to the app. If the app receives a positive signal, it sends an exposure notification to the end-user. 
-
-The matching happens on the device. The key server has no way of knowing if two devices interacted. Other countries have added a voluntary flow to allow notified users to upload these notifications for public health analytics purposes, a function that is compliant with the terms of the Exposure Notification framework agreement – although, it remains to be seen whether such functionality would be added to the Canadian implementation to support PT or federal public health authority efforts. If such functionality were being considered (and note it is not at present), we would re-engage with the OPC.
+On a pre-defined schedule (once every 4 to 24 hours depending on battery level, and when the app is opened), the app downloads new diagnosis keys from the key server. The app passes those diagnosis keys to the GAOS layer and the GAOS layer re-generates the RPIs from each of the provided diagnosis keys. The GAOS compares those regenerated RPIs to the list of locally-stored RPIs it has encountered in the last 14 days. If the GAOS layer finds that any of the re-generated and locally-stored RPIs match, and the exposure notification risk criteria are met (length of exposure, strength of signal, etc.), the GAOS layer sends a positive signal to the app. If the app receives a positive signal, it sends an exposure notification to the end-user. The matching happens on the device. The key server has no way of knowing if two devices interacted.
 
 When an app user tests positive for COVID-19 in a PT that has adopted the app, they will obtain a one-time key that will be provided to them by their PT (how this occurs will depend on the PT). This key is provided to the PT by the Government of Canada and the Government of Canada has no way of knowing who that key is associated with (in other words who the person is who will receive this key). All the Government of Canada knows is that someone in a given PT tested positive for COVID-19. That said, the MOUs with the PTs who adopt the app will include requirements to safeguard the keys, to ensure they are only retained as long as necessary and to delete them once obtained by the app user.
 
@@ -123,9 +122,9 @@ Our privacy analysis is in two parts. The first part examines whether there is a
 
 ### Is There a Collection of Personal Information/Data?
 
-The data elements (see Appendix A) that will be under the control of the Government of Canada and stored in the Government of Canada key server (located in Canada) do not contain any direct identifiers (e.g. name, identifying numbers, etc.). 
+The data elements (see [Appendix A](#appendix-a-list-of-covid-alert-app-data)) that will be under the control of the Government of Canada and stored in the Government of Canada key server (located in Canada) do not contain any direct identifiers (e.g. name, identifying numbers, etc.). 
 
-The following provides further information on RPIs and TEKs, on the issuance of the one-time keys that are provided to app users who receive a positive diagnosis, on the use of IP addresses for security reasons and on the HashID. We will also provide more clarity regarding the very strong safeguards that are in place and the short retention of some of these elements. 
+The following provides further information on RPIs and TEKs, on the issuance of the one-time keys that are provided to app users who receive a positive diagnosis, on the use of IP addresses for security reasons, the HashID, and the collection of app metrics. We will also provide more clarity regarding the very strong safeguards that are in place and the short retention of some of these elements. 
 
 First, it should be noted that regardless of the app, PTs are collecting personal information about individuals who test positive for COVID-19 according to their legislative requirements – this occurs entirely outside the app and is not being collected by the Government of Canada via the app. 
 
@@ -153,7 +152,7 @@ For the 14 days after a diagnosis key is inputted, the app does “know” that 
 
 ##### IP Addresses
 
-The IP address accompanies any request made to the key server (e.g., when a user chooses to upload their random codes, or enters their one-time key). However, the IP address is not intentionally “sent” by the app. It accompanies the request naturally: IP addresses are metadata required as part of the underlying internet protocol that powers data transmission over the Internet; without this, the app and the server would not be able to communicate. In other words, IP addresses accompany _all_ requests made to the server (one-time key generation, one-time key verification, diagnosis key upload, etc). In most cases, the IP is not of the phone in particular, but of a wireless router or is dynamically assigned by a cellular network carrier. Few people have static IPs that are permanently associable to them, due to the limited number of IPv4 IP addresses. In sending that information, the IP accompanies the request, as with any request sent over the internet. 
+The IP address accompanies any request made to the key server (e.g., when a user chooses to upload their random codes, or enters their one-time key). However, the IP address is not intentionally “sent” by the app. It accompanies the request naturally: IP addresses are metadata required as part of the underlying internet protocol that powers data transmission over the Internet; without this, the app and the server would not be able to communicate. In other words, IP addresses accompany _all_ requests made to the server (one-time key generation, one-time key verification, diagnosis key upload, etc.). In most cases, the IP is not of the phone in particular, but of a wireless router or is dynamically assigned by a cellular network carrier. Few people have static IPs that are permanently associable to them, due to the limited number of IPv4 IP addresses. In sending that information, the IP accompanies the request, as with any request sent over the internet. 
 
 In the event the one-time key is not valid, the user’s IP address is retained at the key server level for [a rolling window of sixty minutes](https://github.com/cds-snc/covid-shield-server/blob/d2f9cf605f73437d271a801db7acb87a6ce53db4/pkg/persistence/queries.go#L12-L15). After fifty consecutive invalid attempts from the same IP, the IP is blocked for sixty minutes. The associated IP address is deleted from the system sixty minutes after the last invalid attempt to verify a one-time key. 
 
@@ -170,6 +169,15 @@ When the test results system of a PT using this feature reaches out to the Gover
 While the HashID is stored on the Government of Canada key server, the information used to generate it is not. The HashID is associated with a one-time key when the key is generated.
 
 This feature was initially added at the request of Ontario, to prevent abuse of the system. Storing the HashID alongside the generated one-time key allows for PT systems to verify whether to issue a new one-time key or not—the PT system can see whether or not a previously provided one-time key had already been claimed. If a previously provided one-time key has not yet been claimed, then generating a new one-time key with the same HashID automatically invalidates the previous one-time key. If the previous one-time key was already claimed, a new key is not generated.
+
+#### App Metrics
+
+Data is collected from COVID Alert to enable HC to better measure and encourage app uptake, and monitor its performance and effectiveness in limiting the spread of COVID-19. The data used to develop metrics are collected by creating event logs of user experiences and/or actions. These event logs are transmitted to the key server and will be accompanied by the IP address; however, the event logs and the IP address will not be linkable and will never be stored together. The data will be encrypted in transit and stored in two ways on the key server: 
+
+1. As an individual event log stored for 24 hours which contains the type of event, device type (e.g. iPhone, Android), and the date and time; and
+2. As an aggregated record of all events, updated every 24 hours, stored indefinitely, which contains the date, type of event, device type, and total number of events per day. 
+
+Refer to [Appendix B](#appendix-b-covid-alert-app-metrics) for an overview and privacy analysis on the collection of app metrics.
 
 #### Security considerations
 
@@ -198,11 +206,13 @@ Further, the Federal Court in Sig Sauer (Canada (Information Commissioner) v. Ca
 
 Here, the IP addresses on their own do not reveal individual identities; they’re stored on a secure server that only limited Government of Canada employees have access to, and they’re bound by security obligations to protect that information and not access or use it for nefarious purposes. 
 
+In addition, the app metrics being collected by HC do not contain any direct identifiers. Individual logs will be stored for a short period, they will be compiled in the aggregate (total number of users/metric), and will not be combined with other information, including IP addresses (refer to [Appendix B](#appendix-b-covid-alert-app-metrics) for a privacy analysis of the app metrics). 
+
 In conclusion given the totality of the circumstances, while the data elements exchanged by the app, the central key server and the PT servers could be used in theory to produce personally identifiable information, the measures taken in developing the app, the central key server, and PT servers, in addition to the manner in which they collect, exchange, use and retain these data elements, reduce the risk to the lowest minimum possible. Our overall assessment is that it is so highly unlikely that an individual could be identified, that the collection of data elements (including IP addresses) and how they are used does not meet the threshold of “serious possibility” that an individual could be identified.<sup id="f9">[[9]](#gordon)</sup>
 
 Nevertheless, should a different conclusion be reached regarding the assessment of whether any data element could be considered personal information, all requirements of the _Privacy Act_ and Treasury Board Privacy Policies have been met in order to ensure user privacy is protected.
 
-Note that the list of data elements (Appendix A), and consequently this assessment, is subject to change as the app is rolled out and adopted by provinces. The Office of the Privacy Commissioner will be consulted on any substantial modifications or updates that could impact this assessment. 
+Note that the list of data elements ([Appendix A](#appendix-a-list-of-covid-alert-app-data)), and consequently this assessment, is subject to change as the app is rolled out and adopted by provinces. The Office of the Privacy Commissioner will be consulted on any substantial modifications or updates that could impact this assessment. 
 
 ### Privacy Principles 
 
@@ -218,27 +228,27 @@ The app, as a tool to enhance existing measures to address and reduce the spread
 
 ##### Is the measure demonstrably necessary to meet a specific need?
 
-COVID-19 is a new, highly contagious disease about which we still know quite little. There is no vaccine, nor is there a reliable treatment. In some, it can be fatal or cause permanent harms, including serious lung damage or limb amputations. In others, it can cause no or minimal symptoms. Asymptomatic or pre-symptomatic individuals can still infect others. It may be possible for one individual who has already had the illness to become sick again.
+COVID-19 is a highly contagious disease about which we are still learning. In some, it can be fatal or cause permanent harms, including serious lung damage or limb amputations. In others, it can cause no or minimal symptoms. Asymptomatic or pre-symptomatic individuals can still infect others. It may be possible for one individual who has already had the illness to become sick again. It will take many months for vaccine roll-out to reach a point of providing a population-level solution.
 
-Given our inability to prevent (vaccine) or treat the disease, the approaches taken, including asking Canadians to avoid all non-essential trips outside of their home and to avoid close contact with family and friends is a hard reality to sustain until either a vaccine/treatment is developed, or the disease dies out of the population because nobody leaves their house.
+Given  limitations on our ability to prevent or treat the disease, the approaches taken, including asking Canadians to avoid all non-essential trips outside of their home and to avoid close contact with family and friends is a hard reality to sustain.
 
 The public goal of this pan-Canadian exposure notification app is to safely ease restrictions on freedom of movement and allow the economy to safely re-open while protecting the lives, health and well-being of everyone in Canada in the face of the COVID-19 pandemic. 
 
-This goal could be further facilitated by putting into place measures that allow some form of notification of exposure to the virus. Manual contact tracing is already taking place; however, it is hugely time-consuming and resource-intensive, and relies on individuals’ participation as well as their imperfect memory of where they have been for the past 14 days. An automated system to aid in informing individuals of COVID-19 exposure is a necessary element to safely easing restrictions and re-opening the economy until there is a vaccine or effective treatment.
+This goal could be further facilitated by putting into place measures that allow some form of notification of exposure to the virus. Manual contact tracing is already taking place; however, it is hugely time-consuming and resource-intensive, and relies on individuals’ participation as well as their imperfect memory of where they have been for the past 14 days. An automated system to aid in informing individuals of COVID-19 exposure is a necessary element to safely easing restrictions and re-opening the economy.
 
 ##### Is it likely to be effective in meeting that need?
 
 Effectiveness of exposure notification apps is highly contingent on level of adoption; the more users that download the app, the more contacts it will be able to capture. While in the past countries have had difficulty achieving the needed user base, Apple and Google have now launched new technology for a privacy-first approach so that citizens can have confidence that their government is not collecting personally identifiable information. Coupled with a strong communications and marketing strategy, this is expected to significantly increase the number of users downloading the app than has been the case in countries that launched such programs in earlier phases of the pandemic. 
 
-Health Canada expects that the application is likely to be effective at achieving the intended purposes.
+Certain metrics will be collected from COVID Alert in order to assess the effectiveness of the app from a public health and technical performance perspective. Refer to [Appendix B](#appendix-b-covid-alert-app-metrics) for more information on how this approach will enable HC to assess app effectiveness. 
 
 ##### Is the loss of privacy proportional to the need?
 
-As mentioned, it is unlikely that any personal information will be collected about app users by the Government of Canada via the app, and the data that is collected is generally retained for a short period of time with the purpose of supporting security measures. In other words, all the information in this app’s ecosystem is designed to be kept for the shortest time period necessary to achieve the specific need that information is for. If an individual receives a notice that they were in close proximity with someone who tested positive, but the individual who was notified had been in contact with very few people in the last two weeks, it is possible they would be able to identify who that individual is. There are other re-identification risks that may be possible, but they would be much more difficult to accomplish and therefore much more remote. The limited impact on individual’s privacy seems proportional to the great need to save lives, to ease restrictions on individuals thereby ameliorating the mental health of Canadians as well, and to allow the economy to safely re-open and rebuild.
+As mentioned, it is unlikely that any personal information will be collected about app users by the Government of Canada via the app, and the data that is collected is generally retained for a short period of time to support security measures and assess app effectiveness. In other words, all the information in this app’s ecosystem is designed to be kept for the shortest timeperiod necessary to achieve the specific need that information is for. If an individual receives a notice that they were in close proximity with someone who tested positive, but the individual who was notified had been in contact with very few people in the last two weeks, it is possible they would be able to identify who that individual is. There are other re-identification risks that may be possible, but they would be much more difficult to accomplish and therefore much more remote. The limited impact on individual’s privacy seems proportional to the great need to save lives, to ease restrictions on individuals thereby ameliorating the mental health of Canadians as well, and to allow the economy to safely re-open and rebuild.
 
 ##### Is there a less privacy-invasive way of achieving the same end?
 
-This question asks whether reasonable steps have been taken to ensure that the minimum amount of personal information required to achieve the objective has been collected. As noted the app is unlikely to involve a collection of personal information by the Government of Canada. 
+This question asks whether reasonable steps have been taken to ensure that the minimum amount of personal information required to achieve the objective has been collected. As noted, the app is unlikely to involve a collection of personal information by the Government of Canada. 
 
 We note further that the alternative option, a contact tracing app, is more privacy invasive, collecting geolocation data and reporting this to public health authorities. In addition, manual contact tracing is highly resource-intensive and relies on individuals’ imperfect memory of where they have been for the past 14 days. It involves tracers tracking down individuals directly (typically by phone) to inform them of their risk of exposure and advising them of next steps. While manual contact tracing will continue, the supplementary capacity provided through the app allows for exposed individuals to be notified, without requiring the collection of personal information that is done during manual tracing. 
 
@@ -246,7 +256,7 @@ For these reasons, the exposure notification app has been identified as a valuab
 
 #### _Purpose Limitation_
 
-The app and the data collected therein will be used for the purpose of reducing the spread of the COVID-19 virus in Canada. In addition, data, that will be assessed to ensure it does not constitute personal information, will be used in order to monitor and measure the performance of the app. Further, any new use or disclosure of personal information can only be done with consent. Note that use of the Google/Apple API is conditional on any uses or disclosure of personal information being based upon consent. 
+The app and the data collected therein will be used for the purpose of reducing the spread of the COVID-19 virus in Canada. In addition, data, assessed to ensure it does not constitute personal information, will be used in order to monitor and measure the performance of the app. Further, any new use or disclosure of personal information can only be done with consent. Note that use of the Google/Apple API is conditional on any uses or disclosure of personal information being based upon consent. 
 
 #### _De-identification_
 
@@ -258,7 +268,7 @@ The app as a whole will be shut down within 30 days of a declaration by the Chie
 
 Once the determination has been made to shut down the app, all components of the service will be retired. This includes the key server and one-time-key portals, as well as the ability to download the app in the Apple and Google app stores. 
 
-If aggregate, anonymous data are collected, this collection and the retention of the data will be assessed to ensure it meets all requirements.
+The collection of aggregate, de-identified data and its retention period has been assessed to ensure it meets all requirements.
 
 #### _Transparency_
 
@@ -280,7 +290,7 @@ Procedural and technical safeguards are implemented, in accordance with the secu
 
 Finally, the public will be informed of any vulnerabilities or threats to the app, to ensure they can make an informed decision.
 
-## Appendix A: List of COVID Alert App Data Elements
+## Appendix A: List of COVID Alert App Data
 
 <table>
   <tr>
@@ -471,6 +481,82 @@ Finally, the public will be informed of any vulnerabilities or threats to the ap
   </tr>
 </table>
 
+## Appendix B: COVID Alert App Metrics  
+
+As of the week of February 8, 2021, new app metrics are being collected from COVID Alert to enhance the Government of Canada’s ability to evaluate the effectiveness of the app.
+
+### Before
+
+Before this change, the app metrics were only being collected from the COVID Alert server and the Google Play and Apple app stores. Those metrics included: 
+
+*   Total number of downloads;
+*   Number of provinces and territories (PTs) that have on-boarded; and 
+*   Number of one-time keys (OTKs) entered into the app (by PT).<sup id="f11">[[11]](#server-data)</sup>
+
+These metrics alone were insufficient to assess the effectiveness of the app on public health outcomes. HC continues to collect these metrics from the COVID Alert server and app stores, alongside the additional app metrics from the app outlined below. 
+
+### New metrics
+
+HC now collects the following data:
+
+* **Number of active users per province or territory (PT):** An “active user” is a user whose app is performing background checks as intended. The app reports the PT the user selected in the app during the onboarding process, to provide an approximate number of active users per PT. The PT selection will remain voluntary for app users. 
+
+* **Number of users whose app changed to the “exposed” state:** When a user receives an exposure notification, the app status changes from “unexposed” to “exposed.” Each time this happens, the event would be logged and transmitted to the key server and aggregated to provide a total number of app users who received an exposure notification and the approximate number of exposure notifications sent. In addition, a separate event would be logged to provide a total number of users who received additional exposure notifications while their app was already in the “exposed” state. This data would also be cross-referenced with the selected PT to estimate the number of notifications received in each PT. 
+
+* **Number of app users who enter a one-time key (OTK) after receiving an exposure notification:** If a user tests positive for COVID-19 and enters an OTK in the app while the app is in the “exposed” state, this would provide metrics on the approximate number of users who tested positive after receiving an exposure notification. This data would be cross-referenced with the selected PT to estimate the number of users who tested positive after receiving an exposure notification in each PT. 
+
+* **Technical performance metrics:** 
+
+     *   The number of new installs, which reports each time a user hits the first screen shown when the app is opened for the first time. This indicates that a new user has downloaded and opened COVID Alert. 
+     *   The number of “date of symptom onset” or “test date” submitted when uploading Temporary Exposure Keys (TEKs). The dates themselves are not shared.
+     *   Number of app users who have completed onboarding and have agreed to the following three permissions: 
+          *   COVID Alert is on 
+          *   Google/Apple Exposure Notification Framework is enabled 
+          *   Push notifications enabled for COVID Alert
+     *   Number of devices performing background checks, and number of background checks performed per day, by type of device (iOS or Android)<sup id="f12">[[12]](#daily-background-checks)</sup>
+     *   Number of times the app was turned off or on<sup id="f13">[[13]](#ppe-app-on-off)</sup>
+     *   Amount of time between exposure notification and the user clearing the “exposed” state<sup id="f14">[[14]](#clear-exposed-state)</sup>
+
+### Data Collection Method
+
+Data is collected from COVID Alert to develop the app metrics that enable HC to assess app effectiveness and performance. The data used to develop the app metrics are collected by creating event logs of user experiences and/or actions. These event logs are transmitted to the key server and will be accompanied by the IP address; however, the event logs and the IP address will not be linkable and will never be stored together. The data will be encrypted in transit and stored in two ways on the key server: 
+
+1. As an individual event log stored for 24 hours, which contains the type of event, device type (e.g. iPhone, Android), and the date and time; and
+2. As an aggregated record of all events, updated every 24 hours, stored indefinitely, which contains the date, type of event, device type, and total number of events per day. 
+
+### Public Health Rationale
+
+The app metrics collected from COVID Alert will provide information on:
+
+*   The approximate level of app uptake in each PT;
+*   The approximate number of exposure notifications sent per PT;
+*   The approximate number of users who test positive for COVID-19 after they received an exposure notification; 
+*   Whether the various functions of the app are working correctly and if they are useful; and 
+*   The technical performance of the app, specifically,
+    *   proportion of users who submit OTKs who also submit a symptom onset/test date; 
+    *   proportion of users enabling permissions required for the app to work; 
+    *   whether necessary background checks are being conducted; and
+    *   whether two new features - ability to turn off the app, and ability to clear the exposed state - are being utilized as intended.
+
+These metrics will enable HC to assess the app’s effectiveness in influencing positive public health outcomes, which aligns with the OPC’s recommendation. The metrics will inform the evaluation that will take place in partnership with their office. 
+
+If the metrics demonstrate the app’s effectiveness, it may encourage individuals to download COVID Alert and encourage new PTs to onboard. 
+
+They will also provide an approximate measure of whether individuals use the app to notify other individuals of potential exposure. This would enable HC to determine whether the app is having tangible impact on reducing the spread of the pandemic (i.e. whether individuals are being notified of potential exposures and whether they are taking action as a result). Collecting these metrics by PT will also enable HC to target its communications to the areas where there is less engagement with the app. 
+
+### Privacy Analysis
+
+The metrics being proposed above do not contain any direct identifiers. Individual logs will be stored for a short period, they will be compiled in the aggregate (total number of users/metric), and will not be combined with other information, including IP addresses. In addition, metrics will not be reported publicly if the counts are less than twenty. 
+
+Given these circumstances, and the measures taken to protect the data (e.g., limiting the retention of individual event logs, aggregating event logs, storing the data separate from IP addresses, and storing the data on a secure server with limited access), the data are unlikely to constitute personal information. In other words, there is a less than frivolous chance that an individual could be identified alone, or in combination with other available information. Therefore, it is unlikely that the _Privacy Act_ would be engaged on the collection of these metrics. 
+
+The primary risk is that the public _perceives_ the collection of the app metrics to be contrary to the privacy-protective approach taken in the design of the app. This will be mitigated by ensuring clear and transparent messaging about the additional data collection, the need for this data, and the privacy protections in place to reduce the risk of re-identification to near zero.
+
+### Other Considerations
+
+The metrics will be used primarily for internal analysis and performance measurement. However, certain metrics, such as the number of installs in each PT and the number of exposure notifications sent, may be released publicly in aggregate form to demonstrate the effectiveness of the app and encourage app adoption. This data may also be released by individual PTs. A privacy assessment will be conducted to ensure that when any metrics are made publicly available, it is done in such a way that reduces the risk of re-identification to near zero. 
+
+Health Canada will also consult with the OPC and the Advisory Council prior to the public release of app metrics data. In addition, the OPC, Advisory Council, and the Federal, Provincial, Territorial Working Group will continue to be consulted on the data collection prior to decisions being made and before implementation. Additional feedback will be considered to ensure that the data collection maintains the app’s privacy-protective approach.
 
 ## Footnotes
 
@@ -503,3 +589,33 @@ Finally, the public will be informed of any vulnerabilities or threats to the ap
 
 <a name="pandemic-criteria">[10]</a>
      Note that the criteria for the pandemic to be considered over, and the process for this determination to be made, have yet to be established. [↩](#f10)
+
+<a name="server-data">[11]</a>
+     The exhaustive data being collected by the Government of Canada from the server is:
+
+*   number of OTKs generated, by PT
+*   number of OTKs entered into the app, by PT
+*   duration length of an OTK, per PT (i.e. how long it took an OTK to be claimed)
+*   number of unclaimed encryption keys, by PT (an encryption key is what you get in return for claiming an OTK, so this metric represents number of unclaimed OTKs)
+*   number of expired claimed encryption keys, by PT
+*   number of expired claimed encryption keys with no uploads, by PT
+*   number of exhausted encryption keys by PT
+*   number of TEKs uploaded per user in their initial upload (i.e. right after OTK submission)
+*   number of TEKs uploaded after an initial upload (number of keys uploaded in a batch, not connected to any device or user)
+
+The Government also monitors the following metrics via the Google Play and Apple App Stores, for performance purposes:
+
+*   number of downloads
+*   number of downloads by device type
+*   user loss (i.e. number of uninstalls)
+*   crashes
+*   reviews (qualitative data) [↩](#f11)
+
+<a name="daily-background-checks">[12]</a>
+     The app performs daily background checks to make sure it is functioning properly. [↩](#f12)
+
+<a name="ppe-app-on-off">[13]</a>
+     This feature was added so that app users can turn off the app while they are wearing full personal protective equipment (e.g. nurses and doctors who are treating COVID-19 patients), so they do not receive exposure notifications during times when they are fully protected from exposure. [↩](#f13)
+
+<a name="clear-exposed-state">[14]</a>
+     This feature was added so that users who receive an exposure notification, get tested and receive a negative test result can clear their ‘exposed’ status. However, it is also possible for individuals to clear their exposed status immediately, with no negative test result. [↩](#f14)
