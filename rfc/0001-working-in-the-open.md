@@ -16,7 +16,7 @@ For those not familiar with ‘Request For Comments’ (RFC), we will *loosely* 
 
 # Motivation
 
-Why are we doing this? What use cases does it support? What is the expected outcome?
+*Why are we doing this? What use cases does it support? What is the expected outcome?*
 
 We work in the open because we value transparency, rapid cycles of testing, collaboration and sharing explicitly oriented toward building trust and confidence in the  services we work on. This means all the source code for what we build is available in an open repo on GitHub, that our code can be forked by other organizations (provinces, countries, etc) and that we offer a level of timely transparency into bugs or issues that require user action as a part of their fix. 
 
@@ -24,8 +24,7 @@ We build on the work of others --  ‘Make things open: it makes them better’.
 
 # Detailed design
 
-This is the bulk of the RFC. Explain the design in enough detail for somebody familiar
-with the framework to understand, and for somebody familiar with the implementation to implement. This should get into specifics and corner-cases, and include examples of how the feature is used.
+*This is the bulk of the RFC. Explain the design in enough detail for somebody familiar with the framework to understand, and for somebody familiar with the implementation to implement. This should get into specifics and corner-cases, and include examples of how the feature is used.*
 
 Our teams currently use a mixture of public and private tools in order to track their daily activities, which while ideal for their needs, presents several challenges to easily working in the open.
 
@@ -45,23 +44,23 @@ We encourage our team members to work in the language of their choice, and to en
 
 # Drawbacks
 
-Why should we *not* do this?
+*Why should we *not* do this?*
 
 [insert noisy crickets here] 
 
 # Alternatives
 
-What other designs have been considered? 
+*What other designs have been considered?*
 
 We are open to alternative suggestions, but in the interim, we believe this is a good short term measure.
 
-What is the impact of not doing this?
+*What is the impact of not doing this?*
 
 We lose opportunities to build further trust and confidence with Canadians, and we also miss out on opportunities to demonstrate to other public servants how we are approaching the challenges of service delivery.
 
 # Unresolved questions
 
-What parts of the design are still TBD?
+*What parts of the design are still TBD?*
 
 <List of unresolved questions / issues to be appended to this RFC over time through comments from others>
 
