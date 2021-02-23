@@ -70,7 +70,7 @@ We lose opportunities to build further trust and confidence with Canadians, and 
 ----
 
 
-#Résumé
+# Résumé
 
 Le présent document vise à instaurer une façon de « travailler ouvertement » qui est plus ordonnée, de sorte que nous puissions montrer davantage le processus décisionnel derrière le système Alerte COVID. Le document vise aussi à définir une norme de pratique pour les projets aussi bien au Service numérique canadien que dans l’ensemble du gouvernement du Canada.
 
