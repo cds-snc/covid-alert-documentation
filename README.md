@@ -17,6 +17,7 @@ Design research documentation:
 
 *   [How might people positive for COVID-19 react to the ‘One-time key’?](https://github.com/cds-snc/covid-alert-documentation/blob/main/research/LiteratureReview.md) (Literature review, July 28 2020)
 *   [How well does the app support users when they receive a positive diagnosis (and one-time key)?](https://github.com/cds-snc/covid-alert-documentation/blob/main/research/UsabilityAug2020.md) (Usability testing, Aug 25 2020)
+*   [Findings from QR Code discovery research](https://github.com/cds-snc/covid-alert-documentation/blob/main/research/QRCodeDiscoveryResearch.md) (February 15, 2021)
 
 You may also be interested in:
 
@@ -72,6 +73,7 @@ Documentation pour la recherche en conception:
 
 *   [Quelle est la réaction des personnes qui ont la COVID-19 face à la « clé à usage unique »?](https://github.com/cds-snc/covid-alert-documentation/blob/main/recherche/RevueLitterature.md) (Revue de la littérature, le 28 juillet 2020)
 *   [Dans quelle mesure l’application aide-t-elle les utilisateurs quand ils reçoivent un résultat positif (et une clé à usage unique) ?](https://github.com/cds-snc/covid-alert-documentation/blob/main/recherche/UtilisabiliteAout2020.md) (Test d'utilisabilité, 25 août 2020)
+*   [Recherche et constatations relatives au code QR](https://github.com/cds-snc/covid-alert-documentation/blob/main/recherche/RechercheConstatationsCodeQR.md) (15 février 2021)
 
 Vous pouvez également consulter :  
 
