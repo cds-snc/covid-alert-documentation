@@ -63,6 +63,7 @@ Ce dépôt comprend de la documentation à l’appui d’[Alerte COVID](https://
 
 *   [Évaluation de la protection de la vie privée de l’application Alerte COVID](https://github.com/cds-snc/covid-alert-documentation/blob/main/EvaluationViePriveeAlerteCOVID.md)
 *   [Rapport sur l’accessibilité](https://github.com/cds-snc/covid-alert-documentation/blob/main/RapportAccessibilite.md)
+*   [Évaluation de sécurité de l'application Alerte COVID](https://github.com/cds-snc/covid-alert-documentation/blob/main/CCCS_ÉvaluationDeSécurité.pdf)
 *   [Processus de divulgation des vulnérabilités](https://github.com/cds-snc/covid-alert-documentation/blob/main/PolitiqueDivulgationVulnerabilites.md)
 
 Documentation pour le produit:
