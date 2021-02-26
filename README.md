@@ -2,10 +2,11 @@
 
 # COVID Alert documentation
 
-This repository contains supporting documentation for [COVID Alert](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html), Canada’s exposure notification app. These documents were produced by the [Canadian Digital Service](https://digital.canada.ca/), [Health Canada](https://www.canada.ca/en/health-canada.html), and other government partners:
+This repository contains supporting documentation for [COVID Alert](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html), Canada’s exposure notification app. These documents were produced by the [Canadian Digital Service](https://digital.canada.ca/), [Health Canada](https://www.canada.ca/en/health-canada.html), [Canadian Centre for Cyber Security](https://cyber.gc.ca) and other government partners:
 
 *   [COVID Alert Privacy Assessment](https://github.com/cds-snc/covid-alert-documentation/blob/main/COVIDAlertPrivacyAssessment.md)
 *   [Accessibility Report](https://github.com/cds-snc/covid-alert-documentation/blob/main/AccessibilityReport.md)
+*   [COVID Alert Security Assessment](https://github.com/cds-snc/covid-alert-documentation/blob/main/CCCS_SecurityAssessment.pdf)
 *   [Vulnerability Disclosure Policy](https://github.com/cds-snc/covid-alert-documentation/blob/main/VulnerabilityDisclosurePolicy.md)
 
 Product documentation:
@@ -62,6 +63,7 @@ Ce dépôt comprend de la documentation à l’appui d’[Alerte COVID](https://
 
 *   [Évaluation de la protection de la vie privée de l’application Alerte COVID](https://github.com/cds-snc/covid-alert-documentation/blob/main/EvaluationViePriveeAlerteCOVID.md)
 *   [Rapport sur l’accessibilité](https://github.com/cds-snc/covid-alert-documentation/blob/main/RapportAccessibilite.md)
+*   [Évaluation de sécurité de l'application Alerte COVID](https://github.com/cds-snc/covid-alert-documentation/blob/main/CCCS_ÉvaluationDeSécurité.pdf)
 *   [Processus de divulgation des vulnérabilités](https://github.com/cds-snc/covid-alert-documentation/blob/main/PolitiqueDivulgationVulnerabilites.md)
 
 Documentation pour le produit:
