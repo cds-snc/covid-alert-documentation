@@ -2,6 +2,8 @@
 
 # COVID Alert Decision Framework 
 
+Date: February 25, 2021
+
 ## Executive summary 
 
 This document outlines how we prioritize the work on COVID Alert. As COVID Alert is one tool of many to slow the spread of COVID-19, this product needs to respond to the changing landscape of the pandemic. This framework provides alignment across those working on it on how we prioritize what we work on next. 

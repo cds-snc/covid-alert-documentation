@@ -2,6 +2,8 @@
 
 # Cadre décisionnel Alerte COVID 
 
+Date : Le 25 février 2021
+
 ## Sommaire exécutif 
 
 Ce document décrit comment nous établissons les priorités relatives au travail sur Alerte COVID. Alerte COVID est un outil parmi tant d'autres qui visent à ralentir la propagation de la COVID-19, et il doit évoluer en fonction du contexte changeant de la pandémie. Ce cadre fournit un fil directeur pour toutes les parties concernées sur l'établissement des priorités futures pour l'application. 
