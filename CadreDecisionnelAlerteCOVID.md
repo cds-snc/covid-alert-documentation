@@ -55,7 +55,7 @@ La gouvernance du service de notification des expositions est partagée entre pl
   <tr>
    <td>Groupe de travail sur la santé publique fédéral / provincial / territorial (FPT)
    </td>
-   <td><strong><p>Qui :</strong> Groupe de travail composé de représentants de toutes les équipes provinciales et territoriales d’Alerte COVID (y compris des représentants de la santé publique et de la prestation de services numériques)
+   <td><p><strong>Qui :</strong> Groupe de travail composé de représentants de toutes les équipes provinciales et territoriales d’Alerte COVID (y compris des représentants de la santé publique et de la prestation de services numériques)
    </p>
 <p>
 <strong>Quoi</strong> : Ils sont responsables de garantir une expérience optimale de l’application et du service Alerte COVID dans leurs compétences respectives. L’activité du groupe de travail comprend des mises à jour du service (fonctionnalités/bogues en attente), des contributions et des commentaires des provinces et territoires en matière de santé publique, ainsi que le partage des pratiques exemplaires.
