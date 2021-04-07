@@ -8,6 +8,7 @@ This repository contains supporting documentation for [COVID Alert](https://www.
 *   [Accessibility Report](https://github.com/cds-snc/covid-alert-documentation/blob/main/AccessibilityReport.md)
 *   [COVID Alert Security Assessment](https://github.com/cds-snc/covid-alert-documentation/blob/main/CCCS_SecurityAssessment.pdf)
 *   [Vulnerability Disclosure Policy](https://github.com/cds-snc/covid-alert-documentation/blob/main/VulnerabilityDisclosurePolicy.md)
+*   [COVID Alert Decision Framework](https://github.com/cds-snc/covid-alert-documentation/blob/main/COVIDAlertDecisionFramework.md)
 
 Product documentation:
 
@@ -65,6 +66,7 @@ Ce dépôt comprend de la documentation à l’appui d’[Alerte COVID](https://
 *   [Rapport sur l’accessibilité](https://github.com/cds-snc/covid-alert-documentation/blob/main/RapportAccessibilite.md)
 *   [Évaluation de sécurité de l'application Alerte COVID](https://github.com/cds-snc/covid-alert-documentation/blob/main/CCCS_ÉvaluationDeSécurité.pdf)
 *   [Processus de divulgation des vulnérabilités](https://github.com/cds-snc/covid-alert-documentation/blob/main/PolitiqueDivulgationVulnerabilites.md)
+*   [Cadre décisionnel Alerte COVID](https://github.com/cds-snc/covid-alert-documentation/blob/main/CadreDecisionnelAlerteCOVID.md)
 
 Documentation pour le produit:
 
