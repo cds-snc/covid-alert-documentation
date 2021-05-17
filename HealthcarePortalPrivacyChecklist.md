@@ -12,28 +12,28 @@ The purpose of this document is to ensure that HC/PHAC programs handling persona
 
 <table>
   <tr>
-   <td><strong>Institution</strong>
-   </td>
+   <th><strong>Institution</strong>
+   </th>
    <td>Lead institution: Health Canada (HC) 
 <br/>
 Internal Support Services: Treasury Board Secretariat Canadian Digital Services (CDS)
    </td>
   </tr>
   <tr>
-   <td><strong>Branch</strong>
-   </td>
+   <th><strong>Branch</strong>
+   </th>
    <td>Health Canada COVID-19 Task Force 
    </td>
   </tr>
   <tr>
-   <td><strong>Contact person name and title</strong>
-   </td>
+   <th><strong>Contact person name and title</strong>
+   </th>
    <td>Marc Fortin, Assistant Deputy Minister, COVID-19 Task Force 
    </td>
   </tr>
   <tr>
-   <td><strong>PMD Analyst</strong>
-   </td>
+   <th><strong>PMD Analyst</strong>
+   </th>
    <td>Melissa Toutloff, Senior Policy Analyst 
    </td>
   </tr>
@@ -49,14 +49,14 @@ The collection of the personal information is for non-administrative purposes, i
 
 <table>
   <tr>
-   <td>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>No</strong>
-   </td>
-   <td><strong>N/A</strong>
-   </td>
+   <th>
+   </th>
+   <th><strong>Yes</strong>
+   </th>
+   <th><strong>No</strong>
+   </th>
+   <th><strong>N/A</strong>
+   </th>
   </tr>
   <tr>
    <td>The HC/PHAC Privacy Management Division (PMD) has been engaged in the development of this Privacy Checklist? 
@@ -180,14 +180,14 @@ PTs that adopt the app and use the portal will enter into a legal agreement with
 
 <table>
   <tr>
-   <td>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>No</strong>
-   </td>
-   <td><strong>N/A</strong>
-   </td>
+   <th>
+   </th>
+   <th><strong>Yes</strong>
+   </th>
+   <th><strong>No</strong>
+   </th>
+   <th><strong>N/A</strong>
+   </th>
   </tr>
   <tr>
    <td>Is there a legal authority for the proposed collection of personal information? 
@@ -207,14 +207,14 @@ In addition, subsection 29.2 of the _Financial Administrative Act_ (FAA) provide
 
 <table>
   <tr>
-   <td>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>No</strong>
-   </td>
-   <td><strong>N/A</strong>
-   </td>
+   <th>
+   </th>
+   <th><strong>Yes</strong>
+   </th>
+   <th><strong>No</strong>
+   </th>
+   <th><strong>N/A</strong>
+   </th>
   </tr>
   <tr>
    <td>Does the collection of personal information directly relate to a program or activity?
@@ -236,14 +236,14 @@ CDS will also be responsible for portal support. For example, if someone is lock
 
 <table>
   <tr>
-   <td>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>No</strong>
-   </td>
-   <td><strong>N/A</strong>
-   </td>
+   <th>
+   </th>
+   <th><strong>Yes</strong>
+   </th>
+   <th><strong>No</strong>
+   </th>
+   <th><strong>N/A</strong>
+   </th>
   </tr>
   <tr>
    <td>Does the initiative/program/activity collect personal information directly from the individual?
@@ -259,14 +259,14 @@ Personal information about the PT administrators, who will be providing health c
 
 <table>
   <tr>
-   <td>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>No</strong>
-   </td>
-   <td><strong>N/A</strong>
-   </td>
+   <th>
+   </th>
+   <th><strong>Yes</strong>
+   </th>
+   <th><strong>No</strong>
+   </th>
+   <th><strong>N/A</strong>
+   </th>
   </tr>
   <tr>
    <td>Is the personal information for this initiative/program/activity collected by another government institution or entity and then disclosed to the initiative/program/activity?
@@ -296,14 +296,14 @@ CDS super-admin users will have access to the data in the key server and will be
 
 <table>
   <tr>
-   <td>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>No</strong>
-   </td>
-   <td><strong>N/A</strong>
-   </td>
+   <th>
+   </th>
+   <th><strong>Yes</strong>
+   </th>
+   <th><strong>No</strong>
+   </th>
+   <th><strong>N/A</strong>
+   </th>
   </tr>
   <tr>
    <td>When collection is directly from individuals, will the individuals receive a Privacy Notice before their personal information is collected, setting out the purpose of the collection, and how the personal information will be used, disclosed or shared?
@@ -333,14 +333,14 @@ The personal information for this initiative is not being used for an administra
 
 <table>
   <tr>
-   <td>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>No</strong>
-   </td>
-   <td><strong>N/A</strong>
-   </td>
+   <th>
+   </th>
+   <th><strong>Yes</strong>
+   </th>
+   <th><strong>No</strong>
+   </th>
+   <th><strong>N/A</strong>
+   </th>
   </tr>
   <tr>
    <td>Does a PIB need to be modified or created for this activity?
@@ -496,14 +496,14 @@ PT administrators are responsible for deactivating accounts when they are no lon
 
 <table>
   <tr>
-   <td>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>No</strong>
-   </td>
-   <td><strong>N/A</strong>
-   </td>
+   <th>
+   </th>
+   <th><strong>Yes</strong>
+   </th>
+   <th><strong>No</strong>
+   </th>
+   <th><strong>N/A</strong>
+   </th>
   </tr>
   <tr>
    <td>Are staff is appropriately trained on privacy requirements?
@@ -531,14 +531,14 @@ The personal information about the PT administrator and the healthcare providers
 
 <table>
   <tr>
-   <td>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>No</strong>
-   </td>
-   <td><strong>N/A</strong>
-   </td>
+   <th>
+   </th>
+   <th><strong>Yes</strong>
+   </th>
+   <th><strong>No</strong>
+   </th>
+   <th><strong>N/A</strong>
+   </th>
   </tr>
   <tr>
    <td>Is the personal information protected in a manner that is commensurate with its <a href="http://mysource.hc-sc.gc.ca/sites/default/files/care_and_custody_of_information_flyer_eng.pdf">security classification</a>?
@@ -558,14 +558,14 @@ Procedural and technical safeguards are implemented, in accordance with the secu
 
 <table>
   <tr>
-   <td>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>No</strong>
-   </td>
-   <td><strong>N/A</strong>
-   </td>
+   <th>
+   </th>
+   <th><strong>Yes</strong>
+   </th>
+   <th><strong>No</strong>
+   </th>
+   <th><strong>N/A</strong>
+   </th>
   </tr>
   <tr>
    <td>Is there a Privacy Breach Plan in place?
@@ -595,14 +595,14 @@ HC has a process in place to respond to privacy breaches that aligns with the Tr
 
 <table>
   <tr>
-   <td>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>No</strong>
-   </td>
-   <td><strong>N/A</strong>
-   </td>
+   <th>
+   </th>
+   <th><strong>Yes</strong>
+   </th>
+   <th><strong>No</strong>
+   </th>
+   <th><strong>N/A</strong>
+   </th>
   </tr>
   <tr>
    <td>Has a security assessment has been conducted? 
@@ -638,14 +638,14 @@ Comprehensive security controls are in place on the underlying AWS infrastructur
 
 <table>
   <tr>
-   <td>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>No</strong>
-   </td>
-   <td><strong>N/A</strong>
-   </td>
+   <th>
+   </th>
+   <th><strong>Yes</strong>
+   </th>
+   <th><strong>No</strong>
+   </th>
+   <th><strong>N/A</strong>
+   </th>
   </tr>
   <tr>
    <td>Is de-identified or aggregate information used when possible?
@@ -679,14 +679,14 @@ Given the low sensitivity of the personal information and how the information wi
 
 <table>
   <tr>
-   <td>
-   </td>
-   <td><strong>Yes</strong>
-   </td>
-   <td><strong>No</strong>
-   </td>
-   <td><strong>N/A</strong>
-   </td>
+   <th>
+   </th>
+   <th><strong>Yes</strong>
+   </th>
+   <th><strong>No</strong>
+   </th>
+   <th><strong>N/A</strong>
+   </th>
   </tr>
   <tr>
    <td>Does the institution have a process to receive and respond to privacy-related complaints and inquiries?
