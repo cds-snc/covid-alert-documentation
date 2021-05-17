@@ -20,10 +20,10 @@ Service de soutien interne : Service numérique canadien (SNC) du Secrétariat 
    </td>
   </tr>
   <tr>
-   <tdh><strong>Direction</strong>
+   <th><strong>Direction</strong>
    </th>
-   <th>Groupe de travail sur la COVID-19 de Santé Canada
-   </th>
+   <td>Groupe de travail sur la COVID-19 de Santé Canada
+   </td>
   </tr>
   <tr>
    <th><strong>Nom et titre de la personne-ressource</strong>
