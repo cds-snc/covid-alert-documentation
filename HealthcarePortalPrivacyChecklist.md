@@ -1,8 +1,10 @@
 [Français](https://github.com/cds-snc/covid-alert-documentation/blob/main/ListeVerificationProtectionRenseignementsPersonnelsPortailSoinsSante.md)
 
-# Privacy Checklist for COVID-19 Initiatives: COVID Alert Healthcare Portal
+# Privacy Checklist for COVID-19 Initiatives: COVID Alert Healthcare Portal
 
-_Health Canada/Public Health Agency of Canada Privacy Management Division – PP-2020-000075_
+_Health Canada/Public Health Agency of Canada Privacy Management Division_ \
+_Date: 2020-08-13_ \
+_PP-2020-000075_
 
 ## Background
 
