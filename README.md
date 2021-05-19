@@ -5,6 +5,7 @@
 This repository contains supporting documentation for [COVID Alert](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html), Canada’s exposure notification app. These documents were produced by the [Canadian Digital Service](https://digital.canada.ca/), [Health Canada](https://www.canada.ca/en/health-canada.html), [Canadian Centre for Cyber Security](https://cyber.gc.ca) and other government partners:
 
 *   [COVID Alert Privacy Assessment](https://github.com/cds-snc/covid-alert-documentation/blob/main/COVIDAlertPrivacyAssessment.md)
+*   [COVID Alert Healthcare Portal Privacy Checklist](https://github.com/cds-snc/covid-alert-documentation/blob/main/HealthcarePortalPrivacyChecklist.md)
 *   [Accessibility Report](https://github.com/cds-snc/covid-alert-documentation/blob/main/AccessibilityReport.md)
 *   [COVID Alert Security Assessment](https://github.com/cds-snc/covid-alert-documentation/blob/main/CCCS_SecurityAssessment.pdf)
 *   [Vulnerability Disclosure Policy](https://github.com/cds-snc/covid-alert-documentation/blob/main/VulnerabilityDisclosurePolicy.md)
@@ -63,6 +64,7 @@ For questions or feedback, you can email the Canadian Digital Service at [cds-sn
 Ce dépôt comprend de la documentation à l’appui d’[Alerte COVID](https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/alerte-covid.html), l’application de notification d’exposition du Canada. Ces documents ont été produits par le [Service numérique canadien](https://numerique.canada.ca/), [Santé Canada](https://www.canada.ca/fr/sante-canada.html) et d’autres partenaires gouvernementaux :   
 
 *   [Évaluation de la protection de la vie privée de l’application Alerte COVID](https://github.com/cds-snc/covid-alert-documentation/blob/main/EvaluationViePriveeAlerteCOVID.md)
+*   [Liste de vérification de la protection des renseignements personnels : Portail de soins de santé Alerte COVID](https://github.com/cds-snc/covid-alert-documentation/blob/main/ListeVerificationProtectionRenseignementsPersonnelsPortailSoinsSante.md)
 *   [Rapport sur l’accessibilité](https://github.com/cds-snc/covid-alert-documentation/blob/main/RapportAccessibilite.md)
 *   [Évaluation de sécurité de l'application Alerte COVID](https://github.com/cds-snc/covid-alert-documentation/blob/main/CCCS_ÉvaluationDeSécurité.pdf)
 *   [Processus de divulgation des vulnérabilités](https://github.com/cds-snc/covid-alert-documentation/blob/main/PolitiqueDivulgationVulnerabilites.md)
