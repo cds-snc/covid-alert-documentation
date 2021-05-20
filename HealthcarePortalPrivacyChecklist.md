@@ -516,7 +516,7 @@ PT administrators are responsible for deactivating accounts when they are no lon
    </td>
   </tr>
   <tr>
-   <td>Has the appropriate <a href="http://mysource.hc-sc.gc.ca/eng/ss/programs-services/information-management-information-technology/it-security/care-and-custody">security classification</a> been applied to the personal information?
+   <td>Has the appropriate security classification been applied to the personal information?
    </td>
    <td>☒
    </td>
@@ -543,7 +543,7 @@ The personal information about the PT administrator and the healthcare providers
    </th>
   </tr>
   <tr>
-   <td>Is the personal information protected in a manner that is commensurate with its <a href="http://mysource.hc-sc.gc.ca/sites/default/files/care_and_custody_of_information_flyer_eng.pdf">security classification</a>?
+   <td>Is the personal information protected in a manner that is commensurate with its security classification?
    </td>
    <td>☒
    </td>
@@ -580,7 +580,7 @@ Procedural and technical safeguards are implemented, in accordance with the secu
    </td>
   </tr>
   <tr>
-   <td>Have all individuals responsible for handling the personal information been informed of the steps to take in the event of a <a href="http://mysource.hc-sc.gc.ca/eng/ss/programs-services/information-management-information-technology/access-information-and-privacy-0">privacy breach</a>? 
+   <td>Have all individuals responsible for handling the personal information been informed of the steps to take in the event of a privacy breach?
    </td>
    <td>☒
    </td>

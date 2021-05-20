@@ -514,7 +514,7 @@ Les administrateurs sont responsables de désactiver les comptes lorsqu’ils ne
    </td>
   </tr>
   <tr>
-   <td>Est-ce que la <a href="http://mysource.hc-sc.gc.ca/eng/ss/programs-services/information-management-information-technology/it-security/care-and-custody">classification de sécurité</a> adéquate a été accordée aux renseignements personnels?
+   <td>Est-ce que la classification de sécurité adéquate a été accordée aux renseignements personnels?
    </td>
    <td>☒
    </td>
@@ -541,7 +541,7 @@ Les renseignements personnels concernant les administrateurs et les fournisseurs
    </th>
   </tr>
   <tr>
-   <td>Est-ce que les renseignements personnels sont protégés d’une manière tenant compte de la <a href="http://mysource.hc-sc.gc.ca/sites/default/files/care_and_custody_of_information_flyer_eng.pdf">classification de sécurité</a>?
+   <td>Est-ce que les renseignements personnels sont protégés d’une manière tenant compte de la classification de sécurité?
    </td>
    <td>☒
    </td>
@@ -578,7 +578,7 @@ Des mesures de protection procédurales et techniques sont mises en œuvre, conf
    </td>
   </tr>
   <tr>
-   <td>Est-ce que tous les individus responsables du traitement des renseignements personnels ont été informés des mesures à prendre en cas d’<a href="http://mysource.hc-sc.gc.ca/eng/ss/programs-services/information-management-information-technology/access-information-and-privacy-0">atteinte à la vie privée</a>? 
+   <td>Est-ce que tous les individus responsables du traitement des renseignements personnels ont été informés des mesures à prendre en cas d’atteinte à la vie privée?
    </td>
    <td>☒
    </td>
