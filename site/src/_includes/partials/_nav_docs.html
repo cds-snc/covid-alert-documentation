@@ -1,7 +1,0 @@
-<nav class="nav--about" aria-label="{% trans 'Table of contents: About the Portal' %}">
-  <ul>
-    {% for item in collections[section][locale] %}
-      <li><a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.data.title }}</a></li>
-    {% endfor %}
-  </ul>
-</nav>
