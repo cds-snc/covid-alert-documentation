@@ -1,0 +1,23 @@
+.sections-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: $space-md;
+  > * {
+    flex: 1 0 calc(50% - #{$space-md});
+  }
+  [href] {
+    display: block;
+    padding: $space-md;
+    border: 2px solid $color-grey-light;
+    border-radius: 10px;
+    border-bottom-width: 4px;
+    text-decoration: none;
+    color: $color-black;
+
+    &:hover {
+      background: $color-grey-light;
+      border-color: $color-grey;
+    }
+  }
+}

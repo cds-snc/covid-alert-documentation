@@ -1,0 +1,65 @@
+main .messages {
+  &--container {
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    ul {
+      padding-left: 0px;
+      list-style-type: none;
+      margin-bottom: 0;
+
+      li {
+        padding: $space-sm;
+
+        &.info,
+        &.success {
+          border-left: 4px solid $color-blue;
+          color: $color-blue-dark;
+          background: rgba(78, 136, 185, 0.1);
+        }
+
+        &.error {
+          border-left: 4px solid $color-red;
+          color: $color-red;
+          background: $color-red-light;
+        }
+
+        &.warning {
+          border-left: 4px solid $color-yellow-dark;
+          background: $color-yellow-warning-light;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+main .info-message {
+  margin: $space-xl 0;
+  padding: $space-sm $space-md;
+  border-left: 4px solid $color-blue;
+  background: rgba(78, 136, 185, 0.1);
+
+  ul {
+    li {
+      margin-bottom: 0;
+    }
+  }
+}
+
+main .success-message {
+  margin: $space-xl 0;
+  padding: $space-sm $space-md;
+  border-left: 4px solid #008751;
+  background: #E6FAE8;
+
+  ul {
+    li {
+      margin-bottom: 0;
+    }
+  }
+
+  h1 {
+    margin: 0;
+  }
+}

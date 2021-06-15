@@ -1,0 +1,13 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+  {{ content | safe }}
+
+  {% include  "partials/sections.html" %}
+
+  <div class="content-next-link">
+    <a href="#" class="chevron-right">{% trans "Got questions?" %}</a>
+  </div>
+
+{% endblock %}

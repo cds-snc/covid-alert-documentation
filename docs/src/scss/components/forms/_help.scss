@@ -1,0 +1,16 @@
+main form {
+  [class^="help--"] {
+    color: $color-grey;
+
+    ul,
+    ol {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li + li {
+        padding-top: $space-xxs;
+      }
+    }
+  }
+}
