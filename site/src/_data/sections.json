@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "text": "App",
+      "url": "/app/",
+      "description": "Give keys to individuals who tested positive for COVID-19 so they can inform close contacts of a possible exposure."
+    },
+    {
+      "text": "Portal",
+      "url": "/portal/",
+      "description": "Give keys to individuals who tested positive for COVID-19 so they can inform close contacts of a possible exposure."
+    },
+    {
+      "text": "Server",
+      "url": "/server/",
+      "description": "Give keys to individuals who tested positive for COVID-19 so they can inform close contacts of a possible exposure."
+    },
+    {
+      "text": "Partnerships",
+      "url": "/partnerships/",
+      "description": "Give keys to individuals who tested positive for COVID-19 so they can inform close contacts of a possible exposure."
+    },
+    {
+      "text": "Policy",
+      "url": "/policy/",
+      "description": "Give keys to individuals who tested positive for COVID-19 so they can inform close contacts of a possible exposure."
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+%button-states {
+  &:focus {
+    outline: 0 !important;
+    border-color: $color-yellow;
+    color: $color-black;
+    background-color: $color-yellow !important;
+    -webkit-box-shadow: 0 2px 0 $color-black;
+    box-shadow: 0 2px 0 $color-black;
+  }
+
+  &:active {
+    top: 2px;
+    box-shadow: none !important;
+
+    &::before {
+      top: -4px;
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.6;
+    cursor: progress;
+  }
+}
+
+%button-styles {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.1875;
+  display: inline-block;
+  position: relative;
+  margin-top: 10px;
+  padding: 9px 18px;
+  border-radius: 5px;
+  color: $color-white;
+  background-color: $color-blue-button;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 0 black;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-appearance: none;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -4px;
+    left: -2px;
+    background: transparent;
+  }
+
+  &:hover {
+    background-color: $color-blue-dark;
+  }
+
+  @extend %button-states;
+
+  &.secondary {
+    color: $color-black;
+    background-color: $color-grey-light;
+    box-shadow: 0 2px 0 $color-grey;
+
+    &:hover {
+      background-color: #b4b4b4;
+    }
+
+    @extend %button-states;
+  }
+
+  &.start {
+    background-color: $color-green;
+    box-shadow: 0 2px 0 $color-green-dark;
+
+    &:hover {
+      background-color: $color-green-medium;
+    }
+  }
+
+  &.info {
+    background-color: $color-blue-dark;
+    box-shadow: 0 2px 0 black;
+
+    &:hover {
+      background-color: $color-blue-medium;
+    }
+  }
+
+  &.warning {
+    background-color: $color-yellow-warning;
+    box-shadow: 0 2px 0 black;
+    color: black;
+
+    &:hover {
+      background-color: $color-yellow;
+    }
+  }
+
+  &.danger {
+    color: $color-white;
+    background-color: $color-red;
+    box-shadow: 0 2px 0 $color-red-dark;
+
+    &:hover {
+      background-color: #8e0619;
+    }
+
+    &:focus {
+      color: $color-black;
+    }
+
+    @extend %button-states;
+  }
+
+  &.with-chevron {
+    padding-right: 23px;
+
+    &::after {
+      @include chevron();
+    }
+  }
+}
+
+main {
+  form button:not(.link):not([class^="duet"]) {
+    @extend %button-styles;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  form button.link {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    &.datepicker_button {
+        display: inline-block;
+        padding-left: 15px;
+    }
+  }
+
+  a[role="button"] {
+    @extend %button-styles;
+  }
+
+  a.danger {
+    color: $color-red;
+    margin-left: $space-md;
+  }
+
+  .content-button {
+    margin-top: $space-lg;
+    margin-bottom: $space-xxl;
+    display: flex;
+    flex-direction: column;
+    @include sm {
+      align-items: flex-start;
+    }
+
+    form {
+      width: auto;
+      max-width: unset;
+      margin-bottom: none;
+      display: inline;
+    }
+
+    &.push-down {
+      margin-top: $space-xxl;
+    }
+
+    form,
+    button,
+    a[role="button"] {
+      + a[role="button"],
+      + button {
+        margin-top: $space-md;
+      }
+    }
+
+    @include sm {
+      display: block;
+
+      form,
+      button,
+      a[role="button"] {
+        + a[role="button"],
+        + button {
+          margin-top: $space-xs;
+          margin-left: $space-xl;
+        }
+      }
+    }
+  }
+}
