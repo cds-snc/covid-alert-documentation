@@ -1,0 +1,727 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CNoto+Sans:400,700&amp;display=fallback" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CNoto+Sans:400,700&amp;display=fallback" >
+
+    <!-- Local files -->
+    <style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}details,main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}ol[role=list],ul[role=list]{list-style:none}[hidden],template{display:none}</style>
+    <style>@charset "UTF-8";*{box-sizing:border-box}[contentEditable=true]:not([disabled]):focus:not(.autocomplete__option),[tabindex]:not([disabled]):focus:not(.autocomplete__option),a[href]:not([disabled]):focus:not(.autocomplete__option),area[href]:not([disabled]):focus:not(.autocomplete__option),button:not([disabled]):focus:not(.autocomplete__option),iframe:not([disabled]):focus:not(.autocomplete__option),input:not([disabled]):focus:not(.autocomplete__option),select textarea:not([disabled]):focus:not(.autocomplete__option){outline:#ffbf47 solid 3px;outline-offset:0}body{margin:0;font-size:1.05em;font-family:"Noto Sans",sans-serif;line-height:1.65}@media screen and (min-width:21em){body{font-size:1.2em}}@media screen and (min-width:35.5em){body{font-size:1.3em}}.multiple-choice__item p,ol,p,ul{margin-top:0;margin-bottom:10px}@media screen and (min-width:21em){.multiple-choice__item p,ol,p,ul{margin-bottom:15px}}a,a:visited,button.link{color:#284162}#site-name,h1,h2,h3,h4,h5,h6{font-family:Lato,sans-serif;line-height:1.33;font-weight:600}h1{font-size:2.075em}h2{font-size:1.44em}h3,h4,h5{font-size:1.2em}.page--container{max-width:960px;margin:0 auto;padding-left:20px;padding-right:20px}strong.break-line{display:block;margin:10px 0}main{padding-bottom:60px}main>div{margin-bottom:30px}@media screen and (min-width:48em){main .content--container:not(.row){width:90%}}@media screen and (min-width:64em){main .content--container:not(.row){width:80%}}@media screen and (min-width:75em){.page--container{max-width:1170px}main .content--container:not(.row){width:70%}}main .content--container:not(.row) .content-section{margin-top:60px!important}.container{position:relative;min-height:100vh;display:flex;flex-direction:column}.container main{flex:1 0 auto}.container footer{flex-shrink:0}.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}.hidden{display:none!important}.print-only{display:none}.row{display:flex;flex-direction:column;flex-wrap:wrap;width:100%;margin-top:40px;gap:20px}@media screen and (min-width:48em){.row{flex-direction:row}}.row .column{flex-basis:100%;flex:1}.row .column.column--2-3{flex:2}.row .column h1{margin-top:0}.sections-list{display:flex;flex-wrap:wrap;padding:0;gap:20px}.sections-list>*{flex:1 0 calc(50% - 20px)}.sections-list [href]{display:block;padding:20px;border:2px solid #d0d7de;border-radius:10px;border-bottom-width:4px;text-decoration:none;color:#000}.sections-list [href]:hover{background:#d0d7de;border-color:#6f777b}main a[role=button]:focus,main form button:focus:not(.link):not([class^=duet]){outline:0!important;border-color:#ffbf47;color:#000;background-color:#ffbf47!important;-webkit-box-shadow:0 2px 0 #000;box-shadow:0 2px 0 #000}main a[role=button]:active,main form button:active:not(.link):not([class^=duet]){top:2px;box-shadow:none!important}main a[role=button]:active::before,main form button:active:not(.link):not([class^=duet])::before{top:-4px}main a[disabled][role=button],main form button[disabled]:not(.link):not([class^=duet]){opacity:.6;cursor:progress}main a[role=button],main form button:not(.link):not([class^=duet]){font-size:1em;font-weight:400;line-height:1.1875;display:inline-block;position:relative;margin-top:10px;padding:9px 18px;border-radius:5px;color:#fff;background-color:#26374a;border:2px solid transparent;box-shadow:0 2px 0 #000;text-align:center;vertical-align:top;cursor:pointer;text-decoration:none;-webkit-appearance:none}main a[role=button]::before,main form button:not(.link):not([class^=duet])::before{content:"";display:block;position:absolute;top:-2px;right:-2px;bottom:-4px;left:-2px;background:0 0}main a[role=button]:hover,main form button:hover:not(.link):not([class^=duet]){background-color:#284162}main a.secondary[role=button],main form button.secondary:not(.link):not([class^=duet]){color:#000;background-color:#d0d7de;box-shadow:0 2px 0 #6f777b}main a.secondary[role=button]:hover,main form button.secondary:hover:not(.link):not([class^=duet]){background-color:#b4b4b4}main a.start[role=button],main form button.start:not(.link):not([class^=duet]){background-color:#00703c;box-shadow:0 2px 0 #003620}main a.start[role=button]:hover,main form button.start:hover:not(.link):not([class^=duet]){background-color:#005a30}main a.info[role=button],main form button.info:not(.link):not([class^=duet]){background-color:#284162;box-shadow:0 2px 0 #000}main a.info[role=button]:hover,main form button.info:hover:not(.link):not([class^=duet]){background-color:#335075}main a.warning[role=button],main form button.warning:not(.link):not([class^=duet]){background-color:#ffa54d;box-shadow:0 2px 0 #000;color:#000}main a.warning[role=button]:hover,main form button.warning:hover:not(.link):not([class^=duet]){background-color:#ffbf47}main a.danger[role=button],main form button.danger:not(.link):not([class^=duet]){color:#fff;background-color:#b1081f;box-shadow:0 2px 0 #6a0613}main a.danger[role=button]:hover,main form button.danger:hover:not(.link):not([class^=duet]){background-color:#8e0619}main a.danger[role=button]:focus,main form button.danger:focus:not(.link):not([class^=duet]){color:#000}main a.with-chevron[role=button],main form button.with-chevron:not(.link):not([class^=duet]){padding-right:23px}main a.with-chevron[role=button]::after,main form button.with-chevron:not(.link):not([class^=duet])::after{border-style:solid;content:"";display:inline-block;height:.45em;position:relative;width:.45em;transform:rotate(45deg);border-width:.15em .15em 0 0;left:.3em}main form button:not(.link):not([class^=duet]){font-family:"Noto Sans",sans-serif}main form button.link{padding:0;margin:0;border:none;background:0 0;text-decoration:underline;-webkit-appearance:none;cursor:pointer}main form button.link.datepicker_button{display:inline-block;padding-left:15px}main a.danger{color:#b1081f;margin-left:20px}main .content-button{margin-top:30px;margin-bottom:60px;display:flex;flex-direction:column}main .content-button form{width:auto;max-width:unset;margin-bottom:none;display:inline}main .content-button.push-down{margin-top:60px}main .content-button a[role=button]+a[role=button],main .content-button a[role=button]+button,main .content-button button+a[role=button],main .content-button button+button,main .content-button form+a[role=button],main .content-button form+button{margin-top:20px}details{margin-bottom:30px;list-style-type:none;border:1px solid #bcbcbc;border-radius:5px}details summary{margin:10px 15px;color:#284162;cursor:pointer;display:list-item}details summary:hover{opacity:.85}details summary:focus{outline:0!important}details summary:focus>span{outline:#ffbf47 solid 3px;outline-offset:2px}details summary~div{border-top:1px solid #bcbcbc;padding:30px 15px 15px}@media screen and (min-width:21em){details summary~div{padding-left:30px;padding-right:20px}}footer{width:100%;background:#eee;line-height:30px;border-top:3px solid #26374a}footer .footer-links{padding-top:30px;padding-bottom:30px;font-size:.85em}footer .footer-links ul{list-style-position:outside;margin-left:20px;padding:0;margin-bottom:0}footer .footer-links li{margin-right:20px}footer .footer-links a{text-decoration:none}footer .canada-wordmark{margin-top:30px;padding-bottom:20px;width:147.2px}footer .button-text-style{color:#000;text-decoration:none}footer .button-text-style::after{border-style:solid;content:"";display:inline-block;height:.45em;position:relative;width:.45em;transform:rotate(45deg);border-width:.15em 0 0 .15em;top:0;left:.6em}footer .box-style{margin-left:0;padding:10px 15px;width:165px;background-color:#fff;border:0;text-decoration:none}@media screen and (min-width:35.5em){main .content-button{align-items:flex-start;display:block}main .content-button a[role=button]+a[role=button],main .content-button a[role=button]+button,main .content-button button+a[role=button],main .content-button button+button,main .content-button form+a[role=button],main .content-button form+button{margin-top:10px;margin-left:40px}details summary~div{padding-left:42px}footer .footer-links ul{margin-bottom:20px}footer .footer-links li{display:inline-block}footer .footer-links li:first-of-type::before{content:none;width:0}footer .box-style,footer .button-text-style{display:none}header{text-align:right}}@media screen and (min-width:48em){footer .page--container{display:flex;justify-content:space-between;align-items:center}footer .page--container .footer-links{flex:2}footer .page--container .footer-links ul{margin-bottom:-5px}footer .page--container .canada-wordmark{flex:1;text-align:right;margin-bottom:0;max-height:100%}footer .page--container .canada-wordmark img{height:40px;margin-bottom:10px;margin-top:20px}}header{padding:0}header .fip-container{flex-direction:column;justify-content:space-between;display:flex;margin-top:20px;margin-bottom:20px}header .fip-container li a,header .fip-container li button{padding:0 5px;margin-left:-5px}header .fip-container button{background:0 0;color:#284162;text-decoration:underline;border:0;line-height:1.65;cursor:pointer}header .canada-flag{height:auto;max-height:40px;width:252px;margin-bottom:15px;margin-right:15px}@media screen and (min-width:21em){header .canada-flag{width:272px}}@media screen and (min-width:35.5em){header .fip-container{flex-direction:row;align-items:center}header .fip-container li a,header .fip-container li button{margin:0}header .canada-flag{width:360px;margin-bottom:0}}header #site-name{font-size:1.5em;margin:20px 0;text-align:left}.jumbotron{background-color:#26374a;color:#fff;padding:20px;text-align:center;display:inline-block;margin-bottom:20px;border-radius:5px}.jumbotron>:not(h1){font-size:1.05em}.jumbotron h1{margin-top:0;margin-bottom:10px}@media screen and (min-width:35.5em){.jumbotron{padding:30px;margin-bottom:30px}.jumbotron h1{margin-bottom:15px}}.content-next-link{margin-top:60px;margin-bottom:20px}.content-next-link a::after{border-style:solid;content:"";display:inline-block;height:.45em;position:relative;width:.45em;transform:rotate(45deg);border-width:.15em .15em 0 0;left:.3em}.content-back-link{margin-top:20px;margin-bottom:40px}.content-back-link a{padding-left:.45em}.content-back-link a::before{border-style:solid;content:"";display:inline-block;height:.45em;position:relative;width:.45em;transform:rotate(45deg);border-width:0 0 .15em .15em;right:.3em}.no-underline-link{text-decoration:none}.page-next-link{border-style:solid;content:"";border-width:0 0 .15em .15em;left:.3em;content:"";display:inline-block;height:.45em;position:relative;width:.45em;box-sizing:content-box;transform:rotate(225deg);right:0}.page-back-link{border-style:solid;content:"";transform:rotate(45deg);border-width:0 0 .15em .15em;left:.3em;content:"";display:inline-block;height:.45em;position:relative;width:.45em;box-sizing:content-box;right:0}p+ul{margin-top:-5px}@media screen and (min-width:21em){.jumbotron>:not(h1){font-size:1.2em}p+ul:not(.expanded){margin-top:-10px}}ol,ul{padding-left:30px}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}ol li:not(:last-of-type),ul li:not(:last-of-type){padding-bottom:5px}@media screen and (min-width:35.5em){ol,ul{padding-left:40px}ol li:not(:last-of-type),ul li:not(:last-of-type){padding-bottom:0}}ol.disc,ul.disc{list-style-type:disc}ol.expanded>li+li,ul.expanded>li+li{padding-top:10px}ol.paragraphs,ul.paragraphs{padding-left:0;list-style-type:none}ol.paragraphs>li+li,ul.paragraphs>li+li{padding-top:15px}ol.style-none,ul.style-none{padding-left:0}ol.style-none li,ul.style-none li{list-style:none}main .messages--container{font-weight:700;margin-bottom:20px}main .messages--container ul{padding-left:0;list-style-type:none;margin-bottom:0}main .messages--container ul li{padding:15px}main .messages--container ul li.info,main .messages--container ul li.success{border-left:4px solid #4e88b9;color:#284162;background:rgba(78,136,185,.1)}main .messages--container ul li.error{border-left:4px solid #b1081f;color:#b1081f;background:#f3e9e8}main .messages--container ul li.warning{border-left:4px solid #8e4400;background:#ffd599;font-weight:400}main .info-message{margin:40px 0;padding:15px 20px;border-left:4px solid #4e88b9;background:rgba(78,136,185,.1)}main .info-message ul li{margin-bottom:0}main .success-message{margin:40px 0;padding:15px 20px;border-left:4px solid #008751;background:#e6fae8}main .success-message ul li{margin-bottom:0}main .success-message h1{margin:0}.multiple-choice{margin-top:15px}.multiple-choice__item{font-size:1.1875rem;line-height:1.25;display:block;position:relative;min-height:40px;margin-bottom:10px;padding-left:40px}.multiple-choice__item>input{cursor:pointer;position:absolute;z-index:1;margin:0;opacity:0}.multiple-choice__item>input:checked+label::after{opacity:1}.multiple-choice__item>input:focus+label::before{-webkit-box-shadow:0 0 0 3px #ffbf47;box-shadow:0 0 0 3px #ffbf47}.multiple-choice__item>input+label{display:inline-block;margin-bottom:0;padding:8px 15px 5px;cursor:pointer;-ms-touch-action:manipulation;touch-action:manipulation;font-weight:400}.multiple-choice__item>input+label::before{content:"";-webkit-box-sizing:border-box;box-sizing:border-box;position:absolute;top:0;left:0;width:40px;height:40px;border:2px solid currentColor;background:0 0}.multiple-choice__item>input+label::after{content:"";position:absolute;opacity:0}.multiple-choice--radios .multiple-choice__item>input[type=radio]{top:-2px;left:-2px;width:44px;height:44px}.multiple-choice--radios .multiple-choice__item>input[type=radio]+label::before{border-radius:50%}.multiple-choice--radios .multiple-choice__item>input[type=radio]+label::after{top:10px;left:10px;width:0;height:0;border:10px solid currentColor;border-radius:50%;background:currentColor}.multiple-choice__p{margin:20px 0 20px 5px}.multiple-choice--checkboxes .multiple-choice__item>input[type=checkbox]{top:calc(50% - 20px);left:0;width:40px;height:40px}.multiple-choice--checkboxes .multiple-choice__item>input[type=checkbox]+label::before{top:calc(50% - 20px)}.multiple-choice--checkboxes .multiple-choice__item>input[type=checkbox]+label::after{top:calc(50% - 20px + 11px);left:9px;width:18px;height:7px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);border:solid;border-width:0 0 5px 5px;border-top-color:transparent;background:0 0}.multiple-choice__item .no-info{max-width:600px;margin-left:-40px}.multiple-choice__item .no-info__wrapper{margin-top:20px;padding:10px 10px 10px 30px;border-left:2px solid #333}.multiple-choice__item p{font-size:16px}@media screen and (min-width:21em){.multiple-choice__item p{font-size:inherit}}.multiple-choice__item>input:not(:checked)+label+.no-info{max-height:0;overflow:hidden;visibility:hidden}.multiple-choice__item>input:checked+label+.no-info{overflow-y:hidden;visibility:visible}nav ul{margin:0;padding:0;list-style-type:none}nav ul li,nav ul li a{display:inline-block}.nav--header{font-size:.8em}.nav--header ul{text-align:right}.nav--header li{margin-left:20px}.nav--header li:first-of-type{margin-left:0}.nav--main{background:#eee;margin-bottom:40px}.nav--main li{margin-right:20px;padding-bottom:0!important}.nav--main a{text-decoration:none;padding:10px 0;border-bottom:4px solid transparent;margin-right:10px}.nav--main a.active,.nav--main a:hover,.nav--main a[data-state=active]{border-bottom:4px solid #284162}.nav--about li{width:100%;margin-bottom:15px}.nav--about li a{text-decoration:none}.nav--about li a.active,.nav--about li a[aria-current=page]{font-weight:600;border-left:4px solid currentColor;padding-left:10px}.nav--about li a:focus,.nav--about li a:hover{text-decoration:underline}.nav--about__mobile{display:inline-block;border:none;border-radius:0;background:#eee}.nav--about__desktop{display:none}@media screen and (min-width:48em){.nav--about__mobile{display:none}.nav--about__desktop{display:block}}.nav--about__mobile>summary{margin:0;padding:10px 25px 10px 15px;list-style:none;border-bottom:2px solid #284162}.nav--about__mobile>summary:focus{outline:#ffbf47 solid 3px!important}.nav--about__mobile>summary:hover{opacity:1;background:#d4d4d4}.nav--about__mobile>summary::-webkit-details-marker{display:none}.nav--about__mobile>summary>div::after{border-style:solid;content:"";display:inline-block;height:.45em;position:relative;width:.45em;transform:rotate(45deg);border-width:0 .15em .15em 0;bottom:.25em;left:.6em}.nav--about__mobile[open]{width:auto}.nav--about__mobile[open]>summary{margin-bottom:20px}.nav--about__mobile[open]>summary>div::after{border-style:solid;content:"";display:inline-block;height:.45em;position:relative;width:.45em;transform:rotate(45deg);border-width:.15em 0 0 .15em;top:0;left:.6em}.nav--about__mobile[open] ul a:not(.active){padding-left:15px}div.otk{display:inline-block;position:relative;font-size:xx-large;background-color:#eee;border-radius:4px;padding:10px 100px;margin:20px}div.otk:after{content:"";position:absolute;bottom:1%;left:2.5%;width:0;height:0;border:20px solid transparent;border-top-color:#eee;border-bottom:0;border-left:0;margin-left:-10px;margin-bottom:-20px}div.otk-corner{content:"";position:absolute;top:-60px;right:-60px;height:100px;width:100px;background:green;border:5px solid #696969;transform:rotate(45deg)}.phonetic__alphabet{font-weight:700;margin-bottom:15px}.phonetic__alphabet span{display:inline-block;margin:5px 0}#skip-link-container{width:100%;position:absolute;z-index:5;text-align:center;top:15px}#skip-link-container #skip-link{position:absolute;width:1px;height:1px;overflow:hidden;white-space:nowrap}#skip-link-container #skip-link:focus{position:static;padding:10px;width:auto;height:auto;overflow:auto;background-color:#fff;text-align:center}#page--content:focus{outline:0}.summary-list{font-weight:400;color:#0b0c0c;margin:0 0 30px;display:table;width:100%;table-layout:fixed}.summary-list__row{font-weight:400;color:#0b0c0c;display:table-row}.summary-list__key{color:#0b0c0c;margin:0 0 5px;display:block;padding-top:10px;padding-right:20px;padding-bottom:10px;overflow-wrap:break-word;font-weight:700;width:70%}@media screen and (min-width:35.5em){.nav--header{font-size:.9em}.summary-list__key{display:table-cell;border-bottom:1px solid #b1b4b6;width:30%}}.summary-list__value{font-weight:400;color:#0b0c0c;margin:0;display:block;padding-top:5px;padding-right:20px;overflow-wrap:break-word;width:75%}@media screen and (min-width:35.5em){.summary-list__value{display:table-cell;border-bottom:1px solid #b1b4b6;padding-bottom:10px;padding-top:10px;width:50%}}.summary-list__actions{font-weight:400;color:#0b0c0c;margin:0 0 15px;display:block;padding-top:10px;padding-bottom:10px;border-bottom:1px solid #b1b4b6;width:100%;padding-right:0;text-align:left}@media screen and (min-width:35.5em){.summary-list__actions{display:table-cell;border-bottom:1px solid #b1b4b6;width:20%;text-align:right}}main table{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#0b0c0c;width:100%;margin-bottom:20px;border-spacing:0;border-collapse:collapse}main table thead th:last-child:not(.duet-date__table-header){color:transparent}main table caption{display:table-caption;text-align:left}main table td:not(.duet-date__cell),main table th:not(.duet-date__table-header){padding:20px 15px 15px 0;border-bottom:1px solid #d0d7de;text-align:left;vertical-align:middle}main table td:not(.duet-date__cell):last-child,main table th:not(.duet-date__table-header):last-child{padding-right:0}main table td:not(.duet-date__cell) span,main table th:not(.duet-date__table-header) span{display:block}.pagination,main table.with-actions td:last-child:not([colspan]),main table.with-actions th:last-child:not([colspan]){text-align:right}.current{display:block}.icon-arrow{border:2px solid #585858;display:inline-block;width:32px;height:32px;background-position:50% 50%;background-repeat:no-repeat}.icon-arrow.selected{border:2px solid #000;background-color:#d0d7de}.icon-arrow.up{background-image:url(/static/img/arrow_upward_24px.png)}.icon-arrow.down{background-image:url(/static/img/arrow_downward_24px.png)}.duet-date__table-header span{text-align:center}.tag{display:inline-block;letter-spacing:1px;text-decoration:none;text-transform:uppercase;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:.7em;font-weight:700;line-height:1.15;padding:5px 8px}.tag--blue{background-color:#b3cae5;color:#284162}.tag--green{background-color:#b3dfc0;color:#003620}.tag--grey{background-color:#eee;color:#333}.tag--red{background-color:#f3e9e8;color:#b1081f}.tag--yellow{background-color:#ffd599;color:#333}@media print{.screen-only{display:initial}body{font-size:1.15em}body.backup_codes div.content-button,body.backup_codes footer,body.backup_codes header .fip-container,body.backup_codes nav{display:none}body.backup_codes header #site-name{font-size:2.8em}body.backup_codes header #site-name img{display:inline-block;margin-left:30px;width:55px;margin-bottom:-8px}body.backup_codes h1{display:none}body.backup_codes .header--print{display:block;margin:.67em 0;font-size:1.8em}body.backup_codes .static-codes ol{font-size:1.4em}}</style>
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
+
+    <title>Liste de vérification de la protection des renseignements personnels des initiatives liées à la COVID-19 : Portail de soins de santé Alerte COVID — Documentation Alerte COVID</title>
+  </head>
+  <body class="">
+    <div id="skip-link-container"><a href="#page--content" id="skip-link">Skip to main content</a></div>
+    <div class="container">
+      <header>
+        <div class="page--container">
+          <div class="fip-container">
+            <div class="canada-flag">
+    
+        <img src="/img/sig-blk-fr.svg" alt="Government of Canada" />
+    
+</div>
+
+            <h2 class="visually-hidden">Language selection</h2>
+
+  <a href="/en/HealthcarePortalPrivacyChecklist">English</a>
+
+
+          </div>
+        </div>
+        <div class="page--container">
+          <div id="site-name">
+            COVID Alert Documentation
+            <img class="print-only" src="img/logo-minimal.svg" alt="" />
+          </div>
+        </div>
+      </header>
+      <main id="content">
+        <nav class="nav--main"  aria-label="Product navigation">
+  <div class="page--container">
+    <ul>
+      
+      <li>
+        <a href="/fr/app/"  >Application</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+
+        <div class="page--container" id="page--content" tabindex="-1">
+          <div class="content--container row">
+            
+  
+
+  <div class="column column--2-3">
+    <h1>Liste de vérification de la protection des renseignements personnels des initiatives liées à la COVID-19 : Portail de soins de santé Alerte COVID</h1>
+    <p><em>Division de la gestion de la protection des renseignements personnels de Santé Canada et de l’Agence de la santé publique du Canada</em> <br>
+<em>Date : 2020-08-13</em> <br>
+<em>PP-2020-000075</em></p>
+<h2>Contexte</h2>
+<p>Comme organismes assujettis à la <em>Loi sur la protection des renseignements personnels</em>, Santé Canada et l’Agence de la santé publique du Canada (ASPC) ont l’obligation de protéger les renseignements personnels qu’ils détiennent.</p>
+<p>Le présent document vise à s’assurer que les programmes de Santé Canada et de l’ASPC qui traitent des renseignements personnels respectent les exigences de la <em>Loi sur la protection des renseignements personnels</em> et du Conseil du Trésor.</p>
+<table>
+  <tr>
+   <th><strong>Institution</strong>
+   </th>
+   <td>Ministère responsable : Santé Canada
+<br/>
+Service de soutien interne : Service numérique canadien (SNC) du Secrétariat du Conseil du Trésor
+   </td>
+  </tr>
+  <tr>
+   <th><strong>Direction</strong>
+   </th>
+   <td>Groupe de travail sur la COVID-19 de Santé Canada
+   </td>
+  </tr>
+  <tr>
+   <th><strong>Nom et titre de la personne-ressource</strong>
+   </th>
+   <td>Marc Fortin, sous-ministre adjoint, Groupe de travail face à la COVID-19
+   </td>
+  </tr>
+  <tr>
+   <th><strong>Analyste, DGPRP</strong>
+   </th>
+   <td>Melissa Toutloff, analyste principale des politiques
+   </td>
+  </tr>
+</table>
+<h2>Justification pour compléter une liste de vérification de la protection des renseignements personnels pour les initiatives liées à la COVID-19</h2>
+<p>Les renseignements personnels recueillis dans le cadre de cette initiative comprennent des renseignements sur les administrateurs du Portail Alerte COVID (le Portail) (prénom et nom de famille, courriel, numéro de téléphone, province ou territoire, informations d’identification et activités liées au compte) et les fournisseurs de soins de santé (courriel, numéro de téléphone, province ou territoire, informations d’identification et activités liées au compte). Les renseignements personnels serviront à créer le rôle d’administrateur du Portail dans la province ou le territoire qui donnera accès aux fournisseurs de soins de santé. Le gouvernement du Canada n’aura pas besoin des renseignements personnels des utilisateurs du Portail des soins de santé pour vérifier leurs informations d’identification et leur donner accès au système, car cela demeurera la responsabilité des provinces ou territoires. De plus amples renseignements sur le Portail sont fournis à la section 3 du présent document.</p>
+<p>La collecte de renseignements personnels est menée à des fins non administratives, n’est pas de nature délicate et ne répond pas aux exigences de la Directive intérimaire sur l’évaluation des facteurs relatifs à la vie privée (EFVP) pour effectuer une EFVP. Dans des circonstances normales, la liste de vérification de la protection des renseignements personnels de Santé Canada et de l’ASPC serait utilisée pour évaluer les répercussions d’une initiative comme celle-ci sur la vie privée. Toutefois, compte tenu de la nature de cette activité et de l’importance d’évaluer les initiatives liées à la COVID-19 selon le <a href="https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/renseignements-sur-la-sante-renseignements-genetiques-et-autres-renseignements-sur-le-corps/urgences-sanitaires/fw_covid/">Cadre du Commissariat à la protection de la vie privée (Commissariat) pour l’évaluation par le gouvernement du Canada des initiatives en réponse à la COVID-19 ayant une incidence importante sur la vie privée</a>, Santé Canada s’appuie sur la Liste de vérification de la protection des renseignements personnels des initiatives liées à la COVID-19, qui intègre également les principes énoncés dans le cadre du Commissariat.</p>
+<h2>Participation</h2>
+<table>
+  <tr>
+   <th>
+   </th>
+   <th><strong>Oui</strong>
+   </th>
+   <th><strong>Non</strong>
+   </th>
+   <th><strong>S.O</strong>
+   </th>
+  </tr>
+  <tr>
+   <td>La Division de la gestion de la protection des renseignements personnels (DGPRP) de Santé Canada/ASPC a-t-elle participé à l’élaboration de cette Évaluation?
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+  <tr>
+   <td>Le Commissariat a été avisé de cette initiative.
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+</table>
+<p>Le SNC, en tant qu’institution responsable de la prestation de services de soutien interne à Santé Canada dans le cadre de l’initiative, a fait appel à la DGPRP de Santé Canada au début du processus afin de remplir une liste de vérification de la protection des renseignements personnels.</p>
+<p>Le Commissariat a été informé que le SNC élaborera un portail de soins de santé au moyen de consultations avec son bureau sur l’Évaluation de la protection de la vie privée de l’application de notification d’exposition à la COVID-19 (PP-2020-000062).</p>
+<h2>Renseignements généraux</h2>
+<table>
+  <tr>
+   <td colspan="3" ><strong>Institution et initiative</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Santé Canada
+   </td>
+   <td colspan="2" >Portail Alerte COVID
+   </td>
+  </tr>
+  <tr>
+   <td colspan="3" ><strong>Fonctionnaires responsables de remplir l’Évaluation de la conformité en matière de protection de la vie privée</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Cadre responsable du domaine du programme
+   </td>
+   <td colspan="2" >Marc Fortin, sous-ministre adjoint
+   </td>
+  </tr>
+  <tr>
+   <td>Représentant délégué en matière de protection de la vie privée
+   </td>
+   <td colspan="2" >Andréa Rousseau, directrice, Division de la gestion de la protection des renseignements personnels, Santé Canada/Agence de la santé publique du Canada
+   </td>
+  </tr>
+  <tr>
+   <td colspan="3" ><strong>Initiative pluri-institutionnelle (s’il y a lieu) Pour les initiatives pluri-institutionnelles, nommez une institution principale ayant la responsabilité générale des aspects de la protection de la vie privée pour aider à réduire les lacunes et les incohérences.</strong>
+   </td>
+  </tr>
+  <tr>
+   <td colspan="2" >Service numérique canadien
+   </td>
+   <td>John Millons, chef des politiques
+   </td>
+  </tr>
+</table>
+<h2>Aperçu</h2>
+<table>
+  <tr>
+   <td>Présentez un aperçu de l’initiative, du programme ou de l’activité. Décrivez brièvement le but de l’initiative, du programme ou de l’activité. Incluez une description des activités qui impliquent les renseignements personnels et une description précise des renseignements personnels nécessaires.
+   </td>
+  </tr>
+</table>
+<p>Dans le but de réduire la propagation du virus de la COVID-19 tout en assouplissant graduellement les restrictions imposées et en permettant à l’économie de recommencer, le gouvernement du Canada a lancé une application nationale unique de notification d’exposition à la COVID-19 (ci-après appelée Alerte COVID). Chaque province ou territoire aura la possibilité d’adopter l’application pour sa compétence. Certaines provinces et territoires auront besoin du soutien du gouvernement du Canada pour mettre en œuvre un Portail de soins de santé (Portail Alerte COVID) afin d’obtenir les clés à usage unique dont les utilisateurs de l’application auront besoin pour informer les autres utilisateurs d’une exposition possible à la COVID-19. Pour une évaluation complète de la protection de la vie privée de l’application de notification d’exposition à la COVID-19, veuillez consulter le document suivant :<a href="https://www.canada.ca/fr/sante-publique/services/maladies/maladie-coronavirus-covid-19/alerte-covid/politique-confidentialite/evaluation.html"> Alerte COVID : Évaluation de la protection de la vie privée de l’application de notification d’exposition à la COVID-19</a>.</p>
+<h3>À propos du Portail Alerte COVID</h3>
+<p>Lorsque les utilisateurs de l’application téléchargent l’application Alerte COVID et consentent à ses diverses fonctions, leur appareil transmet des identifiants aléatoires (clés d’exposition temporaires [CET]) qui sont utilisés pour enregistrer la proximité de l’appareil d’un autre utilisateur de l’application. Lorsqu’un utilisateur reçoit un résultat positif au test de la COVID-19, les autorités de santé (fournisseurs de soins de santé) des provinces ou territoires qui ont adopté l’application lui fourniront une clé à usage unique et des instructions sur la façon de la saisir dans l’application. L’application validera les clés à usage unique et demandera à l’utilisateur s’il souhaite que ses 14 derniers jours de CET soient envoyés au serveur du gouvernement du Canada (serveur de clés) afin que les autres utilisateurs puissent être avisés s’ils ont été exposés à l’utilisateur ayant reçu un résultat positif à la COVID-19. Des clés à usage unique sont créées et hébergées dans le serveur de clés qui contient également d’autres données recueillies au moyen de l’application.</p>
+<p>Certaines provinces et territoires ont la capacité de récupérer des clés à usage unique du serveur de clés à l’aide de leur infrastructure de TI existante (p. ex., certaines administrations ont une plateforme pour fournir les résultats de test de la COVID-19 aux personnes en ligne, et la même plateforme peut être utilisée pour émettre des clés à usage unique), tandis que d’autres provinces ou territoires n’ont pas cette capacité (p. ex., certaines fournissent les résultats des tests par téléphone). Pour les administrations qui n’ont pas la capacité de récupérer les clés à usage unique, le SNC élabore le Portail Alerte COVID (le Portail) que les administrations peuvent utiliser pour récupérer les clés et les fournir aux utilisateurs de l’application qui ont obtenu un résultat positif pour la COVID-19. Bien que le Portail s’appuie sur l’extraction de clés à usage unique à partir du serveur de clés, il n’est pas connecté à l’application de quelque façon que ce soit ni à un système de TI d’une province ou d’un territoire.</p>
+<h3>Fonctionnement du Portail</h3>
+<p>Les provinces et territoires qui compteront sur le Portail pour émettre des clés à usage unique aux utilisateurs de l’application devront désigner des représentants de leur organisation auprès du SNC qui peuvent agir à titre d’administrateurs du Portail. Les administrateurs seront responsables d’envoyer des invitations aux fournisseurs de soins de santé qui auront besoin d’accéder au Portail pour obtenir les clés à usage unique. Pour les administrations incapables d’assumer ce rôle d’administrateur, le SNC agira à titre d’administrateur du Portail et enverra des invitations aux fournisseurs de soins de santé.</p>
+<p>Lorsqu’un utilisateur de l’application obtient un résultat positif au test de la COVID-19, le fournisseur de soins de santé ouvre une session dans le Portail pour générer une clé à usage unique. La demande sera soumise au serveur de clés et la clé à usage unique sera renvoyée au fournisseur de soins de santé afin qu’il puisse la fournir à l’utilisateur de l’application, avec des instructions sur la saisie de la clé dans l’application. Le Portail affiche la clé à usage unique pour le fournisseur de soins de santé, aucune autre validation de la clé nouvellement générée n’est nécessaire. Le reste des processus de clé à usage unique a lieu entre l’application et le serveur de clés, lorsque et si l’utilisateur de l’application le fait, comme le décrit l’évaluation de la protection de la vie privée de l’application de notification d’exposition à la COVID-19.</p>
+<p>Le mécanisme par lequel la clé à usage unique est fournie à l’utilisateur revient à la province ou le territoire qui la demande (cette responsabilité lui incombe) qui devra la transmettre de façon sécuritaire.</p>
+<h4>Renseignements sur l’administrateur et les fournisseurs de soins de santé de la province ou du territoire</h4>
+<p>Les renseignements personnels recueillis et utilisés par le SNC pour administrer le Portail sont les suivants : renseignements sur les administrateurs provinciaux/territoriaux (prénom et nom de famille, courriel, numéro de téléphone, province ou territoire, informations d’identification et activités liées au compte) et les fournisseurs de soins de santé (courriel, numéro de téléphone, province ou territoire, informations d’identification et activités liées au compte).</p>
+<p>Ces renseignements seront entreposés sur le serveur de clés.</p>
+<h4>Journalisation aux fins de vérification de sécurité</h4>
+<p>Afin de maintenir l’intégrité du Portail et de réduire la probabilité que des clés à usage unique frauduleuses soient générées, plusieurs fonctions de journalisation aux fins de vérification sont incluses dans le Portail Alerte COVID. Il s’agit notamment des activités comme l’ouverture de session, l’invitation de nouveaux utilisateurs, la création d’un compte, l’obtention d’une clé à usage unique, etc. Ces activités seraient associées au compte d’utilisateur qui les a demandées et à l’horodatage auquel elles ont eu lieu.</p>
+<h3>Rôles et responsabilités</h3>
+<h4>Santé Canada</h4>
+<p>Santé Canada est responsable de la mise en œuvre globale de l’application et du Portail. Son rôle consiste à collaborer avec les provinces et les territoires pour encourager l’adoption et faciliter l’intégration de l’application. Santé Canada est également responsable d’évaluer les répercussions et les risques en matière de la vie privée associés à la mise en œuvre de l’application et du Portail, et de faire participer le Commissariat à la protection de la vie privée à des consultations afin d’obtenir des commentaires utiles.</p>
+<h4>Service numérique canadien (SNC)</h4>
+<p>Le SNC est responsable de fournir des services de soutien interne (services de technologie de l’information) à Santé Canada. Il est responsable du développement des composantes technologiques de l’application Alerte COVID et du Portail. En plus de développer l’application elle-même, le SNC exploitera le serveur de clés (situé au Canada) qui entreposera les clés chiffrées et anonymisées qui reflètent les cas positifs de COVID-19, notamment les clés à usage unique que les administrations obtiendront à partir du Portail.</p>
+<h4>Provinces et territoires</h4>
+<p>Les provinces et les territoires sont responsables de tester et de diagnostiquer la COVID-19. Dans le cas des provinces et des territoires qui ont adopté l’application, il leur incombera également de fournir aux utilisateurs de l’application dont le test est positif pour la COVID-19 la clé à usage unique (à télécharger dans l’application) afin que les autres utilisateurs puissent être informés de l’exposition potentielle. Pour les provinces et territoires qui n’ont pas la capacité technique d’obtenir des clés à usage unique au moyen de leur propre infrastructure de TI existante, le SNC a mis au point un portail Web où les fournisseurs de soins de santé pourront ouvrir une session afin d’obtenir une clé à usage unique. Les administrateurs des provinces et des territoires seront responsables de fournir des informations d’identification aux fournisseurs de soins de santé qui ont besoin d’accéder au Portail.</p>
+<p>Les provinces et territoires qui adoptent l’application et utilisent le Portail concluront une entente juridique avec le gouvernement du Canada, qui établit les modalités d’utilisation du Portail.</p>
+<h2>Autorité juridique, collecte et notification</h2>
+<table>
+  <tr>
+   <th>
+   </th>
+   <th><strong>Oui</strong>
+   </th>
+   <th><strong>Non</strong>
+   </th>
+   <th><strong>S.O</strong>
+   </th>
+  </tr>
+  <tr>
+   <td>Est-ce qu’il y a une autorité juridique pour la collecte proposée des renseignements personnels?
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+</table>
+<p>L’application Alerte COVID et son administration, notamment la création du Portail, en tant qu’outil visant à renforcer les mesures existantes pour lutter contre la propagation de la COVID-19 et la réduire, s’inscrivent dans le cadre des mandats de Santé Canada et de ses exigences législatives conformément à l’article 4 de la <em>Loi sur le ministère de la Santé</em>, qui vise à protéger la population canadienne contre les risques pour la santé et la propagation des maladies.</p>
+<p>De plus, l’article 29.2 de la <em>Loi sur la gestion des finances publiques</em> (LGFP) confère au SNC le pouvoir de fournir des services de soutien internes (services de TI) à Santé Canada et de remplir son rôle dans l’élaboration de l’application et du Portail, comme il est décrit à la section 3 du présent document.</p>
+<table>
+  <tr>
+   <th>
+   </th>
+   <th><strong>Oui</strong>
+   </th>
+   <th><strong>Non</strong>
+   </th>
+   <th><strong>S.O</strong>
+   </th>
+  </tr>
+  <tr>
+   <td>La collecte des renseignements personnels est-elle directement liée à un programme ou une activité?
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+</table>
+<p>Pour offrir le plus grand avantage aux Canadiens en matière de protection contre les risques pour la santé et la propagation de la maladie, une application pancanadienne de notification d’exposition est préférable à une mosaïque de solutions régionales. L’une des principales fonctions du Groupe de travail sur l’Alerte COVID est de collaborer avec toutes les administrations pour encourager l’adoption et faciliter l’intégration de la solution. Différents soutiens peuvent être nécessaires pour les administrations afin de permettre le lancement de l’application Alerte COVID dans leur secteur de compétence. Le manque d’infrastructure technologique pour distribuer les clés à usage unique a été désigné comme un obstacle à l’intégration de certaines administrations, et c’est cette situation qui a donné l’élan à la création d’un portail fédéral, accessible aux provinces et territoires sur une base facultative, au besoin.</p>
+<p>Les renseignements personnels recueillis dans le cadre de cette activité sont directement liés à la responsabilité du SNC de fournir ce service de soutien interne à Santé Canada. Le SNC est responsable du développement des composantes technologiques du Portail. Il hébergera le serveur de clés qui créera et entreposera les clés à usage unique auxquelles les administrations auront accès en se connectant au Portail. Ils configureront les comptes utilisateur des administrateurs afin que ces utilisateurs puissent donner accès au Portail aux professionnels de santé.</p>
+<p>Le SNC sera également responsable du soutien du Portail. Par exemple, si le compte d’une personne est verrouillé ou qu’un utilisateur a besoin d’un nouveau compte associé a un nouveau courriel, il devra le faire manuellement.</p>
+<table>
+  <tr>
+   <th>
+   </th>
+   <th><strong>Oui</strong>
+   </th>
+   <th><strong>Non</strong>
+   </th>
+   <th><strong>S.O</strong>
+   </th>
+  </tr>
+  <tr>
+   <td>Est-ce que l’initiative, le programme ou l’activité collecte les renseignements personnels directement de l’individu?
+   </td>
+   <td colspan="2" >Partiellement.
+   </td>
+   <td>☐
+   </td>
+  </tr>
+</table>
+<p>Les renseignements personnels sur les administrateurs des provinces et des territoires qui fourniront les informations d’identification pour le Portail aux fournisseurs de soins de santé seront recueillis par le SNC auprès des équipes des autorités de santé régionales responsables de l’intégration de l’application. Lorsque des comptes pour les fournisseurs de soins de santé sont créés, leur nom d’utilisateur, leur mot de passe et les renseignements de journalisation du compte sont automatiquement entreposés dans le serveur de clés du SNC.</p>
+<table>
+  <tr>
+   <th>
+   </th>
+   <th><strong>Oui</strong>
+   </th>
+   <th><strong>Non</strong>
+   </th>
+   <th><strong>S.O</strong>
+   </th>
+  </tr>
+  <tr>
+   <td>Les renseignements personnels destinés à l’initiative, au programme ou à l’activité sont-ils collectés par une autre institution ou entité gouvernementale, puis divulgués à l’initiative, au programme ou à l’activité?
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+  <tr>
+   <td>Est-ce que l’autorité juridique de collecte par d’autres entités a été vérifiée?
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+</table>
+<p>Les renseignements personnels sur les administrateurs et les fournisseurs de soins de santé sont recueillis par le SNC au nom de Santé Canada. Toutefois, Santé Canada n’a pas besoin d’avoir accès à cette information pour s’acquitter de ses responsabilités dans le cadre de cette initiative.</p>
+<p>Les super administrateurs du SNC auront accès aux données du serveur de clés et pourront consulter le profil de tous les utilisateurs, ainsi que leurs renseignements personnels, à l’exception de leurs mots de passe. Le SNC mettra en œuvre la journalisation de diverses actions (ouverture de session, invitation de nouveaux utilisateurs, création de comptes, obtention de clés à usage unique, etc.). Cela leur permettra de retracer les comportements anormaux ou suspects. Seuls les employés autorisés du SNC se verront attribuer des comptes de super administrateurs et les données ne seront accessibles qu’au besoin. Ces fonctions sont conformes au rôle du SNC qui consiste à fournir des services de soutien internes à Santé Canada en vertu de la LGFP.</p>
+<table>
+  <tr>
+   <th>
+   </th>
+   <th><strong>Oui</strong>
+   </th>
+   <th><strong>Non</strong>
+   </th>
+   <th><strong>S.O</strong>
+   </th>
+  </tr>
+  <tr>
+   <td>Lorsque la collecte est faite directement auprès des individus, est-ce que les individus recevront un avis de confidentialité avant que leurs renseignements personnels soient collectés, établissant le but de la collecte ainsi que les modalités d’utilisation, de divulgation ou de communication des renseignements personnels?
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+  <tr>
+   <td>Est-ce qu’il existe une ou plusieurs fichiers de renseignements personnels (FRP) pour cette activité?
+   </td>
+   <td>☐
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+  </tr>
+</table>
+<p>Un avis de confidentialité sera inclus sur le site Web du Portail.</p>
+<p>Les renseignements personnels liés à cette initiative ne sont pas utilisés à des fins administratives, mais ils sont organisés ou destinés à être récupérés au moyen d’un identificateur personnel et, par conséquent, un FRP est requis. Un FRP sera rédigé et comprendra le chapitre Info Source de Santé Canada.</p>
+<table>
+  <tr>
+   <th>
+   </th>
+   <th><strong>Oui</strong>
+   </th>
+   <th><strong>Non</strong>
+   </th>
+   <th><strong>S.O</strong>
+   </th>
+  </tr>
+  <tr>
+   <td>Est-il nécessaire de modifier ou de créer une FRP pour cette activité?
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+  <tr>
+   <td>Est-ce que les renseignements personnels portent sur les individus qui pourraient avoir de plus fortes sensibilités ou appartenir à des populations vulnérables qui vivent des niveaux disproportionnés de discrimination (p. ex., renseignements liés à la race, au handicap, à la consommation de drogue illicite, au genre, à l’identité et l’expression du genre)?
+   </td>
+   <td>☐
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+  </tr>
+</table>
+<p>Les renseignements personnels recueillis sont limités au nom, aux coordonnées, au nom d’utilisateur et aux activités de compte des administrateurs des provinces et des territoires et des fournisseurs de soins de santé afin d’avoir accès au Portail des soins de santé. Ces renseignements sont considérés comme étant de nature peu délicate (peu susceptibles de causer un préjudice) et, dans de nombreuses provinces et territoires, les noms et les coordonnées des employés et d’autres renseignements sur leur poste sont accessibles au public.</p>
+<p>Les renseignements personnels ne révèlent pas directement si la personne appartient à une population vulnérable.</p>
+<h2>Circulation des données – Collecte, utilisation, divulgation, rétention et disposition des renseignements personnels</h2>
+<p>Cette section devrait décrire le « cycle de vie » des renseignements personnels (collecte, utilisation, divulgation, rétention et disposition). Elle comprend également l’identité des partenaires qui traitent les renseignements personnels pendant l’administration d’un programme ou d’une activité. Le tableau présenté vise à aider à établir le flux de circulation des renseignements personnels pendant leur cycle de vie.</p>
+<table>
+  <tr>
+   <td><strong>Renseignements personnels</strong>
+   </td>
+   <td><strong>Méthode de collecte</strong>
+   </td>
+   <td><strong>Collectés initialement par</strong>
+   </td>
+   <td><strong>Type de format/type de fichier</strong>
+   </td>
+   <td><strong>Méthode de transmission</strong>
+   </td>
+   <td><strong>But et nécessité de la collecte</strong>
+   </td>
+   <td><strong>Utilisés par</strong>
+   </td>
+   <td><strong>Divulgués à</strong>
+   </td>
+   <td><strong>Accès</strong>
+   </td>
+   <td><strong>Détails sur la rétention et la disposition</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>
+<p>
+<strong>Administrateur provincial/territorial</strong>
+</p>
+<ul>
+<li>Prénom et nom de famille
+<li>Courriel
+<li>Numéro de téléphone
+<li>Province/territoire
+<li>Informations d’identification (courriel et mot de passe)
+<li>Activités du compte (ouverture de session, création de comptes, etc.)
+</ul>
+<p>
+<strong>Fournisseur de soins de santé</strong>
+</p>
+<ul>
+<li>Courriel
+<li>Numéro de téléphone
+<li>Province/territoire
+<li>Informations d’identification (courriel et mot de passe)
+<li>Activités du compte (ouverture de session, récupération de clés à usage unique, etc.)
+</li>
+</ul>
+</li>
+</ul>
+   </td>
+   <td>
+<p>
+Les renseignements personnels sur les administrateurs sont envoyés par courriel au SNC par les équipes des autorités sanitaires régionales responsables de l’intégration de l’application Alerte COVID-19 afin de créer des comptes d’administrateur.
+</p>
+<p>
+Les renseignements personnels sur les fournisseurs de soins de santé sont recueillis directement par l’administrateur qui créera le compte pour le fournisseur de soins de santé au moyen d’une interface sécurisée dans le logiciel du Portail, l’accès étant limité aux comptes d’administrateur. Le SNC recueille indirectement ces renseignements lorsque le compte du fournisseur de soins de santé est créé et que ses renseignements sont entreposés sur le serveur de clés.
+</p>
+   </td>
+   <td>
+<p>
+Sécurité du SNC/personnel opérationnel responsable de la gestion du Portail.
+</p>
+<p>
+Administrateur provincial/territorial
+</p>
+   </td>
+   <td>Format électronique
+   </td>
+   <td>Courriel régulier
+   </td>
+   <td>
+<p>
+Les renseignements personnels sur les administrateurs sont recueillis par le SNC afin d’établir un compte d’administrateur et de créer des comptes pour les fournisseurs de soins de santé afin qu’ils puissent obtenir les clés à usage unique.
+</p>
+<p>
+Les renseignements personnels sur les fournisseurs de soins de santé sont recueillis afin qu’ils puissent obtenir un compte sur le Portail pour accéder aux clés à usage unique.
+</p>
+<p>
+Les numéros de téléphone sont recueillis afin qu’un code d’authentification à deux facteurs puisse être envoyé aux administrateurs et aux fournisseurs de soins de santé comme mesure de sécurité nécessaire pour créer leur compte de Portail.
+</p>
+<p>
+Le SNC tient un registre de vérification des activités des administrateurs et des fournisseurs de soins de santé pour des activités comme l’ouverture de session, l’invitation de nouveaux utilisateurs, la création de comptes, l’obtention d’une clé à usage unique, etc. Le registre de vérification a pour but de réduire la probabilité de générer frauduleusement une clé à usage unique et de retracer les comportements anormaux ou suspects.
+</p>
+   </td>
+   <td>Sécurité du SNC/personnel opérationnel responsable de la gestion du Portail.
+   </td>
+   <td>
+<p>
+Il n’y a pas de divulgation des renseignements personnels de l’administrateur ou du fournisseur de soins de santé à des tiers.
+</p>
+<p>
+Si une activité frauduleuse ou illégale est découverte, les renseignements du journal de vérification pourraient être fournis aux organismes d’application de la loi. Ces divulgations seraient faites conformément àl’article 8(2) de la <em>Loi sur la protection des renseignements personnels.</em>
+</p>
+   </td>
+   <td>Les super administrateurs du SNC peuvent consulter les profils de tous les utilisateurs ainsi que tous leurs renseignements, à l’exception de leurs mots de passe. Seuls les employés autorisés du SNC se verraient accorder des comptes de super administrateurs.
+   </td>
+   <td>
+<p>
+Les renseignements personnels sur les administrateurs et le nom du fournisseur de soins de santé, le courriel, le numéro de téléphone, la province ou le territoire et les informations d’identification seront conservés jusqu’à 30 jours après la déclaration de la fin de la pandémie, après quoi le Portail sera désactivé et l’information qu’elle contient sera supprimée. 
+</p>
+<p>
+Les administrateurs sont responsables de désactiver les comptes lorsqu’ils ne sont plus nécessaires. Lorsqu’un compte est désactivé, un enregistrement du compte est conservé dans les journaux de vérification jusqu’à ce que le Portail soit désactivé afin de conserver un enregistrement des comptes supprimés (p. ex., pour que le SNC puisse savoir si un compte supprimé est recréé et pour signaler s’il est suspect). Cela ne s’applique pas aux journaux de vérification liés à une enquête de sécurité (le cas échéant), qui pourraient être conservés pendant 24 mois supplémentaires. L’accès à ces journaux de vérification est limité au personnel de sécurité et d’exploitation du SNC.
+</p>
+   </td>
+  </tr>
+</table>
+<h2>Risques, mesures d’atténuation et de sauvegarde</h2>
+<table>
+  <tr>
+   <th>
+   </th>
+   <th><strong>Oui</strong>
+   </th>
+   <th><strong>Non</strong>
+   </th>
+   <th><strong>S.O</strong>
+   </th>
+  </tr>
+  <tr>
+   <td>Le personnel a-t-il eu une formation adéquate sur les exigences relatives à la protection de la vie privée?
+   </td>
+   <td colspan="2" >Partiellement.
+   </td>
+   <td>☐
+   </td>
+  </tr>
+  <tr>
+   <td>Est-ce que la classification de sécurité adéquate a été accordée aux renseignements personnels?
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+</table>
+<p>Le personnel du SNC qui traite les renseignements personnels reçoit une formation sur les plans d’intervention en cas d’incident fondés sur les politiques du gouvernement du Canada, il sait donc quoi faire en cas d’atteinte à la vie privée ou à la sécurité. Toutefois, le personnel n’a pas suivi de formation générale de sensibilisation à la protection de la vie privée.</p>
+<p>Les renseignements personnels concernant les administrateurs et les fournisseurs de soins de santé sont considérés comme étant de niveau Protégé A. Le serveur de clés où ces renseignements sont entreposés est évalué comme étant de niveau Protégé B.</p>
+<table>
+  <tr>
+   <th>
+   </th>
+   <th><strong>Oui</strong>
+   </th>
+   <th><strong>Non</strong>
+   </th>
+   <th><strong>S.O</strong>
+   </th>
+  </tr>
+  <tr>
+   <td>Est-ce que les renseignements personnels sont protégés d’une manière tenant compte de la classification de sécurité?
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+</table>
+<p>L’infrastructure infonuagique sous-jacente qui hébergera le serveur (fourni par Amazon Web Services [AWS] et situé au Canada) est de niveau protégé B et elle est acquise au moyen d’ententes-cadres existantes sur l’informatique en nuage de Services partagés Canada, sous réserve des modalités contractuelles afin d’assurer que l’accès aux données et aux systèmes est restreint de façon appropriée.</p>
+<p>Des mesures de protection procédurales et techniques sont mises en œuvre, conformément au processus d’évaluation et d’autorisation de la sécurité, afin de s’assurer que seules les personnes ayant besoin d’accéder à l’infrastructure ou aux données peuvent le faire, et seulement aux fins liées à la mise en œuvre du système de notification d’exposition. Le système est mis en œuvre selon le principe du droit d’accès minimal, c’est-à-dire que l’accès aux données est traité comme une exception et non comme la règle.</p>
+<table>
+  <tr>
+   <th>
+   </th>
+   <th><strong>Oui</strong>
+   </th>
+   <th><strong>Non</strong>
+   </th>
+   <th><strong>S.O</strong>
+   </th>
+  </tr>
+  <tr>
+   <td>Est-ce qu’un plan est prévu en cas d’atteinte à la vie privée?
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+  <tr>
+   <td>Est-ce que tous les individus responsables du traitement des renseignements personnels ont été informés des mesures à prendre en cas d’atteinte à la vie privée?
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+</table>
+<p>Le SNC a mis en place un plan de gestion des événements cybernétiques pour intervenir en cas d’incidents de cybersécurité, qui comprend des étapes pour traiter les atteintes.</p>
+<p>Santé Canada a mis en place un processus pour répondre aux atteintes à la vie privée qui s’harmonise avec la Trousse d’outils pour la  gestion des atteintes à la vie privée du Secrétariat du Conseil du Trésor. Tous les employés de Santé Canada peuvent consulter le processus de traitement des atteintes à la vie privée sur le site intranet du Ministère.</p>
+<table>
+  <tr>
+   <th>
+   </th>
+   <th><strong>Oui</strong>
+   </th>
+   <th><strong>Non</strong>
+   </th>
+   <th><strong>S.O</strong>
+   </th>
+  </tr>
+  <tr>
+   <td>Est-ce qu’une évaluation de sécurité a été menée?
+   </td>
+   <td>☐
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+  </tr>
+  <tr>
+   <td>Est-ce que des contrôles physiques et techniques ont été mis en place pour protéger contre l’accès non autorisé aux renseignements personnels?
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+</table>
+<p>Une évaluation de sécurité est en cours de réalisation en partenariat avec la Division de la cybersécurité du Bureau du dirigeant principal de l’information. Cette liste de vérification sera mise à jour une fois l’évaluation de sécurité terminée afin de tenir compte des risques qui peuvent avoir une incidence sur la vie privée.</p>
+<p>Le SNC met en œuvre diverses mesures de contrôle pour la création de comptes et l’ouverture de session afin d’atténuer les résultats indésirables :</p>
+<ul>
+<li>Les mots de passe ne peuvent pas être des phrases courantes ou liés au nom d’utilisateur;</li>
+<li>Toutes les ouvertures de session nécessitent l’envoi d’un code d’authentification à deux facteurs au moyen d’un téléphone, d’un courriel ou d’un autre processus applicable;</li>
+<li>Après plusieurs échecs de tentative d’ouverture de session, le compte est bloqué pendant un certain temps.</li>
+</ul>
+<p>Des mesures de contrôle de sécurité complètes sont en place dans l’infrastructure sous-jacente d’AWS conformément au <a href="https://cyber.gc.ca/fr/orientation/annexe-4a-profil-1-protege-b-integrite-moyenne-disponibilite-moyenne-itsg-33">profil de confidentialité Protégé B, d’intégrité moyenne et de disponibilité moyenne du nuage du gouvernement du Canada</a>.</p>
+<table>
+  <tr>
+   <th>
+   </th>
+   <th><strong>Oui</strong>
+   </th>
+   <th><strong>Non</strong>
+   </th>
+   <th><strong>S.O</strong>
+   </th>
+  </tr>
+  <tr>
+   <td>Est-ce que la dépersonnalisation ou le regroupement des renseignements est utilisé lorsque possible?
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+   <td>☒
+   </td>
+  </tr>
+</table>
+<h2>Évaluation de la conformité en matière de protection de la vie privée :</h2>
+<p>Afin de soutenir les provinces et territoires qui adoptent l’application Alerte COVID, le SNC a mis au point un Portail pour permettre aux fournisseurs de soins de santé d’ouvrir une session et d’obtenir les clés à usage unique afin d’en remettre aux utilisateurs de l’application Alerte COVID qui ont obtenu un résultat positif au test de la COVID-19. Les provinces et territoires qui adoptent l’application et utilisent le Portail concluront une entente juridique avec le gouvernement du Canada, qui établit les modalités d’utilisation du Portail.</p>
+<p>Les renseignements personnels recueillis par le SNC sont liés aux administrateurs qui seront responsables de la création des comptes dans le Portail pour les fournisseurs de soins de santé. Le SNC recueillera également les renseignements personnels des fournisseurs de soins de santé lorsque leur compte sera créé dans le Portail et que leurs renseignements personnels seront entreposés sur le serveur de clés.</p>
+<p>Les renseignements personnels sur l’administrateur et les fournisseurs de soins de santé sont limités aux renseignements de nature peu délicate (c.‑à‑d. les coordonnées, les informations d’identification et les activités liées au compte) et servent à créer des comptes dans le Portail. Leur activité sur le Portail sera consignée à des fins de sécurité. De plus, les clés à usage unique ne seront pas connectées aux utilisateurs du Portail et ne seront pas associées à l’utilisateur de l’application qui les reçoit.</p>
+<p>Compte tenu de la faible sensibilité des renseignements personnels et de la façon dont ils seront utilisés, la DGPRP a évalué que les risques globaux  relatif à la vie privée du Portail étaient faibles. Néanmoins, la DGPRP a formulé les recommandations suivantes qui devraient être mises en œuvre afin d’atténuer les risques et d’assurer la conformité à la <em>Loi sur la protection des renseignements personnels</em> et aux politiques sur la protection des renseignements personnels du Conseil du Trésor (CT) :</p>
+<ul>
+<li>L’entente juridique avec les administrations qui utilisent le Portail devrait indiquer qu’il incombe aux administrateurs des provinces et des territoires de désactiver les comptes d’utilisateur lorsqu’ils ne sont plus requis et que les administrateurs des provinces et des territoires doivent examiner régulièrement l’accès aux comptes afin de s’assurer qu’il n’y a pas de compte inactif.</li>
+<li>Bien que le SNC ait élaboré un avis générique sur le site Web du Portail qui fournit de l’information sur les politiques de l’organisation en matière de protection des renseignements personnels, un avis spécifique devrait être créé et affiché sur le site Web du Portail qui fournit un avis conformément aux exigences énoncées à la section 6.2.9 de la Directive sur les pratiques relatives à la protection de la vie privée du CT.</li>
+<li>Santé Canada, en collaboration avec le SNC, devrait créer un FRP afin de décrire la collecte de renseignements personnels. Santé Canada devrait s’efforcer de publier le FRP dans la prochaine version de son chapitre Info Source, en supposant que l’initiative se poursuive au-delà de la date établie à l’article 6.4.6 de la Directive intérimaire sur les pratiques relatives à la protection de la vie privée pour la présentation de FRP pour les initiatives urgentes liées à la COVID-19.</li>
+<li>Bien que le SNC ait reçu une formation sur les plans d’intervention en cas d’incident fondés sur les politiques du gouvernement et que le personnel est donc au courant de ce qu’il doit faire en cas d’atteinte à la vie privée ou à la sécurité, il n’a pas suivi de formation générale de sensibilisation à la protection de la vie privée. Il est recommandé de consulter la Division de l’accès à l’information et de la protection des renseignements personnels du Secrétariat du Conseil du Trésor afin d’obtenir une formation sur la protection des renseignements personnels.</li>
+<li>Il est recommandé que le SNC effectue l’évaluation de sécurité avant le lancement du Portail et qu’il tienne la DGPRP au courant de tout risque pour la sécurité qui pourrait avoir une incidence sur la protection des renseignements personnels.</li>
+</ul>
+<h2>Transparence</h2>
+<table>
+  <tr>
+   <th>
+   </th>
+   <th><strong>Oui</strong>
+   </th>
+   <th><strong>Non</strong>
+   </th>
+   <th><strong>S.O</strong>
+   </th>
+  </tr>
+  <tr>
+   <td>Est-ce que l’institution a mis en place un processus de réception et traitement des plaintes et des demandes liées à la protection de la vie privée?
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+  <tr>
+   <td>Est-ce qu’un sommaire de cette Évaluation de la conformité en matière de protection de la vie privée sera publié en ligne?
+   </td>
+   <td>☒
+   </td>
+   <td>☐
+   </td>
+   <td>☐
+   </td>
+  </tr>
+</table>
+<p>L’Évaluation de la protection de la vie privée de l’application de notification d’exposition à la COVID-19, qui est actuellement affichée sur Canada.ca, sera mise à jour pour inclure des renseignements sur le Portail Alerte COVID.</p>
+<h2>Approbation</h2>
+<p>J’atteste que les renseignements contenus dans le présent rapport décrivent avec exactitude le traitement des renseignements personnels par Santé Canada et je m’engage à la mise en œuvre complète des recommandations.</p>
+<p>Marc Fortin  <br>
+Sous-ministre adjoint, Groupe de travail face à la COVID-19 <br>
+Santé Canada</p>
+<p>À titre de délégué de Santé Canada/ASPC responsable de l’article 10 de la Loi sur la protection des renseignements personnels, j’accepte ce rapport et je suis satisfait de l’analyse de la protection de la vie privée et de l’identification des risques présentée conformément aux exigences du SCT.</p>
+<p>Andréa Rousseau <br>
+Directrice, Division de la gestion de la protection des renseignements personnels <br>
+Santé Canada/Agence de santé publique du Canada</p>
+<p><em>Remarque : La responsabilité de la conformité aux dispositions des articles 4 à 8 de la <a href="https://laws-lois.justice.gc.ca/fra/lois/p-21/page-2.html">Loi sur la protection des renseignements personnels</a> appartient à tous les employés des institutions gouvernementales qui traitent les renseignements personnels. Les fonctionnaires qui gèrent les programmes et les activités sont responsables de s’assurer que les exigences en matière de protection de la vie privée sont intégrées aux modalités administratives du programme ou de l’activité.</em></p>
+<h2>Définitions</h2>
+<p><strong>« Collecte directe »</strong> collecte de renseignements personnels auprès de l’individu concerné.</p>
+<p><strong>« Collecte indirecte »</strong> collecte de renseignements personnels auprès d’une source autre que l’individu concerné.</p>
+<p><strong>« Fins non administratives »</strong> l’utilisation de renseignements personnels pour une fin qui n’est pas liée à une décision touchant directement la personne. Cela comprend l’utilisation de renseignements personnels à des fins de recherche, de statistique, de vérification et d’évaluation.</p>
+<p><strong>« Renseignements personnels »</strong> des « Renseignements, quels que soient leur forme et leur support, concernant une personne identifiable » (article 3). Voir l’article 3 de la <em>Loi sur la protection des renseignements personnels</em> pour obtenir de plus amples détails.</p>
+<p><strong>« Atteinte à la vie privée »</strong> perte, création, collecte, utilisation, divulgation, conservation ou disposition inappropriée ou non autorisée de renseignements personnels.</p>
+<p><strong>« Avis de confidentialité »</strong> Avis verbal ou écrit présenté à un individu afin de communiquer les fins de la collecte de renseignements personnels, et l’autorité de l’institution fédérale pour procéder à cette collecte, y compris la création, l’utilisation et la divulgation des renseignements. L’avis, qui doit renvoyer au FRP décrit dans <em>Info Source</em>, informe également l’individu de ses droits d’accès et de correction de ses renseignements personnels, ainsi que des conséquences d’un refus de fournir les renseignements demandés.</p>
+
+
+    
+  </div>
+
+          </div>
+        </div>
+
+      </main>
+
+      <footer>
+    <div class="page--container">
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="canada-wordmark"><img src="img/wmms-blk.svg" alt="Symbol of the Government of Canada" /></div>
+    </div>
+</footer>
+
+
+    </div>
+  </body>
+</html>

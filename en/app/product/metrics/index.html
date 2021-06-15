@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CNoto+Sans:400,700&amp;display=fallback" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CNoto+Sans:400,700&amp;display=fallback" >
+
+    <!-- Local files -->
+    <style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}details,main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}ol[role=list],ul[role=list]{list-style:none}[hidden],template{display:none}</style>
+    <style>@charset "UTF-8";*{box-sizing:border-box}[contentEditable=true]:not([disabled]):focus:not(.autocomplete__option),[tabindex]:not([disabled]):focus:not(.autocomplete__option),a[href]:not([disabled]):focus:not(.autocomplete__option),area[href]:not([disabled]):focus:not(.autocomplete__option),button:not([disabled]):focus:not(.autocomplete__option),iframe:not([disabled]):focus:not(.autocomplete__option),input:not([disabled]):focus:not(.autocomplete__option),select textarea:not([disabled]):focus:not(.autocomplete__option){outline:#ffbf47 solid 3px;outline-offset:0}body{margin:0;font-size:1.05em;font-family:"Noto Sans",sans-serif;line-height:1.65}@media screen and (min-width:21em){body{font-size:1.2em}}@media screen and (min-width:35.5em){body{font-size:1.3em}}.multiple-choice__item p,ol,p,ul{margin-top:0;margin-bottom:10px}@media screen and (min-width:21em){.multiple-choice__item p,ol,p,ul{margin-bottom:15px}}a,a:visited,button.link{color:#284162}#site-name,h1,h2,h3,h4,h5,h6{font-family:Lato,sans-serif;line-height:1.33;font-weight:600}h1{font-size:2.075em}h2{font-size:1.44em}h3,h4,h5{font-size:1.2em}.page--container{max-width:960px;margin:0 auto;padding-left:20px;padding-right:20px}strong.break-line{display:block;margin:10px 0}main{padding-bottom:60px}main>div{margin-bottom:30px}@media screen and (min-width:48em){main .content--container:not(.row){width:90%}}@media screen and (min-width:64em){main .content--container:not(.row){width:80%}}@media screen and (min-width:75em){.page--container{max-width:1170px}main .content--container:not(.row){width:70%}}main .content--container:not(.row) .content-section{margin-top:60px!important}.container{position:relative;min-height:100vh;display:flex;flex-direction:column}.container main{flex:1 0 auto}.container footer{flex-shrink:0}.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}.hidden{display:none!important}.print-only{display:none}.row{display:flex;flex-direction:column;flex-wrap:wrap;width:100%;margin-top:40px;gap:20px}@media screen and (min-width:48em){.row{flex-direction:row}}.row .column{flex-basis:100%;flex:1}.row .column.column--2-3{flex:2}.row .column h1{margin-top:0}.sections-list{display:flex;flex-wrap:wrap;padding:0;gap:20px}.sections-list>*{flex:1 0 calc(50% - 20px)}.sections-list [href]{display:block;padding:20px;border:2px solid #d0d7de;border-radius:10px;border-bottom-width:4px;text-decoration:none;color:#000}.sections-list [href]:hover{background:#d0d7de;border-color:#6f777b}main a[role=button]:focus,main form button:focus:not(.link):not([class^=duet]){outline:0!important;border-color:#ffbf47;color:#000;background-color:#ffbf47!important;-webkit-box-shadow:0 2px 0 #000;box-shadow:0 2px 0 #000}main a[role=button]:active,main form button:active:not(.link):not([class^=duet]){top:2px;box-shadow:none!important}main a[role=button]:active::before,main form button:active:not(.link):not([class^=duet])::before{top:-4px}main a[disabled][role=button],main form button[disabled]:not(.link):not([class^=duet]){opacity:.6;cursor:progress}main a[role=button],main form button:not(.link):not([class^=duet]){font-size:1em;font-weight:400;line-height:1.1875;display:inline-block;position:relative;margin-top:10px;padding:9px 18px;border-radius:5px;color:#fff;background-color:#26374a;border:2px solid transparent;box-shadow:0 2px 0 #000;text-align:center;vertical-align:top;cursor:pointer;text-decoration:none;-webkit-appearance:none}main a[role=button]::before,main form button:not(.link):not([class^=duet])::before{content:"";display:block;position:absolute;top:-2px;right:-2px;bottom:-4px;left:-2px;background:0 0}main a[role=button]:hover,main form button:hover:not(.link):not([class^=duet]){background-color:#284162}main a.secondary[role=button],main form button.secondary:not(.link):not([class^=duet]){color:#000;background-color:#d0d7de;box-shadow:0 2px 0 #6f777b}main a.secondary[role=button]:hover,main form button.secondary:hover:not(.link):not([class^=duet]){background-color:#b4b4b4}main a.start[role=button],main form button.start:not(.link):not([class^=duet]){background-color:#00703c;box-shadow:0 2px 0 #003620}main a.start[role=button]:hover,main form button.start:hover:not(.link):not([class^=duet]){background-color:#005a30}main a.info[role=button],main form button.info:not(.link):not([class^=duet]){background-color:#284162;box-shadow:0 2px 0 #000}main a.info[role=button]:hover,main form button.info:hover:not(.link):not([class^=duet]){background-color:#335075}main a.warning[role=button],main form button.warning:not(.link):not([class^=duet]){background-color:#ffa54d;box-shadow:0 2px 0 #000;color:#000}main a.warning[role=button]:hover,main form button.warning:hover:not(.link):not([class^=duet]){background-color:#ffbf47}main a.danger[role=button],main form button.danger:not(.link):not([class^=duet]){color:#fff;background-color:#b1081f;box-shadow:0 2px 0 #6a0613}main a.danger[role=button]:hover,main form button.danger:hover:not(.link):not([class^=duet]){background-color:#8e0619}main a.danger[role=button]:focus,main form button.danger:focus:not(.link):not([class^=duet]){color:#000}main a.with-chevron[role=button],main form button.with-chevron:not(.link):not([class^=duet]){padding-right:23px}main a.with-chevron[role=button]::after,main form button.with-chevron:not(.link):not([class^=duet])::after{border-style:solid;content:"";display:inline-block;height:.45em;position:relative;width:.45em;transform:rotate(45deg);border-width:.15em .15em 0 0;left:.3em}main form button:not(.link):not([class^=duet]){font-family:"Noto Sans",sans-serif}main form button.link{padding:0;margin:0;border:none;background:0 0;text-decoration:underline;-webkit-appearance:none;cursor:pointer}main form button.link.datepicker_button{display:inline-block;padding-left:15px}main a.danger{color:#b1081f;margin-left:20px}main .content-button{margin-top:30px;margin-bottom:60px;display:flex;flex-direction:column}main .content-button form{width:auto;max-width:unset;margin-bottom:none;display:inline}main .content-button.push-down{margin-top:60px}main .content-button a[role=button]+a[role=button],main .content-button a[role=button]+button,main .content-button button+a[role=button],main .content-button button+button,main .content-button form+a[role=button],main .content-button form+button{margin-top:20px}details{margin-bottom:30px;list-style-type:none;border:1px solid #bcbcbc;border-radius:5px}details summary{margin:10px 15px;color:#284162;cursor:pointer;display:list-item}details summary:hover{opacity:.85}details summary:focus{outline:0!important}details summary:focus>span{outline:#ffbf47 solid 3px;outline-offset:2px}details summary~div{border-top:1px solid #bcbcbc;padding:30px 15px 15px}@media screen and (min-width:21em){details summary~div{padding-left:30px;padding-right:20px}}footer{width:100%;background:#eee;line-height:30px;border-top:3px solid #26374a}footer .footer-links{padding-top:30px;padding-bottom:30px;font-size:.85em}footer .footer-links ul{list-style-position:outside;margin-left:20px;padding:0;margin-bottom:0}footer .footer-links li{margin-right:20px}footer .footer-links a{text-decoration:none}footer .canada-wordmark{margin-top:30px;padding-bottom:20px;width:147.2px}footer .button-text-style{color:#000;text-decoration:none}footer .button-text-style::after{border-style:solid;content:"";display:inline-block;height:.45em;position:relative;width:.45em;transform:rotate(45deg);border-width:.15em 0 0 .15em;top:0;left:.6em}footer .box-style{margin-left:0;padding:10px 15px;width:165px;background-color:#fff;border:0;text-decoration:none}@media screen and (min-width:35.5em){main .content-button{align-items:flex-start;display:block}main .content-button a[role=button]+a[role=button],main .content-button a[role=button]+button,main .content-button button+a[role=button],main .content-button button+button,main .content-button form+a[role=button],main .content-button form+button{margin-top:10px;margin-left:40px}details summary~div{padding-left:42px}footer .footer-links ul{margin-bottom:20px}footer .footer-links li{display:inline-block}footer .footer-links li:first-of-type::before{content:none;width:0}footer .box-style,footer .button-text-style{display:none}header{text-align:right}}@media screen and (min-width:48em){footer .page--container{display:flex;justify-content:space-between;align-items:center}footer .page--container .footer-links{flex:2}footer .page--container .footer-links ul{margin-bottom:-5px}footer .page--container .canada-wordmark{flex:1;text-align:right;margin-bottom:0;max-height:100%}footer .page--container .canada-wordmark img{height:40px;margin-bottom:10px;margin-top:20px}}header{padding:0}header .fip-container{flex-direction:column;justify-content:space-between;display:flex;margin-top:20px;margin-bottom:20px}header .fip-container li a,header .fip-container li button{padding:0 5px;margin-left:-5px}header .fip-container button{background:0 0;color:#284162;text-decoration:underline;border:0;line-height:1.65;cursor:pointer}header .canada-flag{height:auto;max-height:40px;width:252px;margin-bottom:15px;margin-right:15px}@media screen and (min-width:21em){header .canada-flag{width:272px}}@media screen and (min-width:35.5em){header .fip-container{flex-direction:row;align-items:center}header .fip-container li a,header .fip-container li button{margin:0}header .canada-flag{width:360px;margin-bottom:0}}header #site-name{font-size:1.5em;margin:20px 0;text-align:left}.jumbotron{background-color:#26374a;color:#fff;padding:20px;text-align:center;display:inline-block;margin-bottom:20px;border-radius:5px}.jumbotron>:not(h1){font-size:1.05em}.jumbotron h1{margin-top:0;margin-bottom:10px}@media screen and (min-width:35.5em){.jumbotron{padding:30px;margin-bottom:30px}.jumbotron h1{margin-bottom:15px}}.content-next-link{margin-top:60px;margin-bottom:20px}.content-next-link a::after{border-style:solid;content:"";display:inline-block;height:.45em;position:relative;width:.45em;transform:rotate(45deg);border-width:.15em .15em 0 0;left:.3em}.content-back-link{margin-top:20px;margin-bottom:40px}.content-back-link a{padding-left:.45em}.content-back-link a::before{border-style:solid;content:"";display:inline-block;height:.45em;position:relative;width:.45em;transform:rotate(45deg);border-width:0 0 .15em .15em;right:.3em}.no-underline-link{text-decoration:none}.page-next-link{border-style:solid;content:"";border-width:0 0 .15em .15em;left:.3em;content:"";display:inline-block;height:.45em;position:relative;width:.45em;box-sizing:content-box;transform:rotate(225deg);right:0}.page-back-link{border-style:solid;content:"";transform:rotate(45deg);border-width:0 0 .15em .15em;left:.3em;content:"";display:inline-block;height:.45em;position:relative;width:.45em;box-sizing:content-box;right:0}p+ul{margin-top:-5px}@media screen and (min-width:21em){.jumbotron>:not(h1){font-size:1.2em}p+ul:not(.expanded){margin-top:-10px}}ol,ul{padding-left:30px}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}ol li:not(:last-of-type),ul li:not(:last-of-type){padding-bottom:5px}@media screen and (min-width:35.5em){ol,ul{padding-left:40px}ol li:not(:last-of-type),ul li:not(:last-of-type){padding-bottom:0}}ol.disc,ul.disc{list-style-type:disc}ol.expanded>li+li,ul.expanded>li+li{padding-top:10px}ol.paragraphs,ul.paragraphs{padding-left:0;list-style-type:none}ol.paragraphs>li+li,ul.paragraphs>li+li{padding-top:15px}ol.style-none,ul.style-none{padding-left:0}ol.style-none li,ul.style-none li{list-style:none}main .messages--container{font-weight:700;margin-bottom:20px}main .messages--container ul{padding-left:0;list-style-type:none;margin-bottom:0}main .messages--container ul li{padding:15px}main .messages--container ul li.info,main .messages--container ul li.success{border-left:4px solid #4e88b9;color:#284162;background:rgba(78,136,185,.1)}main .messages--container ul li.error{border-left:4px solid #b1081f;color:#b1081f;background:#f3e9e8}main .messages--container ul li.warning{border-left:4px solid #8e4400;background:#ffd599;font-weight:400}main .info-message{margin:40px 0;padding:15px 20px;border-left:4px solid #4e88b9;background:rgba(78,136,185,.1)}main .info-message ul li{margin-bottom:0}main .success-message{margin:40px 0;padding:15px 20px;border-left:4px solid #008751;background:#e6fae8}main .success-message ul li{margin-bottom:0}main .success-message h1{margin:0}.multiple-choice{margin-top:15px}.multiple-choice__item{font-size:1.1875rem;line-height:1.25;display:block;position:relative;min-height:40px;margin-bottom:10px;padding-left:40px}.multiple-choice__item>input{cursor:pointer;position:absolute;z-index:1;margin:0;opacity:0}.multiple-choice__item>input:checked+label::after{opacity:1}.multiple-choice__item>input:focus+label::before{-webkit-box-shadow:0 0 0 3px #ffbf47;box-shadow:0 0 0 3px #ffbf47}.multiple-choice__item>input+label{display:inline-block;margin-bottom:0;padding:8px 15px 5px;cursor:pointer;-ms-touch-action:manipulation;touch-action:manipulation;font-weight:400}.multiple-choice__item>input+label::before{content:"";-webkit-box-sizing:border-box;box-sizing:border-box;position:absolute;top:0;left:0;width:40px;height:40px;border:2px solid currentColor;background:0 0}.multiple-choice__item>input+label::after{content:"";position:absolute;opacity:0}.multiple-choice--radios .multiple-choice__item>input[type=radio]{top:-2px;left:-2px;width:44px;height:44px}.multiple-choice--radios .multiple-choice__item>input[type=radio]+label::before{border-radius:50%}.multiple-choice--radios .multiple-choice__item>input[type=radio]+label::after{top:10px;left:10px;width:0;height:0;border:10px solid currentColor;border-radius:50%;background:currentColor}.multiple-choice__p{margin:20px 0 20px 5px}.multiple-choice--checkboxes .multiple-choice__item>input[type=checkbox]{top:calc(50% - 20px);left:0;width:40px;height:40px}.multiple-choice--checkboxes .multiple-choice__item>input[type=checkbox]+label::before{top:calc(50% - 20px)}.multiple-choice--checkboxes .multiple-choice__item>input[type=checkbox]+label::after{top:calc(50% - 20px + 11px);left:9px;width:18px;height:7px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);border:solid;border-width:0 0 5px 5px;border-top-color:transparent;background:0 0}.multiple-choice__item .no-info{max-width:600px;margin-left:-40px}.multiple-choice__item .no-info__wrapper{margin-top:20px;padding:10px 10px 10px 30px;border-left:2px solid #333}.multiple-choice__item p{font-size:16px}@media screen and (min-width:21em){.multiple-choice__item p{font-size:inherit}}.multiple-choice__item>input:not(:checked)+label+.no-info{max-height:0;overflow:hidden;visibility:hidden}.multiple-choice__item>input:checked+label+.no-info{overflow-y:hidden;visibility:visible}nav ul{margin:0;padding:0;list-style-type:none}nav ul li,nav ul li a{display:inline-block}.nav--header{font-size:.8em}.nav--header ul{text-align:right}.nav--header li{margin-left:20px}.nav--header li:first-of-type{margin-left:0}.nav--main{background:#eee;margin-bottom:40px}.nav--main li{margin-right:20px;padding-bottom:0!important}.nav--main a{text-decoration:none;padding:10px 0;border-bottom:4px solid transparent;margin-right:10px}.nav--main a.active,.nav--main a:hover,.nav--main a[data-state=active]{border-bottom:4px solid #284162}.nav--about li{width:100%;margin-bottom:15px}.nav--about li a{text-decoration:none}.nav--about li a.active,.nav--about li a[aria-current=page]{font-weight:600;border-left:4px solid currentColor;padding-left:10px}.nav--about li a:focus,.nav--about li a:hover{text-decoration:underline}.nav--about__mobile{display:inline-block;border:none;border-radius:0;background:#eee}.nav--about__desktop{display:none}@media screen and (min-width:48em){.nav--about__mobile{display:none}.nav--about__desktop{display:block}}.nav--about__mobile>summary{margin:0;padding:10px 25px 10px 15px;list-style:none;border-bottom:2px solid #284162}.nav--about__mobile>summary:focus{outline:#ffbf47 solid 3px!important}.nav--about__mobile>summary:hover{opacity:1;background:#d4d4d4}.nav--about__mobile>summary::-webkit-details-marker{display:none}.nav--about__mobile>summary>div::after{border-style:solid;content:"";display:inline-block;height:.45em;position:relative;width:.45em;transform:rotate(45deg);border-width:0 .15em .15em 0;bottom:.25em;left:.6em}.nav--about__mobile[open]{width:auto}.nav--about__mobile[open]>summary{margin-bottom:20px}.nav--about__mobile[open]>summary>div::after{border-style:solid;content:"";display:inline-block;height:.45em;position:relative;width:.45em;transform:rotate(45deg);border-width:.15em 0 0 .15em;top:0;left:.6em}.nav--about__mobile[open] ul a:not(.active){padding-left:15px}div.otk{display:inline-block;position:relative;font-size:xx-large;background-color:#eee;border-radius:4px;padding:10px 100px;margin:20px}div.otk:after{content:"";position:absolute;bottom:1%;left:2.5%;width:0;height:0;border:20px solid transparent;border-top-color:#eee;border-bottom:0;border-left:0;margin-left:-10px;margin-bottom:-20px}div.otk-corner{content:"";position:absolute;top:-60px;right:-60px;height:100px;width:100px;background:green;border:5px solid #696969;transform:rotate(45deg)}.phonetic__alphabet{font-weight:700;margin-bottom:15px}.phonetic__alphabet span{display:inline-block;margin:5px 0}#skip-link-container{width:100%;position:absolute;z-index:5;text-align:center;top:15px}#skip-link-container #skip-link{position:absolute;width:1px;height:1px;overflow:hidden;white-space:nowrap}#skip-link-container #skip-link:focus{position:static;padding:10px;width:auto;height:auto;overflow:auto;background-color:#fff;text-align:center}#page--content:focus{outline:0}.summary-list{font-weight:400;color:#0b0c0c;margin:0 0 30px;display:table;width:100%;table-layout:fixed}.summary-list__row{font-weight:400;color:#0b0c0c;display:table-row}.summary-list__key{color:#0b0c0c;margin:0 0 5px;display:block;padding-top:10px;padding-right:20px;padding-bottom:10px;overflow-wrap:break-word;font-weight:700;width:70%}@media screen and (min-width:35.5em){.nav--header{font-size:.9em}.summary-list__key{display:table-cell;border-bottom:1px solid #b1b4b6;width:30%}}.summary-list__value{font-weight:400;color:#0b0c0c;margin:0;display:block;padding-top:5px;padding-right:20px;overflow-wrap:break-word;width:75%}@media screen and (min-width:35.5em){.summary-list__value{display:table-cell;border-bottom:1px solid #b1b4b6;padding-bottom:10px;padding-top:10px;width:50%}}.summary-list__actions{font-weight:400;color:#0b0c0c;margin:0 0 15px;display:block;padding-top:10px;padding-bottom:10px;border-bottom:1px solid #b1b4b6;width:100%;padding-right:0;text-align:left}@media screen and (min-width:35.5em){.summary-list__actions{display:table-cell;border-bottom:1px solid #b1b4b6;width:20%;text-align:right}}main table{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#0b0c0c;width:100%;margin-bottom:20px;border-spacing:0;border-collapse:collapse}main table thead th:last-child:not(.duet-date__table-header){color:transparent}main table caption{display:table-caption;text-align:left}main table td:not(.duet-date__cell),main table th:not(.duet-date__table-header){padding:20px 15px 15px 0;border-bottom:1px solid #d0d7de;text-align:left;vertical-align:middle}main table td:not(.duet-date__cell):last-child,main table th:not(.duet-date__table-header):last-child{padding-right:0}main table td:not(.duet-date__cell) span,main table th:not(.duet-date__table-header) span{display:block}.pagination,main table.with-actions td:last-child:not([colspan]),main table.with-actions th:last-child:not([colspan]){text-align:right}.current{display:block}.icon-arrow{border:2px solid #585858;display:inline-block;width:32px;height:32px;background-position:50% 50%;background-repeat:no-repeat}.icon-arrow.selected{border:2px solid #000;background-color:#d0d7de}.icon-arrow.up{background-image:url(/static/img/arrow_upward_24px.png)}.icon-arrow.down{background-image:url(/static/img/arrow_downward_24px.png)}.duet-date__table-header span{text-align:center}.tag{display:inline-block;letter-spacing:1px;text-decoration:none;text-transform:uppercase;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:.7em;font-weight:700;line-height:1.15;padding:5px 8px}.tag--blue{background-color:#b3cae5;color:#284162}.tag--green{background-color:#b3dfc0;color:#003620}.tag--grey{background-color:#eee;color:#333}.tag--red{background-color:#f3e9e8;color:#b1081f}.tag--yellow{background-color:#ffd599;color:#333}@media print{.screen-only{display:initial}body{font-size:1.15em}body.backup_codes div.content-button,body.backup_codes footer,body.backup_codes header .fip-container,body.backup_codes nav{display:none}body.backup_codes header #site-name{font-size:2.8em}body.backup_codes header #site-name img{display:inline-block;margin-left:30px;width:55px;margin-bottom:-8px}body.backup_codes h1{display:none}body.backup_codes .header--print{display:block;margin:.67em 0;font-size:1.8em}body.backup_codes .static-codes ol{font-size:1.4em}}</style>
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
+
+    <title>Metrics — COVID Alert Documentation</title>
+  </head>
+  <body class="">
+    <div id="skip-link-container"><a href="#page--content" id="skip-link">Skip to main content</a></div>
+    <div class="container">
+      <header>
+        <div class="page--container">
+          <div class="fip-container">
+            <div class="canada-flag">
+    
+        <img src="/img/sig-blk-en.svg" alt="Government of Canada" />
+    
+</div>
+
+            <h2 class="visually-hidden">Language selection</h2>
+
+  <a href="/fr/app/produit/mesures-de-performance">Français</a>
+
+
+          </div>
+        </div>
+        <div class="page--container">
+          <div id="site-name">
+            COVID Alert Documentation
+            <img class="print-only" src="img/logo-minimal.svg" alt="" />
+          </div>
+        </div>
+      </header>
+      <main id="content">
+        <nav class="nav--main"  aria-label="Product navigation">
+  <div class="page--container">
+    <ul>
+      
+      <li>
+        <a href="/en/app/"  data-state="active" >App</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+
+        <div class="page--container" id="page--content" tabindex="-1">
+          <div class="content--container row">
+            
+  
+    <div class="column">
+      <div class="nav--about__desktop">
+  <nav class="nav--about" aria-label="Table of contents: About the Portal">
+  <ul>
+    
+      <li><a href="/en/app/research/UsabilityAug2020/" >How well does the app support users when they receive a positive diagnosis (and one-time key)?</a></li>
+    
+      <li><a href="/en/app/research/QRCodeDiscoveryResearch/" >Findings from QR Code discovery research</a></li>
+    
+      <li><a href="/en/app/research/LiteratureReview/" >How might people positive for COVID-19 react to the ‘One-time key’?</a></li>
+    
+      <li><a href="/en/app/"  data-state="active">App</a></li>
+    
+      <li><a href="/en/app/product/qr-codes/" >QR Codes - Notifications for venue outbreaks</a></li>
+    
+      <li><a href="/en/app/product/metrics/"  aria-current="page" data-state="active">Metrics</a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<details class="nav--about__mobile">
+  <summary>
+    <div>How well does the app support users when they receive a positive diagnosis (and one-time key)?</div>
+  </summary>
+    <nav class="nav--about" aria-label="Table of contents: About the Portal">
+  <ul>
+    
+      <li><a href="/en/app/research/UsabilityAug2020/" >How well does the app support users when they receive a positive diagnosis (and one-time key)?</a></li>
+    
+      <li><a href="/en/app/research/QRCodeDiscoveryResearch/" >Findings from QR Code discovery research</a></li>
+    
+      <li><a href="/en/app/research/LiteratureReview/" >How might people positive for COVID-19 react to the ‘One-time key’?</a></li>
+    
+      <li><a href="/en/app/"  data-state="active">App</a></li>
+    
+      <li><a href="/en/app/product/qr-codes/" >QR Codes - Notifications for venue outbreaks</a></li>
+    
+      <li><a href="/en/app/product/metrics/"  aria-current="page" data-state="active">Metrics</a></li>
+    
+  </ul>
+</nav>
+
+</details>
+
+    </div>
+  
+
+  <div class="column column--2-3">
+    <h1>Metrics</h1>
+    <p>The COVID Alert app will soon start collecting metrics to help learn if the app is functioning as intended and about its impact on the pandemic. These metrics are aggregated and not tied to individual devices. The Office of the Privacy Commissioner of Canada and the COVID Alert Advisory Council were consulted on the metrics and the collection method. COVID Alert continues to protect people's privacy.</p>
+<p><strong>What the COVID Alert app will be collecting</strong></p>
+<p>To help understand the impact of COVID Alert on the pandemic, the app will collect the following metrics:</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Collection method</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of active users, by province or territory</td>
+<td>Event is triggered when a device performs a background check</td>
+<td>Understand the adoption and persistent usage of the app</td>
+</tr>
+<tr>
+<td>Number of users whose app changes to the exposed state, by province or territory</td>
+<td>Event is triggered when a device switches from monitoring to the exposed state, and an event that is triggered when a device switches from exposed to exposed (for multiple exposures)</td>
+<td>Understand how many people are receiving exposure notifications from the app</td>
+</tr>
+<tr>
+<td>Number of users who enter a one-time key when in the exposed state, by province or territory</td>
+<td>Event is triggered when a user enters an OTK and exposed state is <code>true</code></td>
+<td>Understand how many people receive an exposure notification and then test positive for COVID-19 -- effectively, understand how the app is limiting the spread</td>
+</tr>
+</tbody>
+</table>
+<p>To help understand how COVID Alert is performing and how people are using it, the app will collect the following metrics:</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Collection method</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of new installs</td>
+<td>Captured by &quot;installed&quot; event, which is triggered when a user hits the language selection</td>
+<td>Understand app uptake and adoption</td>
+</tr>
+<tr>
+<td>Number of &quot;date of symptom onset&quot; or &quot;test date&quot; submitted when sharing exposures, by province or territory</td>
+<td>Event is triggered when Temporary Exposure Keys are uploaded and &quot;date of symptom onset&quot; or &quot;test date&quot; = <code>true</code></td>
+<td>Understand how many positive cases are sharing exposures within a modified contagious period</td>
+</tr>
+<tr>
+<td>Number of users who complete or drop off onboarding at different stages, by province or territory</td>
+<td>Events are triggered when the different stages of onboarding are <code>true</code>: &quot;completed onboarding&quot;, &quot;COVID Alert on&quot;, &quot;GAEN framework authorized&quot;, &quot;push notifications enabled&quot;</td>
+<td>Understand app uptake and adoption, and understand where people may be dropping out of this process</td>
+</tr>
+<tr>
+<td>Number of times the app was turned off or on, by province or territory</td>
+<td>Event is triggered when the app is turned on or off</td>
+<td>Understand usage of on/off functionality, and understand how many apps are turned off and left off</td>
+</tr>
+<tr>
+<td>Amount of time between a user receiving an exposure notification and the user clearing the notification</td>
+<td>Event that captures time between an exposure detected, and an event triggered when user presses &quot;clear&quot;</td>
+<td>Understand how many notifications are cleared, and an indicator of how people react to receiving notifications</td>
+</tr>
+<tr>
+<td>Number of background checks per app, per day, by type of device (iOS or Android)</td>
+<td>A counter within the app which sends a daily total to the server</td>
+<td>Detect when issues occur with background checks</td>
+</tr>
+</tbody>
+</table>
+<p>Most metrics are gathered by province or territory. Province or territory breakdowns are only included when app users have selected their province or territory from within the app, which remains voluntary. The app does not use any other information to determine people's province or territory.</p>
+<p><strong>Collection method</strong></p>
+<p>The data used to develop metrics will be collected by creating event logs of user experiences and/or actions. These event logs will be transmitted to the key server and will be accompanied by the IP address; however, the event logs and the IP address will not be linkable and will never be stored together. The data will be encrypted in transit.</p>
+<p>In addition, these metrics will not contain any direct identifiers. Individual logs will be stored for a short period, they will be compiled in the aggregate (total number of users/metric), and will not be combined with other information, including IP addresses.</p>
+<p>More technical details will be available in the coming days.</p>
+<p><strong>Letting people know</strong></p>
+<p>An app notification will notify COVID Alert users of a change to the <a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert/privacy-policy.html">privacy notice</a>, which will outline the new metrics the app is collecting upon launch. Full details will be found in the <a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert/privacy-policy/assessment.html">COVID Alert Privacy Assessment</a> upon launch.</p>
+
+
+    
+  </div>
+
+          </div>
+        </div>
+
+      </main>
+
+      <footer>
+    <div class="page--container">
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="canada-wordmark"><img src="img/wmms-blk.svg" alt="Symbol of the Government of Canada" /></div>
+    </div>
+</footer>
+
+
+    </div>
+  </body>
+</html>
