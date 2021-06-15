@@ -1,6 +1,8 @@
 <h2 class="visually-hidden">{% trans "Language selection" %}</h2>
 {% if locale == 'en' %}
-  <a href="{{ site.baseurl | url }}/fr/{{ translationUrl }}">{{ site.fr.label }}</a>
+{% set switch = '/fr/'+translationUrl %}
+  <a href="{{ switch | url}}">{{ site.fr.label }}</a>
 {% else %}
-  <a href="{{ site.baseurl | url }}/en/{{ translationUrl }}">{{ site.en.label }}</a>
+{% set switch = '/fr/'+translationUrl %}
+  <a href="{{ switch | url}}">{{ site.en.label }}</a>
 {% endif %}
