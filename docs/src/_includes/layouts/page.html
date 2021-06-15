@@ -14,7 +14,7 @@
 
     {% if next %}
     <div class="content-next-link">
-      <a href="{{ next.url }}" class="chevron-right">{% trans "Next:" %} {{ next.title }}</a>
+      <a href="{{ next.url | url }}" class="chevron-right">{% trans "Next:" %} {{ next.title }}</a>
     </div>
     {% endif %}
   </div>
