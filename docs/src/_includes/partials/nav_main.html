@@ -3,7 +3,7 @@
     <ul>
       {% for item in collections.section[locale] %}
       <li>
-        <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }} >{{ item.data.title }}</a>
+        <a href="{{ item.url | url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }} >{{ item.data.title }}</a>
       </li>
       {% endfor %}
     </ul>

@@ -1,7 +1,7 @@
 <ul class="sections-list" role="list">
   {% for item in collections.section[locale] %}
   <li>
-    <a href="{{ item.url }}">
+    <a href="{{ item.url | url }}">
       <h2>{{ item.data.title }}</h2>
       <p>{{ item.data.description }}</p>
     </a>
