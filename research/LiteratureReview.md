@@ -2,8 +2,7 @@
 
 # How might people positive for COVID-19 react to the ‘One-time key’?
 
-Date: July 28, 2020
-
+Date: July 28, 2020 \
 Authors: Jeana Frost, Adrianne Lee
 
 
