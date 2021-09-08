@@ -2,6 +2,9 @@
 
 # Mesures de performance
 
+Date : le 2 février 2021 \
+Auteure : Courtney Claessens
+
 L’application Alerte COVID commencera bientôt à collecter des mesures de performance qui permettront de mieux savoir si l’application fonctionne comme prévu et de connaître son incidence sur la pandémie. Ces mesures sont agrégées et ne sont pas associées à des appareils personnels. Le Commissariat à la protection de la vie privée du Canada et le Conseil consultatif d’Alerte COVID ont été consultés au sujet des mesures de performance et de la façon de les collecter. Alerte COVID continue de protéger la vie privée des personnes.
 
 **Mesures collectées par l’application Alerte COVID**

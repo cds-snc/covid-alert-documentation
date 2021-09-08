@@ -2,6 +2,9 @@
 
 # Codes QR – Notifications d’éclosions sur site
 
+Date : le 1 février 2021 \
+Auteure : Courtney Claessens
+
 L’objectif d’Alerte COVID est d’aviser les personnes lorsqu’elles risquent d’avoir été exposées à des cas positifs de COVID-19. Une exposition à la COVID-19 peut se produire lors d’un contact étroit avec une personne ayant la COVID-19, ou par la transmission d’aérosols et le contact de matières contaminées à des sites où il y a une éclosion. Actuellement, l’application ne permet d’aviser les personnes que pour des expositions par contact étroit. Alerte COVID pourrait toutefois notifier les utilisateurs d’une éclosion dans un endroit qu’ils ont visités grâce à la lecture de codes QR affichés aux sites participants, tout en préservant son principe de respect de la vie privée. Ce travail est fondé sur les applications de notification du Royaume-Uni et de la Nouvelle-Zélande, et de leur adaptation aux éclosions sur site.
 
 ## Comment ça marche?
