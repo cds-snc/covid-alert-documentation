@@ -24,7 +24,7 @@ Non. Cette fonctionnalité fonctionne à peu près de la même manière que le r
 * Ce service permet de tenir compte d’autres types de transmission de la COVID-19 : surfaces contaminées et aérosols (dans les lieux fermés, bondés de gens, peu aérés).
 
 ## Quelles sont les prochaines étapes?
-Les équipes d’Alerte COVID commencent la recherche, ainsi que la conception et le développement des parties techniques du service. Au cours des prochaines semaines, nous publierons de la documentation plus détaillée sur cette fonctionnalité et les parcours utilisateurs. Le travail se déroule dans les dépôts suivants :
+Les équipes d’Alerte COVID commencent la recherche, ainsi que la conception et le développement des parties techniques du service. Le travail se déroule dans les dépôts suivants :
 
 * https://github.com/cds-snc/covid-alert-app
 * https://github.com/cds-snc/covid-alert-portal
