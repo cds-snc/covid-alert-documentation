@@ -2,10 +2,8 @@
 
 # Quelle est la réaction des personnes qui ont la COVID-19 face à la « clé à usage unique »?
 
-Date : Le 28 juillet 2020
-
-Auteures : Jeana Frost et Adrianne Lee
-
+Date : Le 28 juillet 2020 \
+Auteures : Jeana Frost et Adrianne Lee \
 Traduit par : Élise Cossette
 
 
