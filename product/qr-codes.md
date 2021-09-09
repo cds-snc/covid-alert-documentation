@@ -24,7 +24,7 @@ It’s not. This feature works in much the same privacy-protecting way that the 
 * Addressing additional types of COVID-19 transmission including: fomite (surface based contamination) and aerosol (indoor, crowded, inadequately vented areas).
 
 ## What’s next?
-The COVID Alert teams are starting to research, design, and build the technical pieces of the service. Over the coming weeks we’ll post more detailed documentation on the functionality and flows. The work is happening in these repositories:
+The COVID Alert teams are starting to research, design, and build the technical pieces of the service. The work is happening in these repositories:
 
 * https://github.com/cds-snc/covid-alert-app
 * https://github.com/cds-snc/covid-alert-portal
